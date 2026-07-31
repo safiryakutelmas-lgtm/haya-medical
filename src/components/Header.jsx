@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
+  // Mobil menünün açık/kapalı durumunu tutan state
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8">
@@ -23,53 +29,38 @@ export default function Header() {
         </Link>
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
-          {/* Gezinti Menüsü */}
+          {/* Masaüstü Gezinti Menüsü */}
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm font-medium">
               <li>
-                <Link
-                  className="text-gray-600 transition hover:text-teal-600"
-                  href="/"
-                >
+                <Link className="text-gray-600 transition hover:text-teal-600" href="/">
                   Ana Sayfa
                 </Link>
               </li>
               <li>
-                <Link
-                  className="text-gray-600 transition hover:text-teal-600"
-                  href="/doctors"
-                >
+                <Link className="text-gray-600 transition hover:text-teal-600" href="/doctors">
                   Doktorlarımız
                 </Link>
               </li>
               <li>
-                <Link
-                  className="text-gray-600 transition hover:text-teal-600"
-                  href="/hakkimizda"
-                >
+                <Link className="text-gray-600 transition hover:text-teal-600" href="/hakkimizda">
                   Hakkımızda
                 </Link>
               </li>
               <li>
-                <Link
-                  className="text-gray-600 transition hover:text-teal-600"
-                  href="/iletisim"
-                >
+                <Link className="text-gray-600 transition hover:text-teal-600" href="/iletisim">
                   İletişim
                 </Link>
               </li>
               <li>
-                <Link
-                  className="text-gray-600 transition hover:text-teal-600"
-                  href="/admin"
-                >
+                <Link className="text-gray-600 transition hover:text-teal-600" href="/admin">
                   Admin
                 </Link>
               </li>
             </ul>
           </nav>
 
-          {/* Sağ Taraftaki Butonlar */}
+          {/* Sağ Taraftaki Butonlar ve Mobil Hamburger */}
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
               <Link
@@ -86,8 +77,12 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Mobil Menü Açma Butonu */}
-            <button className="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-700 md:hidden">
+            {/* Mobil Menü Açma/Kapatma Butonu */}
+            <button
+              type="button"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-700 md:hidden"
+            >
               <span className="sr-only">Menüyü Aç</span>
               <svg
                 aria-hidden="true"
@@ -98,17 +93,67 @@ export default function Header() {
                 stroke="currentColor"
                 strokeWidth={2}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                {isMenuOpen ? (
+                  // Menü açıkken gösterilecek "X" (kapat) ikonu
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  // Menü kapalıyken gösterilecek "≡" (hamburger) ikonu
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                )}
               </svg>
             </button>
           </div>
         </div>
 
       </div>
+
+      {/* MOBİL MENÜ AÇILIR ALANI (Sadece isMenuOpen true olduğunda alt tarafta görünür) */}
+      {isMenuOpen && (
+        <div className="md:hidden border-t border-gray-100 bg-white px-4 py-3 space-y-1 shadow-lg">
+          <Link
+            href="/"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition"
+          >
+            Ana Sayfa
+          </Link>
+          <Link
+            href="/doctors"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition"
+          >
+            Doktorlarımız
+          </Link>
+          <Link
+            href="/hakkimizda"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition"
+          >
+            Hakkımızda
+          </Link>
+          <Link
+            href="/iletisim"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition"
+          >
+            İletişim
+          </Link>
+          <Link
+            href="/admin"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition"
+          >
+            Admin
+          </Link>
+          <Link
+            href="/giris"
+            onClick={() => setIsMenuOpen(false)}
+            className="block rounded-lg px-4 py-2 text-sm font-medium text-teal-600 bg-teal-50 hover:bg-teal-100 transition sm:hidden"
+          >
+            Giriş Yap
+          </Link>
+        </div>
+      )}
     </header>
   );
 }
