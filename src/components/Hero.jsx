@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import MultiStepForm from './MultiStepForm';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gray-900 text-white overflow-hidden rounded-2xl  w-full mx-auto shadow-2xl">
+    <div className="relative bg-gray-900 text-white overflow-hidden rounded-2xl  w-full mx-auto shadow-2xl ">
       {/* Arka Plan Görseli ve Karartma Katmanı */}
       <div className="absolute inset-0 z-0">
         <img
@@ -15,7 +16,8 @@ export default function Hero() {
       </div>
 
       {/* Hero İçeriği */}
-      <div className="relative z-10 max-w-2xl px-6 py-20 sm:px-12 sm:py-28">
+      <div className="relative z-10 max-full px-6 py-20 sm:px-12 sm:py-28 grid grid-cols-2">
+        <div>
         <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-teal-300 uppercase bg-teal-900/60 rounded-full border border-teal-500/30">
           Güvenilir Sağlık Rehberi
         </span>
@@ -26,8 +28,7 @@ export default function Hero() {
           Uzman doktorlarımızı inceleyin, deneyim ve muayene ücretlerini karşılaştırarak size en uygun randevuyu kolayca planlayın.
         </p>
 
-        {/* Butonlar */}
-        <div className="flex flex-wrap gap-4">
+         <div className="flex flex-wrap gap-4">
           <Link
             href="/doctors"
             className="px-6 py-3 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg transition shadow-lg shadow-teal-500/30 text-center"
@@ -40,8 +41,16 @@ export default function Hero() {
           >
             Nasıl Çalışır?
           </a>
+         
         </div>
       </div>
+        
+        {/* Butonlar */}
+
+        <MultiStepForm/>
+       
+      </div>
+      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 
 import DoctorCard from "@/components/DoctorCard";
+import DoctorCardT from "@/components/doctorCardT";
 import { supabase } from "@/lib/supabase";
 export const dynamic = 'force-dynamic';
 
@@ -22,7 +23,7 @@ export default async function DoctorsPage() {
           <DoctorCard key={doktor.id} doktor={doktor} />
         ))}
       </div>
-
+          <DoctorCardT/>
       
     </main>
   );
