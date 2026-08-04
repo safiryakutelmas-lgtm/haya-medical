@@ -1,22 +1,25 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import MultiStepForm from './MultiStepForm';
 
 export default function Hero() {
   return (
-    <div className="relative bg-gray-900 text-white overflow-hidden rounded-2xl w-full mx-auto shadow-2xl">
+    <div className="relative bg-gray-900 text-white overflow-hidden w-full min-h-screen shadow-2xl">
       {/* Arka Plan Görseli ve Karartma Katmanı */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070"
           alt="Sağlık Hizmetleri"
-          className="w-full h-full object-cover opacity-40"
+          fill
+          className="object-cover opacity-40"
+          priority
         />
         {/* Görselin üzerine yumuşak koyu degrade kaplama */}
         <div className="absolute inset-0 bg-gradient-to-r from-teal-950/90 via-teal-900/60 to-transparent" />
       </div>
 
       {/* Hero İçeriği - Mobilde 1 kolon, Büyük Ekranlarda (lg) 2 kolon */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20 min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         {/* Sol Taraf: Metin İçeriği */}
         <div className="text-center lg:text-left">
