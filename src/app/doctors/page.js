@@ -1,18 +1,12 @@
 
 import DoctorCard from "@/components/DoctorCard";
 import DoctorCardT from "@/components/doctorCardT";
-import { supabase } from "@/lib/supabase";
+
 export const dynamic = 'force-dynamic';
 
 export default async function DoctorsPage() {
 
-  const { data: doctors, error} = await supabase.from('doctors').select("*");
-
-  if(error){
-    console.error('Hata:' , error.message);
-  }
-
-
+  
   return (
     <main className="p-8 max-w-4xl mx-auto">
       
