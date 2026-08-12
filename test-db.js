@@ -1,14 +1,26 @@
-(async () => {
-  try {
-    const { sql } = await import("./src/lib/neondb.js");
 
-    const result = await sql`SELECT 1 AS connected`;
+import { neon } from '@neondatabase/serverless';
 
-    console.log("Database connection successful.");
-    console.log("Result:", result);
-    process.exit(0);
-  } catch (error) {
-    console.error("Database connection failed:", error);
+async function testConnection() {
+  const dbUrl = process.env.DATABASE_URL;
+
+  if (!dbUrl) {
+    console.error('❌ HATA: .env.local dosyasında DATABASE_URL bulunamadı!');
     process.exit(1);
   }
-})();
+
+  try {
+    console.log('⏳ Neon veritabanına bağlanılıyor...');
+    const sql = neon(dbUrl);
+    const result = await sql`SELECT NOW() as current_time, version();`;
+    
+    console.log('✅ Bağlantı Başarılı!');
+    console.log('📅 Veritabanı Saati:', result[0].current_time);
+    console.log('🐘 PostgreSQL Sürümü:', result[0].version.split(' ')[0] + ' ' + result[0].version.split(' ')[1]);
+  } catch (error) {
+    console.error('❌ Bağlantı Başarısız!');
+    console.error('Hata Detayı:', error.message);
+  }
+}
+
+testConnection();

@@ -1,6 +1,9 @@
 import { getAllClinics, getClinicPricesByClinicId } from '@/services/clinic-test-service';
 import { getAllDoctors } from '@/services/doctorService';
 
+export const dynamic = 'force-dynamic';
+
+// ... geri kalan sayfa kodlarınız
 export default async function ClinicTestPage() {
   const clinics = await getAllClinics();
   const doctors = await getAllDoctors();
