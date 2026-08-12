@@ -20,11 +20,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-white border-b border-gray-100 shadow-sm' : 'bg-transparent border-none'}`}>
-      <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
-        
-        {/* Logo - Tıklayınca Ana Sayfaya Gider */}
-        <Link className="block text-teal-600" href="/">
+    <header className={`sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl transition-shadow duration-300 ${isScrolled ? 'shadow-sm' : 'shadow-none'}`}>
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+        <Link className="flex items-center gap-2 text-teal-600" href="/">
           <span className="sr-only">Ana Sayfa</span>
           <svg
             className="h-8"
@@ -40,70 +38,65 @@ export default function Header() {
           </svg>
         </Link>
 
-        <div className="flex flex-1 items-center justify-end">
-          {/* Masaüstü Gezinti Menüsü */}
+        <div className="flex flex-1 items-center justify-between gap-4">
           <nav aria-label="Global" className="hidden md:flex items-center gap-3">
             <Link
-              className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium transition ${isScrolled ? 'text-gray-700 hover:text-teal-600' : 'text-white hover:text-teal-200'}`}
+              className={`inline-flex items-center rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'text-slate-700 hover:text-teal-600' : 'text-slate-900 hover:text-teal-600'}`}
               href="/"
             >
               Ana Sayfa
             </Link>
             <Link
-              className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium transition ${isScrolled ? 'text-gray-700 hover:text-teal-600' : 'text-white hover:text-teal-200'}`}
+              className={`inline-flex items-center rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'text-slate-700 hover:text-teal-600' : 'text-slate-900 hover:text-teal-600'}`}
               href="/doctors"
             >
               Doktorlarımız
             </Link>
             <Link
-              className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium transition ${isScrolled ? 'text-gray-700 hover:text-teal-600' : 'text-white hover:text-teal-200'}`}
+              className={`inline-flex items-center rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'text-slate-700 hover:text-teal-600' : 'text-slate-900 hover:text-teal-600'}`}
               href="/hakkimizda"
             >
               Hakkımızda
             </Link>
             <Link
-              className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium transition ${isScrolled ? 'text-gray-700 hover:text-teal-600' : 'text-white hover:text-teal-200'}`}
+              className={`inline-flex items-center rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'text-slate-700 hover:text-teal-600' : 'text-slate-900 hover:text-teal-600'}`}
               href="/iletisim"
             >
               İletişim
             </Link>
             <Link
-              className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium transition ${isScrolled ? 'text-gray-700 hover:text-teal-600' : 'text-white hover:text-teal-200'}`}
+              className={`inline-flex items-center rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'text-slate-700 hover:text-teal-600' : 'text-slate-900 hover:text-teal-600'}`}
               href="/admin"
             >
               Admin
             </Link>
+            <Link
+              href="/clinic-test"
+              className="inline-flex items-center rounded-md bg-teal-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-teal-700"
+            >
+              Clinic Test
+            </Link>
           </nav>
 
-          {/* Sağ Taraftaki Butonlar ve Mobil Hamburger */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="/iletisim"
-              className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-md px-4 py-2 text-sm font-medium transition ${isScrolled ? 'block bg-teal-600 text-white hover:bg-teal-700' : 'hidden'} md:static md:translate-x-0 md:translate-y-0 md:bg-transparent md:text-gray-700 md:hover:text-teal-600 md:hover:bg-transparent`}
-            >
-              İletişim
-            </Link>
-            {/* Mobil Menü Açma/Kapatma Butonu */}
+          <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`block rounded-sm p-2.5 transition md:hidden ${isScrolled ? 'text-gray-600 bg-white/80 hover:bg-white' : 'text-white bg-black/40 hover:bg-black/50'}`}
+              className={`rounded-sm p-2.5 transition md:hidden ${isScrolled ? 'text-slate-700 bg-slate-50 hover:bg-slate-100' : 'text-slate-900 bg-slate-100 hover:bg-slate-200'}`}
             >
               <span className="sr-only">Menüyü Aç</span>
               <svg
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth={2}
               >
                 {isMenuOpen ? (
-                  // Menü açıkken gösterilecek "X" (kapat) ikonu
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 ) : (
-                  // Menü kapalıyken gösterilecek "≡" (hamburger) ikonu
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 )}
               </svg>
@@ -172,6 +165,13 @@ export default function Header() {
                 className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-teal-600 transition"
               >
                 Hakkımızda
+              </Link>
+              <Link
+                href="/clinic-test"
+                onClick={() => setIsMenuOpen(false)}
+                className="block rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-teal-600 transition"
+              >
+                Clinic Test
               </Link>
               <Link
                 href="/iletisim"
