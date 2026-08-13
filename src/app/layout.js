@@ -23,7 +23,18 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen bg-white text-slate-900 antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body
+        className="min-h-screen bg-white text-slate-900 antialiased"
+        style={{ fontFamily: '"Open Sans", sans-serif' }}
+      >
         <Header />
         <main className="flex-1 pt-16">{children}</main>
       </body>

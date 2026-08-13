@@ -1,21 +1,74 @@
 
-'use client'
-import React, { useState } from 'react';
+'use client';
+
+import { useState } from 'react';
+
+const hairLossOptions = [
+  { id: 'mild', label: 'Mild' },
+  { id: 'moderate', label: 'Moderate' },
+  { id: 'advanced', label: 'Advanced' },
+  { id: 'different', label: 'Different' },
+];
+
+const yesNoOptions = [
+  { value: true, label: 'Yes', icon: '✓' },
+  { value: false, label: 'No', icon: '✕' },
+];
+
+const ageRangeOptions = [
+  { id: '18-29', label: '18-29' },
+  { id: '30-39', label: '30-39' },
+  { id: '40-49', label: '40-49' },
+  { id: '50+', label: '50+' },
+];
+
+const doctorCriteriaOptions = [
+  { id: 'price', label: 'Price' },
+  { id: 'experience', label: 'Surgeon experience' },
+  { id: 'reviews', label: 'Patient reviews' },
+];
+
+const countryOptions = [
+  { id: 'UK', label: 'UK' },
+  { id: 'USA', label: 'USA' },
+  { id: 'EUROPE', label: 'Europe' },
+  { id: 'OTHER', label: 'Other' },
+];
+
+const initialFormData = {
+  hairLossType: '',
+  hadTransplant: null,
+  familyHistory: null,
+  yearsOfLoss: '',
+  ageRange: '',
+  currentTreatment: null,
+  doctorPriority: '',
+  willingToTravel: null,
+  country: '',
+  zipCode: '',
+  title: 'Mr',
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: {
+    countryCode: '',
+    number: '',
+  },
+  termsAccepted: true,
+};
 
 export default function MultiStepForm() {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
-    hairLossType: '',
-    hadTransplant: null,
-    familyHistory: null,
-    yearsOfLoss: '',
-    fullName: '',
-    email: '',
-    phone: ''
-  });
+  const [formData, setFormData] = useState(initialFormData);
   const [submitted, setSubmitted] = useState(false);
 
-  const totalSteps = 5;
+  const resetForm = () => {
+    setFormData(initialFormData);
+    setStep(1);
+    setSubmitted(false);
+  };
+
+  const totalSteps = 11;
 
   const handleSelect = (key, value) => {
     setFormData((prev) => ({ ...prev, [key]: value }));
@@ -26,208 +79,504 @@ export default function MultiStepForm() {
     if (step > 1) setStep((prev) => prev - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const payload = {
+      hairLossType: formData.hairLossType,
+      hadTransplant: formData.hadTransplant,
+      familyHistory: formData.familyHistory,
+      yearsOfLoss: formData.yearsOfLoss,
+      ageRange: formData.ageRange,
+      currentTreatment: formData.currentTreatment,
+      doctorPriority: formData.doctorPriority,
+      willingToTravel: formData.willingToTravel,
+      country: formData.country,
+      zipCode: formData.zipCode,
+      title: formData.title,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: {
+        countryCode: formData.phone.countryCode,
+        number: formData.phone.number,
+      },
+      termsAccepted: formData.termsAccepted,
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result?.error || 'Failed to submit form');
+      }
+
+      console.log('Doctor finder payload:', JSON.stringify(payload, null, 2));
+      console.log('Insert result:', result);
+      resetForm();
+    } catch (error) {
+      console.error('Submit failed:', error);
+      alert(error.message || 'Form submission failed.');
+    }
   };
 
   return (
-    <div className="min-h-screen bg-[#1b369] flex items-center justify-center p-4 font-sans">
-      <div className="relative w-full max-w-2xl bg-[#eef3f7] rounded-xl shadow-2xl overflow-hidden">
-        {/* Indirim Rozeti */}
-        <div className="absolute top-4 right-4 z-10 bg-[#ff522b] text-white rounded-full w-20 h-20 flex flex-col items-center justify-center text-center p-2 shadow-lg leading-tight font-bold text-xs">
-          <span>Save</span>
-          <span>up to</span>
-          <span className="text-sm font-black">$3,200</span>
+    <div className="flex min-h-[460px] w-full items-center justify-center bg-transparent p-2 font-sans text-slate-900 md:p-4">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-[28px] border border-slate-200/80 bg-white/90 shadow-[0_30px_90px_rgba(15,23,42,0.12)]">
+        <div className="absolute right-4 top-4 z-10 flex h-16 w-16 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0ea5a4] text-center text-[10px] font-black uppercase leading-tight text-white shadow-[0_18px_30px_rgba(14,165,164,0.28)]">
+          <span>Save up to</span>
+          <span>$3150</span>
         </div>
 
-        {/* Progress Bar */}
-        <div className="w-full bg-gray-200 h-1.5">
+        <div className="relative h-2 w-full bg-slate-200/80">
+          <div className="absolute inset-0 rounded-full bg-slate-200/80" />
           <div
-            className="bg-[#ff522b] h-1.5 transition-all duration-300 ease-out"
+            className="absolute left-0 top-0 h-full rounded-full bg-gradient-to-r from-[#0f766e] via-[#14b8a6] to-[#38bdf8] transition-all duration-300 ease-out"
             style={{ width: `${(step / totalSteps) * 100}%` }}
           ></div>
         </div>
 
-        <div className="p-8 md:p-12 min-h-[420px] flex flex-col justify-between">
+        <div className="flex min-h-[420px] flex-col justify-between p-6 md:p-10">
           {!submitted ? (
             <>
-              {/* Geri Butonu */}
-              <div className="h-8">
+              <div className="h-7">
                 {step > 1 && (
                   <button
                     onClick={handlePrev}
-                    className="text-gray-500 hover:text-gray-800 transition-colors flex items-center gap-1 text-xl"
+                    className="flex items-center gap-2 text-lg text-slate-500 transition hover:text-slate-800"
+                    aria-label="Go back"
                   >
                     ←
                   </button>
                 )}
               </div>
 
-              {/* ADIM 1: Dökülme Tipi */}
               {step === 1 && (
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1f2937] text-center mb-8">
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 1 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
                     What does your hair loss look like?
                   </h2>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {[
-                      { id: 'type1', label: 'Mild', img: 'https://medihair.com/wp-content/themes/medihare/assets/images/Funnel_Hair_Loss_NW3.svg' },
-                      { id: 'type2', label: 'Moderate', img: 'https://medihair.com/wp-content/themes/medihare/assets/images/Funnel_Hair_Loss_NW4.svg' },
-                      { id: 'type3', label: 'Severe', img: 'https://medihair.com/wp-content/themes/medihare/assets/images/Funnel_Hair_Loss_NW6.svg' },
-                      { id: 'different', label: 'My hair loss is different', textOnly: true }
-                    ].map((item) => (
-                      <button
-                        key={item.id}
-                        onClick={() => handleSelect('hairLossType', item.id)}
-                        className="bg-white hover:border-[#ff522b] border-2 border-transparent rounded-xl p-4 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all h-36"
-                      >
-                        {item.textOnly ? (
-                          <span className="font-semibold text-gray-700 text-sm">{item.label}</span>
-                        ) : (
-                          <>
-                            <img src={item.img} alt={item.label} className="w-16 h-16 object-contain mb-2" />
-                          </>
-                        )}
-                      </button>
-                    ))}
+
+                  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {hairLossOptions.map((item) => {
+                      const isSelected = formData.hairLossType === item.id;
+
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => handleSelect('hairLossType', item.id)}
+                          className={`flex h-24 items-center justify-center rounded-2xl border px-4 text-center text-sm font-semibold tracking-[0.04em] shadow-[0_10px_22px_rgba(15,23,42,0.04)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 text-teal-700 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700'
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               )}
 
-              {/* ADIM 2: Daha Önce Saç Ekimi */}
               {step === 2 && (
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1f2937] text-center mb-8">
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 2 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
                     Have you ever had a hair transplant?
                   </h2>
+
                   <div className="flex justify-center gap-6">
-                    {[
-                      { value: true, label: 'Yes', icon: '✓' },
-                      { value: false, label: 'No', icon: '⊘' }
-                    ].map((item, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => handleSelect('hadTransplant', item.value)}
-                        className="bg-white hover:border-[#ff522b] border-2 border-transparent rounded-xl p-6 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-all w-36 h-36"
-                      >
-                        <span className="text-4xl text-blue-500 mb-2">{item.icon}</span>
-                        <span className="font-semibold text-gray-700">{item.label}</span>
-                      </button>
-                    ))}
+                    {yesNoOptions.map((item) => {
+                      const isSelected = formData.hadTransplant === item.value;
+
+                      return (
+                        <button
+                          key={String(item.value)}
+                          type="button"
+                          onClick={() => handleSelect('hadTransplant', item.value)}
+                          className={`flex h-36 w-32 flex-col items-center justify-center rounded-2xl border p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white hover:border-teal-300 hover:bg-teal-50'
+                          }`}
+                        >
+                          <span className={`mb-2 text-4xl ${isSelected ? 'text-teal-600' : 'text-teal-600'}`}>
+                            {item.icon}
+                          </span>
+                          <span className={`text-base font-semibold ${isSelected ? 'text-teal-700' : 'text-slate-700'}`}>
+                            {item.label}
+                          </span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               )}
 
-              {/* ADIM 3: Aile Öyküsü */}
               {step === 3 && (
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1f2937] text-center mb-8">
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 3 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
                     Do other people in your family suffer from hair loss?
                   </h2>
+
                   <div className="flex justify-center gap-6">
-                    {[
-                      { value: true, label: 'Yes', icon: '✓' },
-                      { value: false, label: 'No', icon: '⊘' }
-                    ].map((item, idx) => (
+                    {yesNoOptions.map((item) => (
                       <button
-                        key={idx}
+                        key={String(item.value)}
+                        type="button"
                         onClick={() => handleSelect('familyHistory', item.value)}
-                        className="bg-white hover:border-[#ff522b] border-2 border-transparent rounded-xl p-6 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-all w-36 h-36"
+                        className="flex h-36 w-32 flex-col items-center justify-center border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-teal-200 hover:shadow-md"
                       >
-                        <span className="text-4xl text-blue-500 mb-2">{item.icon}</span>
-                        <span className="font-semibold text-gray-700">{item.label}</span>
+                        <span className="mb-2 text-4xl text-cyan-600">{item.icon}</span>
+                        <span className="text-base font-semibold text-slate-700">{item.label}</span>
                       </button>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* ADIM 4: Süre */}
               {step === 4 && (
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1f2937] text-center mb-8">
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 4 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
                     How many years ago did your hair loss begin?
                   </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     {[
-                      { id: '<5', label: 'Less than 5' },
-                      { id: '5-10', label: '5-10' },
-                      { id: '>10', label: 'More than 10' }
-                    ].map((item) => (
+                      { id: '<5', label: 'Less than 5 years' },
+                      { id: '5-10', label: '5 - 10 years' },
+                      { id: '>10', label: 'More than 10 years' },
+                    ].map((item) => {
+                      const isSelected = formData.yearsOfLoss === item.id;
+
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => handleSelect('yearsOfLoss', item.id)}
+                          className={`flex h-20 items-center justify-center rounded-2xl border px-4 text-center text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 text-teal-700 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700'
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {step === 5 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 5 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    How old are you?
+                  </h2>
+
+                  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {ageRangeOptions.map((item) => {
+                      const isSelected = formData.ageRange === item.id;
+
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => handleSelect('ageRange', item.id)}
+                          className={`flex h-20 items-center justify-center rounded-2xl border px-4 text-center text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 text-teal-700 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700'
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {step === 6 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 6 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    Are you currently treating your hair loss with finasteride or minoxidil?
+                  </h2>
+
+                  <div className="flex justify-center gap-6">
+                    {yesNoOptions.map((item) => (
                       <button
-                        key={item.id}
-                        onClick={() => handleSelect('yearsOfLoss', item.id)}
-                        className="bg-white hover:border-[#ff522b] border-2 border-transparent rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-all h-36"
+                        key={String(item.value)}
+                        type="button"
+                        onClick={() => handleSelect('currentTreatment', item.value)}
+                        className="flex h-36 w-32 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)]"
                       >
-                        <span className="text-3xl mb-2">🕒</span>
-                        <span className="font-semibold text-gray-700">{item.label}</span>
+                        <span className="mb-2 text-4xl text-teal-600">{item.icon}</span>
+                        <span className="text-base font-semibold text-slate-700">{item.label}</span>
                       </button>
                     ))}
                   </div>
                 </div>
               )}
 
-              {/* ADIM 5: İletişim Formu */}
-              {step === 5 && (
+              {step === 7 && (
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1f2937] text-center mb-2">
-                    Get Your Free Consultation
-                  </h2>
-                  <p className="text-center text-gray-600 text-sm mb-6">
-                    Where should we send your custom offers?
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 7 of 10
                   </p>
-                  <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    What is the most important criterion for you when choosing a doctor?
+                  </h2>
+
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+                    {doctorCriteriaOptions.map((item) => {
+                      const isSelected = formData.doctorPriority === item.id;
+
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => handleSelect('doctorPriority', item.id)}
+                          className={`flex h-20 items-center justify-center rounded-2xl border px-4 text-center text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 text-teal-700 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700'
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {step === 8 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 8 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    Would you be willing to go abroad?
+                  </h2>
+
+                  <div className="flex justify-center gap-6">
+                    {yesNoOptions.map((item) => (
+                      <button
+                        key={String(item.value)}
+                        type="button"
+                        onClick={() => handleSelect('willingToTravel', item.value)}
+                        className="flex h-36 w-32 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)]"
+                      >
+                        <span className="mb-2 text-4xl text-teal-600">{item.icon}</span>
+                        <span className="text-base font-semibold text-slate-700">{item.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {step === 9 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 9 of 10
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    In which country do you live?
+                  </h2>
+
+                  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                    {countryOptions.map((item) => {
+                      const isSelected = formData.country === item.id;
+
+                      return (
+                        <button
+                          key={item.id}
+                          type="button"
+                          onClick={() => handleSelect('country', item.id)}
+                          className={`flex h-20 items-center justify-center rounded-2xl border px-4 text-center text-sm font-semibold shadow-sm transition hover:-translate-y-0.5 hover:shadow-[0_16px_30px_rgba(15,118,110,0.10)] ${
+                            isSelected
+                              ? 'border-teal-500 bg-teal-50 text-teal-700 ring-1 ring-teal-200'
+                              : 'border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50 hover:text-teal-700'
+                          }`}
+                        >
+                          {item.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {step === 10 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 10 of 11
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    Please enter your zip code
+                  </h2>
+
+                  <div className="mx-auto max-w-md space-y-4">
                     <input
                       type="text"
-                      placeholder="Full Name"
+                      placeholder="Zip code"
                       required
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff522b]"
+                      value={formData.zipCode}
+                      onChange={(e) => setFormData({ ...formData, zipCode: e.target.value })}
+                      className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
                     />
+                    <button
+                      type="button"
+                      onClick={() => setStep(11)}
+                      className="w-full rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 px-4 py-3.5 text-sm font-bold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110"
+                    >
+                      Continue
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {step === 11 && (
+                <div>
+                  <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
+                    Step 11 of 11
+                  </p>
+                  <h2 className="mb-8 text-center text-2xl font-bold text-slate-900 md:text-3xl">
+                    Tell us about yourself
+                  </h2>
+
+                  <form onSubmit={handleSubmit} className="mx-auto max-w-lg space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <select
+                        value={formData.title}
+                        onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      >
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                      </select>
+
+                      <div className="hidden md:block" />
+                    </div>
+
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <input
+                        type="text"
+                        placeholder="First name"
+                        required
+                        value={formData.firstName}
+                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      />
+                      <input
+                        type="text"
+                        placeholder="Last name"
+                        required
+                        value={formData.lastName}
+                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      />
+                    </div>
+
                     <input
                       type="email"
-                      placeholder="Email Address"
+                      placeholder="Email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff522b]"
+                      className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
                     />
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      required
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff522b]"
-                    />
+
+                    <div className="grid gap-4 md:grid-cols-[120px_1fr]">
+                      <input
+                        type="text"
+                        placeholder="Country code"
+                        value={formData.phone.countryCode}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            phone: { ...formData.phone, countryCode: e.target.value },
+                          })
+                        }
+                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      />
+                      <input
+                        type="tel"
+                        placeholder="Phone number"
+                        required
+                        value={formData.phone.number}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            phone: { ...formData.phone, number: e.target.value },
+                          })
+                        }
+                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      />
+                    </div>
+
+                    <label className="flex items-start gap-3 border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 shadow-inner shadow-slate-200/20">
+                      <input
+                        type="checkbox"
+                        checked={formData.termsAccepted}
+                        onChange={(e) => setFormData({ ...formData, termsAccepted: e.target.checked })}
+                        className="mt-1 h-4 w-4 rounded border-slate-300 text-teal-500 focus:ring-teal-400"
+                      />
+                      <span>I agree to the terms and consent to being contacted regarding my consultation.</span>
+                    </label>
+
                     <button
                       type="submit"
-                      className="w-full bg-[#ff522b] hover:bg-[#e0431f] text-white font-bold py-3.5 rounded-lg shadow-md transition-colors"
+                      className="w-full rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 px-4 py-3.5 text-sm font-bold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110"
                     >
-                      Compare Clinics Now
+                      Find My Doctor
                     </button>
                   </form>
                 </div>
               )}
 
-              {/* Alt Bilgi */}
-              <div className="pt-6 border-t border-gray-200 mt-6">
-                <div className="flex flex-wrap justify-between text-xs text-gray-600 gap-2">
-                  <span>✓ 100% free non-binding</span>
-                  <span>✓ Up to 3 offers from verified clinics</span>
-                  <span>✓ Compare over 570 clinics</span>
+              <div className="mt-6 border-t border-slate-200 pt-4">
+                <div className="flex flex-wrap justify-between gap-2 text-[11px] text-slate-500">
+                  
+                  <span>✓ Verified clinics</span>
+                  <span>✓ Tailored recommendations</span>
                 </div>
               </div>
             </>
           ) : (
-            /* Başarı Ekranı */
-            <div className="text-center my-auto">
-              <span className="text-6xl">🎉</span>
-              <h2 className="text-3xl font-bold text-gray-800 mt-4 mb-2">Thank You!</h2>
-              <p className="text-gray-600">
-                We have received your information. Our team will contact you shortly with the best clinic options.
+            <div className="my-auto text-center">
+              <div className="mb-4 text-6xl">🎉</div>
+              <h2 className="mb-2 text-3xl font-bold text-slate-900">Thank you!</h2>
+              <p className="text-sm leading-relaxed text-slate-600">
+                Your information has been received. We will match you with the most suitable doctors and clinics based on your answers.
               </p>
             </div>
           )}

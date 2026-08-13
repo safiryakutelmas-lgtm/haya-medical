@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import DoctorCard from '@/components/DoctorCard';
-
 import Hero from '@/components/Hero';
+import PartnerLogoBant from '@/components/partner-logo-bant';
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen w-full mx-auto">
+    <main className="mx-auto min-h-screen w-full">
       <Hero />
+      <PartnerLogoBant />
     </main>
   );
 }
