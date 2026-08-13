@@ -538,7 +538,7 @@ export default function AdminPage() {
                         </span>
                       ))
                     ) : (
-                      <span className="text-sm text-slate-500">No languages selected</span>
+                      <span className="text-sm text-slate-500">No languages  selected</span>
                     )}
                   </div>
                 </div>
