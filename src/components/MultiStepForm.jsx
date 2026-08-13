@@ -144,7 +144,7 @@ export default function MultiStepForm() {
           ></div>
         </div>
 
-        <div className="flex h-[500px] flex-col justify-between overflow-hidden p-6 md:h-[540px] md:p-10">
+        <div className="flex h-[400px] flex-col justify-between overflow-hidden p-3 md:h-[540px] md:p-10">
           {!submitted ? (
             <>
               <div className="h-7">
@@ -160,7 +160,7 @@ export default function MultiStepForm() {
               </div>
 
               {step === 1 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 1 of 10
                   </p>
@@ -192,7 +192,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 2 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 2 of 10
                   </p>
@@ -229,7 +229,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 3 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 3 of 10
                   </p>
@@ -254,7 +254,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 4 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 4 of 10
                   </p>
@@ -290,7 +290,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 5 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 5 of 10
                   </p>
@@ -322,7 +322,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 6 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 6 of 10
                   </p>
@@ -347,7 +347,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 7 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 7 of 10
                   </p>
@@ -379,7 +379,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 8 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 8 of 10
                   </p>
@@ -404,7 +404,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 9 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 9 of 10
                   </p>
@@ -436,7 +436,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 10 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 10 of 11
                   </p>
@@ -465,7 +465,7 @@ export default function MultiStepForm() {
               )}
 
               {step === 11 && (
-                <div>
+                <div className="mobile-form-step flex h-full flex-col justify-center overflow-hidden pr-1">
                   <p className="mb-2 text-center text-[11px] font-semibold uppercase tracking-[0.24em] text-teal-600">
                     Step 11 of 11
                   </p>
@@ -473,12 +473,12 @@ export default function MultiStepForm() {
                     Tell us about yourself
                   </h2>
 
-                  <form onSubmit={handleSubmit} className="mx-auto max-w-lg space-y-4">
-                    <div className="grid grid-cols-2 gap-4">
+                  <form onSubmit={handleSubmit} className="mx-auto max-w-lg space-y-2 md:space-y-4">
+                    <div className="grid grid-cols-2 gap-2 md:gap-4">
                       <select
                         value={formData.title}
                         onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                        className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                       >
                         <option value="Mr">Mr</option>
                         <option value="Ms">Ms</option>
@@ -487,14 +487,14 @@ export default function MultiStepForm() {
                       <div className="hidden md:block" />
                     </div>
 
-                    <div className="grid gap-4 md:grid-cols-2">
+                    <div className="grid gap-2 md:grid-cols-2 md:gap-4">
                       <input
                         type="text"
                         placeholder="First name"
                         required
                         value={formData.firstName}
                         onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                        className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                       />
                       <input
                         type="text"
@@ -502,7 +502,7 @@ export default function MultiStepForm() {
                         required
                         value={formData.lastName}
                         onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                        className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                       />
                     </div>
 
@@ -512,13 +512,13 @@ export default function MultiStepForm() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                      className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                     />
 
-                    <div className="grid gap-4 md:grid-cols-[120px_1fr]">
+                    <div className="grid gap-2 md:grid-cols-[120px_1fr] md:gap-4">
                       <input
                         type="text"
-                        placeholder="Country code"
+                        placeholder="Code"
                         value={formData.phone.countryCode}
                         onChange={(e) =>
                           setFormData({
@@ -526,7 +526,7 @@ export default function MultiStepForm() {
                             phone: { ...formData.phone, countryCode: e.target.value },
                           })
                         }
-                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                        className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                       />
                       <input
                         type="tel"
@@ -539,23 +539,23 @@ export default function MultiStepForm() {
                             phone: { ...formData.phone, number: e.target.value },
                           })
                         }
-                        className="w-full border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100"
+                        className="w-full border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100 md:px-4 md:py-3"
                       />
                     </div>
 
-                    <label className="flex items-start gap-3 border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 shadow-inner shadow-slate-200/20">
+                    <label className="flex items-start gap-2 border border-slate-200 bg-slate-50 px-3 py-2 text-[11px] text-slate-700 shadow-inner shadow-slate-200/20 md:gap-3 md:px-4 md:py-3 md:text-sm">
                       <input
                         type="checkbox"
                         checked={formData.termsAccepted}
                         onChange={(e) => setFormData({ ...formData, termsAccepted: e.target.checked })}
-                        className="mt-1 h-4 w-4 rounded border-slate-300 text-teal-500 focus:ring-teal-400"
+                        className="mt-0.5 h-3.5 w-3.5 rounded border-slate-300 text-teal-500 focus:ring-teal-400 md:mt-1 md:h-4 md:w-4"
                       />
                       <span>I agree to the terms and consent to being contacted regarding my consultation.</span>
                     </label>
 
                     <button
                       type="submit"
-                      className="w-full rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 px-4 py-3.5 text-sm font-bold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110"
+                      className="w-full rounded-xl bg-gradient-to-r from-teal-500 to-cyan-500 px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110 md:py-3.5"
                     >
                       Find My Doctor
                     </button>
@@ -581,6 +581,47 @@ export default function MultiStepForm() {
             </div>
           )}
         </div>
+
+        <style jsx>{`
+          @media (max-width: 767px) {
+            .mobile-form-step {
+              overflow: hidden;
+              justify-content: center;
+              gap: 0.2rem;
+            }
+
+            .mobile-form-step p {
+              margin-bottom: 0.2rem !important;
+              font-size: 8px !important;
+              letter-spacing: 0.14em !important;
+            }
+
+            .mobile-form-step h2 {
+              margin-bottom: 0.45rem !important;
+              font-size: 0.9rem !important;
+              line-height: 1.2 !important;
+            }
+
+            .mobile-form-step button {
+              min-height: 0 !important;
+              padding: 0.4rem 0.45rem !important;
+              font-size: 0.82rem !important;
+              line-height: 1.2 !important;
+            }
+
+            .mobile-form-step .grid,
+            .mobile-form-step > div,
+            .mobile-form-step form {
+              gap: 0.35rem !important;
+            }
+
+            .mobile-form-step input,
+            .mobile-form-step select,
+            .mobile-form-step label {
+              font-size: 0.7rem !important;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );
