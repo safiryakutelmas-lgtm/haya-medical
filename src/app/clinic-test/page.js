@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import { getAllClinics, getClinicPricesByClinicId } from '@/services/clinic-test-service';
 import { getAllDoctors } from '@/services/doctorService';
 
-export const dynamic = 'force-dynamic';
+
 
 // ... geri kalan sayfa kodlarınız
 export default async function ClinicTestPage() {
@@ -36,41 +37,44 @@ export default async function ClinicTestPage() {
               <p className="mt-1 text-sm text-slate-600">All clinics returned by the service.</p>
             </div>
             <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
-              {clinics.length} clinics
+              {clinics.length}  clinics
             </span>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {clinics.map((clinic) => {
               const prices = clinicPricesById[clinic.id] || [];
+              const locationText = clinic.location || `${clinic.city || 'Unknown city'}, ${clinic.country || 'Unknown country'}`;
+
               return (
                 <div
                   key={clinic.id}
-                  className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+                  className="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
                 >
                   {clinic.imageUrl ? (
-                    <div className="overflow-hidden rounded-3xl bg-slate-100">
-                      <img
+                    <div className="overflow-hidden rounded-2xl bg-slate-100">
+                      <Image
                         src={clinic.imageUrl}
                         alt={`${clinic.name} photo`}
+                        width={800}
+                        height={480}
                         className="h-48 w-full object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     </div>
                   ) : (
-                    <div className="flex h-48 items-center justify-center rounded-3xl bg-slate-100 text-sm text-slate-500">
+                    <div className="flex h-48 items-center justify-center rounded-2xl bg-slate-100 text-sm text-slate-500">
                       No image available
                     </div>
                   )}
 
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <h3 className="text-xl font-semibold text-slate-900">{clinic.name}</h3>
-                      <p className="mt-1 text-sm text-slate-500">
-                        {clinic.city || 'Unknown city'}, {clinic.country || 'Unknown country'}
-                      </p>
+                  <div className="mt-4 flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <h3 className="truncate text-xl font-semibold text-slate-900">{clinic.name}</h3>
+                      <p className="mt-1 text-sm text-slate-500">{locationText}</p>
                     </div>
                     <span
-                      className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                      className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-semibold ${
                         clinic.isVerified ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-600'
                       }`}
                     >
@@ -78,56 +82,78 @@ export default async function ClinicTestPage() {
                     </span>
                   </div>
 
-                  <div className="mt-4 text-sm leading-6 text-slate-600">
-                    <p>
-                      <span className="font-medium text-slate-900">Founded:</span>{' '}
-                      {clinic.foundedYear ?? 'N/A'}
-                    </p>
-                    <p className="mt-2">
-                      <span className="font-medium text-slate-900">Score:</span>{' '}
-                      {clinic.score ?? 'N/A'} / 5
-                    </p>
-                    <p className="mt-2">
-                      <span className="font-medium text-slate-900">Reviews:</span>{' '}
-                      {clinic.reviewCount}
-                    </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-2 text-[11px] font-medium text-slate-600">
+                    {clinic.foundedYear && (
+                      <span className="rounded-full bg-slate-100 px-2 py-1">Founded {clinic.foundedYear}</span>
+                    )}
+                    {clinic.hasVideoConsultation && (
+                      <span className="rounded-full bg-violet-100 px-2 py-1 text-violet-700">Video consult</span>
+                    )}
+                    {clinic.score != null && (
+                      <span className="rounded-full bg-amber-100 px-2 py-1 text-amber-700">{clinic.score}/5</span>
+                    )}
+                  </div>
+
+                  <div className="mt-4 space-y-3 text-sm text-slate-600">
+                    {clinic.specialties?.length ? (
+                      <div>
+                        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Specialties</p>
+                        <div className="flex flex-wrap gap-2">
+                          {clinic.specialties.slice(0, 4).map((specialty) => (
+                            <span key={specialty} className="rounded-full bg-sky-50 px-2.5 py-1 text-xs text-sky-700">
+                              {specialty}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {clinic.methods?.length ? (
+                      <div>
+                        <p className="mb-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Methods</p>
+                        <p>{clinic.methods.join(', ')}</p>
+                      </div>
+                    ) : null}
+
+                    {clinic.priceLabel && (
+                      <p>
+                        <span className="font-medium text-slate-900">Price label:</span> {clinic.priceLabel}
+                      </p>
+                    )}
                   </div>
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {clinic.languages?.length ? (
                       clinic.languages.slice(0, 3).map((language) => (
-                        <span
-                          key={language}
-                          className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700"
-                        >
+                        <span key={language} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-700">
                           {language}
                         </span>
                       ))
                     ) : (
-                      <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-500">
-                        No languages listed
-                      </span>
+                      <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-500">No languages</span>
                     )}
                   </div>
 
-                  <div className="mt-4 text-sm text-slate-600">
-                    <p className="font-medium text-slate-900">Methods:</p>
-                    <p>{clinic.methods?.join(', ') || 'No methods available'}</p>
-                  </div>
+                  <div className="mt-auto border-t border-slate-200 pt-4">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-slate-500">Reviews</span>
+                      <span className="font-semibold text-slate-900">{clinic.reviewCount}</span>
+                    </div>
 
-                  <div className="mt-4 rounded-3xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
-                    <p className="font-semibold text-slate-900">Top price details</p>
                     {prices.length > 0 ? (
-                      prices.slice(0, 2).map((price) => (
-                        <div key={price.id} className="mt-3">
-                          <p className="font-medium">{price.method}</p>
-                          <p className="text-slate-600">
-                            {price.minPrice} - {price.maxPrice} {price.currency}
-                          </p>
-                        </div>
-                      ))
+                      <div className="mt-3 rounded-2xl bg-slate-50 p-3 text-sm text-slate-700">
+                        <p className="font-semibold text-slate-900">Price details</p>
+                        {prices.slice(0, 2).map((price) => (
+                          <div key={price.id} className="mt-2">
+                            <p className="font-medium text-slate-800">{price.method}</p>
+                            <p className="text-slate-600">
+                              {price.minPrice} - {price.maxPrice} {price.currency}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     ) : (
-                      <p className="mt-2 text-slate-500">No price records available.</p>
+                      <div className="mt-3 rounded-2xl bg-slate-50 p-3 text-sm text-slate-500">No price records available.</div>
                     )}
                   </div>
                 </div>
@@ -155,10 +181,13 @@ export default async function ClinicTestPage() {
               >
                 {doctor.imageUrl ? (
                   <div className="overflow-hidden rounded-3xl bg-slate-100">
-                    <img
+                    <Image
                       src={doctor.imageUrl}
                       alt={`${doctor.name} photo`}
+                      width={800}
+                      height={480}
                       className="h-48 w-full object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 ) : (
@@ -182,7 +211,7 @@ export default async function ClinicTestPage() {
                     <span className="font-medium text-slate-900">Clinic ID:</span> {doctor.clinicId || 'N/A'}
                   </p>
                   <p className="mt-2">
-                    <span className="font-medium text-slate-900">Medihair cases:</span> {doctor.medihairCases}
+                    <span className="font-medium text-slate-900">Cases:</span> {doctor.cases}
                   </p>
                   <p className="mt-2">
                     <span className="font-medium text-slate-900">Hair transplants:</span> {doctor.hairTransplantsCount}
