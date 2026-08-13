@@ -144,7 +144,7 @@ export default function MultiStepForm() {
           ></div>
         </div>
 
-        <div className="flex min-h-[420px] flex-col justify-between p-6 md:p-10">
+        <div className="flex h-[500px] flex-col justify-between overflow-hidden p-6 md:h-[540px] md:p-10">
           {!submitted ? (
             <>
               <div className="h-7">
