@@ -14,6 +14,7 @@ export interface Clinic {
   methods: string[] | null;
   hairTransplantsCount: number;
   priceLabel: string | null;
+  location: string | null;
   createdAt: string;
 }
 
@@ -36,7 +37,7 @@ export interface Doctor {
   imageUrl: string | null;
   bio: string | null;
   specialties: string[] | null;
-  medihairCases: number;
+  cases: number;
   yearsOfExperience: number;
   hairTransplantsCount: number;
   education: string | null;
