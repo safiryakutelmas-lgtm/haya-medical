@@ -534,7 +534,7 @@ export default function AdminPage() {
                       form.languages.map((lng) => (
                         <span key={lng} className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700">
                           {lng}
-                          <button type="button" onClick={() => removeLanguage(lng)} className="ml-1 text-xs text-slate-500 hover:text-slate-700">×</button>
+                          <button type="button" onClick={() => removeLanguage(lng)} className="ml-1  text-xs text-slate-500 hover:text-slate-700">×</button>
                         </span>
                       ))
                     ) : (
