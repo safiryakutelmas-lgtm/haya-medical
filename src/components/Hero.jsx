@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Arka Plan Görseli ve Karartma Katmanı */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=2070"
+          src="https://cdn.pixabay.com/photo/2018/07/16/07/34/indian-3541337_1280.jpg"
           alt="Sağlık Hizmetleri"
           fill
           className="object-cover opacity-40"
