@@ -1,6 +1,6 @@
 
 import ClinicsComponent from '@/components/ClinicsComponent';
-import { Footer } from '@/components/footer/footers-02';
+
 import Hero from '@/components/Hero';
 import PartnerLogoBant from '@/components/partner-logo-bant';
 
@@ -10,7 +10,7 @@ export default function HomePage() {
       <Hero />
       <PartnerLogoBant />
     <ClinicsComponent/>
-      <Footer/>
+      
     </main>
   );
 }

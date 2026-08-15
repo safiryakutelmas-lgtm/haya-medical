@@ -33,9 +33,13 @@ export default function AdminPage() {
   const [selectedMethod, setSelectedMethod] = useState('');
 
   const [clinics, setClinics] = useState([]);
+  const [doctors,setDoctors] = useState([]);
   const [clinicListStatus, setClinicListStatus] = useState('idle');
   const hasLoadedClinicsRef = useRef(false);
+  const hasLoadedDoctorsRef = useRef(false);
   const [clinicImageFile, setClinicImageFile] = useState(null);
+  const [casesBeforeImageFile , setBeforeImageFile] = useState(null);
+  const [casesAfterImageFile , setAfterImageFile] = useState(null);
   const [doctorForm, setDoctorForm] = useState({
     clinicId: '',
     name: '',
@@ -61,6 +65,21 @@ export default function AdminPage() {
   const [caseLoading, setCaseLoading] = useState(false);
   const [methodClinicId, setMethodClinicId] = useState('');
   const [caseClinicId, setCaseClinicId] = useState('');
+  const [caseDoctorId, setCaseDoctorId] = useState('');
+  const [caseForm , setCaseForm]= useState({
+  doctorId: '',
+  clinicId: '',
+  method: '',
+  country: '',
+  beforeImageUrl: '',
+  afterImageUrl: '',
+  minPrice: '',
+  maxPrice: '',
+  currency: '',
+  score: '',
+  patientAge: '',
+  hairLossDegree: '',
+  });
 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
@@ -77,7 +96,12 @@ export default function AdminPage() {
     if (hasLoadedClinicsRef.current) return;
     hasLoadedClinicsRef.current = true;
 
+    if(hasLoadedDoctorsRef.current) return;
+    hasLoadedDoctorsRef.current = true;
+
+
     let isMounted = true;
+    let isDoctorsMounted = true;
 
     async function loadClinics() {
       setClinicListStatus('loading');
@@ -105,8 +129,39 @@ export default function AdminPage() {
 
     loadClinics();
 
+    async function loadDoctors() {
+      
+      try {
+        const res = await fetch('api/doctors')
+
+        if(!res.ok){
+          throw new Error('Failed to fetch doctors');
+
+        }
+
+        const data = await res.json();
+        const list = Array.isArray(data) ? data : Array.isArray(data.doctors) ? data.doctors : [];
+
+        if(isDoctorsMounted){
+          setDoctors(list);
+
+        }
+
+      } catch (err) {
+        console.error("failed to fetch doctors" , err);
+        if(isDoctorsMounted){
+
+        }
+      }
+      
+    }
+
+    loadDoctors();
+
+
     return () => {
       isMounted = false;
+      isDoctorsMounted = false;
     };
   }, []);
 
@@ -156,6 +211,14 @@ export default function AdminPage() {
 
   function updateDoctorField(key, value) {
     setDoctorForm((current) => ({ ...current, [key]: value }));
+  }
+
+  function updateCaseDoctorField(key, value){
+    setCaseForm((current)=> ({ ...current, [key]: value}));
+  }
+
+  function updateCaseClinicField(key, value){
+    setCaseForm((current) => ({...current,[key]:value}));
   }
 
   function addSelectedDoctorSpecialty() {
@@ -403,13 +466,48 @@ export default function AdminPage() {
     setMessage(null);
 
     try {
-      if (!caseClinicId) {
-        throw new Error('Please select a clinic before creating a case.');
-      }
+      const uploadedBeforeImageUrl = casesBeforeImageFile
+        ? await uploadImageToCloudinary(casesBeforeImageFile, 'cases', 'haya-medical-cases-before')
+        : caseForm.beforeImageUrl || null;
+
+         const uploadedAfterImageUrl = casesAfterImageFile
+        ? await uploadImageToCloudinary(casesAfterImageFile, 'cases', 'haya-medical-cases-after')
+        : caseForm.afterImageUrl|| null;
+
+        const payload = {
+  doctorId: caseForm.doctorId ? Number(caseForm.doctorId) : null,
+  clinicId: caseForm.clinicId ? Number(caseForm.clinicId) : null,
+  method: caseForm.method|| null,
+  country: caseForm.country || null,
+  beforeImageUrl: uploadedBeforeImageUrl || null,
+  afterImageUrl: uploadedAfterImageUrl || null,
+  minPrice: caseForm.minPrice || null,
+  maxPrice: caseForm.maxPrice || null,
+  currency: caseForm.currency,
+  score: caseForm.score || null,
+  patientAge: caseForm.patientAge || null,
+  hairLossDegree: caseForm.hairLossDegree || null,
+
+        };
+
+        const res = await fetch("/api/cases", {
+          method:"POST",
+           headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) {
+          const err = await res.json();
+        throw new Error(err?.error || 'Failed to create cases');
+        }
+
+     // if (!caseForm.clinicId) {
+      //  throw new Error('Please select a clinic before creating a case.');
+     // }
 
       setMessage({ type: 'success', text: 'Case form submitted successfully.' });
     } catch (err) {
-      setMessage({ type: 'error', text: err.message });
+      setMessage({ type: 'error', text: err.message +"ddddd"});
     } finally {
       setCaseLoading(false);
     }
@@ -909,10 +1007,33 @@ export default function AdminPage() {
 
               <form onSubmit={onCaseSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium mb-1">Doctor</label>
-                  <select className="w-full rounded-md border px-3 py-2">
-                    <option value="">Select doctor</option>
-                  </select>
+
+                   <label className="block text-sm font-medium mb-1">Doctor</label>
+                  {clinicListStatus === 'loading' && (
+                    <p className="text-sm text-slate-500">Loading doctors...</p>
+                  )}
+
+                  {clinicListStatus === 'error' && (
+                    <p className="text-sm text-rose-600">Unable to load doctor.</p>
+                  )}
+
+                  {clinicListStatus !== 'loading' && clinicListStatus !== 'error' && (
+                    
+                    <select
+                     value={caseForm.doctorId}
+                      onChange={(e) => updateCaseDoctorField('doctorId', e.target.value)}
+                      className="w-full rounded-md border px-3 py-2"
+                    >
+                      <option value="">Select Doctor</option>
+                      {doctors.map((doctor) => (
+                        <option key={doctor.id} value={doctor.id}>
+                          {doctor.name}
+                        </option>
+                      ))}
+                    </select>
+                  )}
+                  
+                  
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Clinic</label>
@@ -926,8 +1047,8 @@ export default function AdminPage() {
 
                   {clinicListStatus !== 'loading' && clinicListStatus !== 'error' && (
                     <select
-                      value={caseClinicId}
-                      onChange={(e) => setCaseClinicId(e.target.value)}
+                      value={caseForm.clinicId}
+                      onChange={(e) => updateCaseClinicField("clinicId" ,e.target.value)}
                       className="w-full rounded-md border px-3 py-2"
                     >
                       <option value="">Select clinic</option>
@@ -964,12 +1085,34 @@ export default function AdminPage() {
                   <label className="block text-sm font-medium mb-1">Before image</label>
                   <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
                     Before image uploader
+                    
+                <div>
+                  <label className="block text-sm font-medium mb-1">Image</label>
+                  <ImageUploader
+                    onFileSelect={(file) => setBeforeImageFile(file)}
+                    value={caseForm.beforeImageUrl}
+                  />
+                  {form.imageUrl && (
+                    <p className="mt-2 text-sm text-slate-600">Uploaded URL: <span className="break-all">{form.imageUrl}</span></p>
+                  )}
+                </div>
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">After image</label>
                   <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500">
                     After image uploader
+                    
+                <div>
+                  <label className="block text-sm font-medium mb-1">Image</label>
+                  <ImageUploader
+                    onFileSelect={(file) => setAfterImageFile(file)}
+                    value={caseForm.afterImageUrl}
+                  />
+                  {form.imageUrl && (
+                    <p className="mt-2 text-sm text-slate-600">Uploaded URL: <span className="break-all">{form.imageUrl}</span></p>
+                  )}
+                </div>
                   </div>
                 </div>
 

@@ -1,4 +1,25 @@
-import { createDoctor } from '@/services/doctorService';
+import { createDoctor, getAllDoctors } from '@/services/doctorService';
+
+
+
+
+export async function GET(){
+    try {
+        const doctors = await getAllDoctors();
+        return new Response(JSON.stringify(doctors), {
+            status:200,
+            headers:{'Content-Type' : 'application/json'},
+        })
+    } catch (err) {
+        console.error(err);
+        return new Response(JSON.stringify({ error: err.message }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
+    }
+}
+
+
 
 export async function POST(req) {
   try {
