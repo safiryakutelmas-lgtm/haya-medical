@@ -5,10 +5,9 @@ import Link from 'next/link';
 
 const navItems = [
   { label: 'Ana Sayfa', href: '/' },
-  { label: 'Doktorlarımız', href: '/doctors' },
   { label: 'Hakkımızda', href: '/hakkimizda' },
   { label: 'İletişim', href: '/iletisim' },
-  { label: 'Admin', href: '/admin' },
+
 ];
 
 export default function Header() {
@@ -74,7 +73,15 @@ export default function Header() {
             href="/clinic-test"
             className="ml-2 inline-flex items-center rounded-full bg-teal-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-teal-700"
           >
-            Clinic Test
+            Kliniklerimiz
+
+          </Link>
+          <Link
+            href="/doctors"
+            className="ml-2 inline-flex items-center rounded-full bg-blue-400 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-600"
+          >
+            Doktorlarımız
+
           </Link>
         </nav>
 
@@ -171,6 +178,13 @@ export default function Header() {
               className="flex w-full items-center justify-center rounded-2xl bg-teal-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition hover:bg-teal-700"
             >
               Clinic Test
+            </Link>
+            <Link
+              href="/doctors"
+              onClick={() => setIsMenuOpen(false)}
+              className="mt-3 flex w-full items-center justify-center rounded-2xl bg-teal-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition hover:bg-teal-700"
+            >
+              Doktorlarımız
             </Link>
           </div>
         </div>
