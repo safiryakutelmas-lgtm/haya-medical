@@ -88,7 +88,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link
             href="/admin"
-            className="hidden rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-teal-200 hover:text-teal-600 sm:inline-flex"
+            className="hidden rounded-full border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-teal-200 hover:text-teal-600 "
           >
             Admin
           </Link>
@@ -185,6 +185,13 @@ export default function Header() {
               className="mt-3 flex w-full items-center justify-center rounded-2xl bg-teal-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition hover:bg-teal-700"
             >
               Doktorlarımız
+            </Link>
+            <Link
+              href="/admin"
+              onClick={() => setIsMenuOpen(false)}
+              className="mt-3 flex w-full items-center justify-center rounded-2xl bg-teal-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-teal-200 transition hover:bg-teal-700"
+            >
+              Admin
             </Link>
           </div>
         </div>

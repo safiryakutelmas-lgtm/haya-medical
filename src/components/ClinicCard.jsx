@@ -89,7 +89,7 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
           <div>
             <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Starting From</span>
             <span className="text-base font-bold text-slate-900 tracking-tight">
-              {clinic.priceLabel || (prices.length > 0 ? `${prices[0]?.minPrice} ${prices[0]?.currency}` : 'Contact for Price')}
+              {"$"+clinic.priceLabel || (prices.length > 0 ? `${prices[0]?.minPrice} ${prices[0]?.currency}` : 'Contact for Price')}
             </span>
           </div>
 

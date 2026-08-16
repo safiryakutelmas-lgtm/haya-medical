@@ -8,15 +8,12 @@ export default async function DoctorsPage() {
   const doctors = await getAllDoctors();
 
   return (
-    <main className="p-8 max-w-4xl mx-auto">
-
-
-<div className="grid gap-6 pt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-        {doctors?.map((doctor) => (
-          <DoctorCard key={doctor.id} doctor={doctor} />
-        ))}
-      </div>
-
-    </main>
+   <main className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8  max-w-7xl px-4 py-10 ">
+  <div className="grid gap-6 pt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    {doctors?.map((doctor) => (
+      <DoctorCard key={doctor.id} doctor={doctor} />
+    ))}
+  </div>
+</main>
   );
 }

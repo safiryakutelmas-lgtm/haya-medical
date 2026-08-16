@@ -49,6 +49,8 @@ export default function AdminPage() {
     specialties: [],
     yearsOfExperience: '',
     education: '',
+    hairTransplantsCount:'',
+
   });
   const [doctorImageFile, setDoctorImageFile] = useState(null);
   const [selectedDoctorSpecialty, setSelectedDoctorSpecialty] = useState('');

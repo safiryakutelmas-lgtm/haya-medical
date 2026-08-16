@@ -129,7 +129,9 @@ export default function MultiStepForm() {
 
   return (
     <div className="flex min-h-[500px] w-full items-center justify-center  p-3 font-sans text-slate-900 md:p-8">
-      <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl border border-slate-200/80 bg-white/95 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.08)] backdrop-blur-md">
+      <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl border border-slate-200/80 bg-white/95 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.08)] backdrop-blur-md" style={{
+        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 28px), 100% 98%, 0 calc(100% - 28px))'
+      }}>
         
         {/* Kurumsal Fırsat Rozeti */}
         <div className="absolute right-4 top-4 z-20 flex items-center gap-1.5 rounded-full border border-emerald-200/60 bg-emerald-50/90 px-3.5 py-1.5 text-xs font-semibold text-emerald-800 shadow-sm backdrop-blur-sm md:right-6 md:top-6">

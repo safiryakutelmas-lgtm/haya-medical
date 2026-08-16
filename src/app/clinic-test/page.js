@@ -23,14 +23,11 @@ export default async function ClinicTestPage() {
   return (
 
     
-    <main className="min-h-screen bg-slate-50 text-slate-950">
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-white p-8 shadow-sm border border-slate-200">
-          <h1 className="text-3xl font-semibold tracking-tight text-slate-900">Clinic Dashboard</h1>
-          
-        </div>
+    <main className="min-h-screen  text-slate-950">
+      <div className="mx-auto max-w-7xl px-4 py-0 sm:px-6 lg:px-8">
+        
 
-        <section className="mt-10">
+        <section className="mt-2">
           <div className="mb-6 flex items-end justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold text-slate-900">Clinics</h2>

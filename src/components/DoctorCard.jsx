@@ -3,10 +3,22 @@ import Image from 'next/image';
 
 export default function DoctorCard({ doctor }) {
   const {
-    name = "Doktor Adı",
-    experience = 0,
+    id,
+    clinicId = null,
+    name = " ",
+    title = " ",
+    imageUrl = " ",
+    bio = "",
+    specialties = [],
+    cases = 0,
+    yearsOfExperience = 0,
+    experience = 0, // Hem experience hem yearsOfExperience desteği
+    hairTransplantsCount = 0,
+    education = " ",
+    medicalSocieties = [],
+    city = " ",
     price = 0,
-    city = "Belirtilmemiş",
+    createdAt = null,
   } = doctor || {};
 
   return (
@@ -62,7 +74,7 @@ export default function DoctorCard({ doctor }) {
           <div className="flex-1">
             <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">Total Cases</span>
             <span className="mt-0.5 font-bold text-slate-900 text-sm tracking-tight">
-              {doctor.cases ? doctor.cases.toLocaleString() : 'N/A'}
+              {doctor.cases ? doctor.cases.toLocaleString() : 'Default'}
             </span>
           </div>
 
@@ -71,7 +83,7 @@ export default function DoctorCard({ doctor }) {
           <div className="flex-1">
             <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">Hair Transplants</span>
             <span className="mt-0.5 font-bold text-slate-900 text-sm tracking-tight">
-              {doctor.hairTransplantsCount ? `${doctor.hairTransplantsCount.toLocaleString()}+` : 'N/A'}
+              {doctor.hairTransplantsCount ? `${doctor.hairTransplantsCount.toLocaleString()}+` : 'High'}
             </span>
           </div>
         </div>

@@ -15,7 +15,7 @@ const logoSet = [...partners, ...partners];
 export default function PartnerLogoBant() {
   return (
     <section className="w-full bg-slate-50">
-      <div className="w-full px-0 py-8 sm:py-10">
+      <div className="w-full px-0 py-8 sm:py-1">
         <div className="mx-auto mb-5 max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-[20px] font-semibold uppercase tracking-[0.26em] text-slate-500">
             Trusted clinics

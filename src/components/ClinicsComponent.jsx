@@ -125,7 +125,7 @@ export default async function ClinicsComponent() {
                       <div>
                         <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Starting From</span>
                         <span className="text-base font-bold text-slate-900 tracking-tight">
-                          {priceDisplay}
+                          {"$ "+priceDisplay}
                         </span>
                       </div>
 
