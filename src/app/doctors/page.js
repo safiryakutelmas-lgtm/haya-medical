@@ -9,6 +9,10 @@ export default async function DoctorsPage() {
 
   return (
    <main className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8  max-w-7xl px-4 py-10 ">
+   <div>
+              <h2 className="text-2xl font-semibold text-slate-900">Doctors</h2>
+           
+            </div>
   <div className="grid gap-6 pt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
     {doctors?.map((doctor) => (
       <DoctorCard key={doctor.id} doctor={doctor} />
