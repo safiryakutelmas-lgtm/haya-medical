@@ -4,9 +4,7 @@ import MultiStepForm from './MultiStepForm';
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[85dvh] lg:h-[88dvh] lg:min-h-[620px] flex items-center overflow-hidden bg-slate-950 text-white shadow-2xl" style={{
-        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 28px), 50% 100%, 0 calc(100% - 28px))'
-      }}>
+    <div className="relative w-full min-h-[85dvh] lg:h-[88dvh] lg:min-h-[620px] flex items-center overflow-hidden bg-slate-950 text-white shadow-2xl md:[clip-path:polygon(0_0,_100%_0,_100%_calc(100%-28px),_50%_100%,_0_calc(100%-28px))]" >
       {/* Arka Plan Görseli ve Gradient Overlay'ler */}
       <div className="absolute inset-0 z-0">
         <Image

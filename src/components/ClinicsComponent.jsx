@@ -18,7 +18,7 @@ export default async function ClinicsComponent() {
   }, {});
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-950">
+    <main className="min-h-screen  text-slate-950">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         
         <section className="mt-10">
