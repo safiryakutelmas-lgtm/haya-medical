@@ -1,0 +1,115 @@
+{
+  "Pages": {
+    "Home": {
+      "title": "Medica Hair Clinic - Saç Ekimi Danışmanlığı",
+      "description": "En uygun saç ekimi uzmanını ve kliniğini bulun."
+    },
+    "Clinics": {
+      "title": "Klinikler ve Doktorlar - Medica Hair Clinic",
+      "description": "En iyi saç ekimi klinikleri ve uzman doktorlarını inceleyin, size en uygun seçeneği bulun."
+    }
+  },
+  "Hero": {
+    "altText": "Sağlık Hizmetleri",
+    "badge": "Saç Ekimi Danışmanlığı",
+    "title": "En uygun saç ekimi uzmanını bulun",
+    "description": "FUE, DHI, fiyat ve klinik seçimini tek ekranda değerlendirin. Kısa bir form doldurun; size uygun doktor ve klinik önerileri için doğru adımda rehberlik edelim.",
+    "buttonDoctors": "Doktorları Gör",
+    "buttonProcess": "Süreç",
+    "safeEval": "Güvenli değerlendirme",
+    "expertMatch": "Uzman eşleşmesi"
+  },
+  "Header": {
+    "home": "Ana Sayfa",
+    "hairTransplants": "Saç Ekimi",
+    "hairTransplantsSub1": "FUE Tekniği Nedir?",
+    "hairTransplantsSub2": "DHI Saç Ekimi",
+    "hairTransplantsSub3": "Sakal ve Bıyık Ekimi",
+    "hairLoss": "Saç Dökülmesi",
+    "hairLossSub1": "Saç Dökülmesinin Nedenleri",
+    "hairLossSub2": "Erkek Tipi Saç Dökülmesi",
+    "hairLossSub3": "Prp ve Kök Hücre Tedavileri",
+    "findClinic": "Klinik Bul",
+    "results": "Sonuçlar",
+    "certification": "Sertifikalar",
+    "compareClinics": "Klinikleri Karşılaştır",
+    "admin": "Yönetim",
+    "openMenu": "Menüyü Aç",
+    "closeMenu": "Menüyü Kapat",
+    "navLabel": "Ana Menü",
+    "mobileNavLabel": "Mobil Navigasyon"
+  },
+  "ClinicCard": {
+    "imageNotAvailable": "Görsel bulunamadı",
+    "verifiedFacility": "Doğrulanmış Klinik",
+    "established": "Kuruluş",
+    "treatmentMethods": "Tedavi Yöntemleri",
+    "totalProcedures": "Toplam İşlem",
+    "notAvailable": "Bilgi Yok",
+    "startingFrom": "Başlangıç Fiyatı",
+    "contactForPrice": "Fiyat için iletişime geçin",
+    "onlineConsult": "Online Görüşme",
+    "viewProfile": "Klinik Profilini İncele"
+  },
+  "ClinicsPage": {
+    "dashboardTitle": "Klinik Paneli",
+    "clinicsTitle": "Klinikler",
+    "clinicsCount": "{count} klinik",
+    "unknownCity": "Bilinmeyen şehir",
+    "doctorsTitle": "Doktorlar",
+    "doctorsCount": "{count} doktor"
+  },"ClinicDetailPage": {
+    "notFoundTitle": "Klinik bulunamadı",
+    "invalidIdMsg": "Geçerli bir klinik kimliği sağlanmadı.",
+    "notFoundMsg": "İstenen klinik veritabanında bulunamadı.",
+    "backToClinics": "Kliniklere Dön",
+    "noImage": "Görsel Yok",
+    "founded": "Kuruluş:",
+    "languages": "Diller:",
+    "specialties": "Uzmanlıklar:",
+    "methods": "Yöntemler:",
+    "totalProcedures": "Toplam İşlem:",
+    "price": "Fiyat:",
+    "about": "Hakkında",
+    "noDetails": "Klinik hakkında daha fazla detay bulunmamaktadır.",
+    "score": "Puan",
+    "reviews": "{count} değerlendirme",
+    "address": "Adres:",
+    "website": "Web Sitesi:",
+    "visit": "Ziyaret Et",
+    "doctorsTitle": "Klinikteki Doktorlar",
+    "noDoctors": "Bu kliniğe bağlı doktor bulunamadı."
+  },
+  "DoctorCard": {
+    "noPhoto": "Fotoğraf Yok",
+    "yearsExp": "Yıl Deneyim",
+    "totalCases": "Toplam Vaka",
+    "hairTransplants": "Saç Ekimi",
+    "areasOfExpertise": "Uzmanlık Alanları",
+    "generalPractice": "Genel Pratik",
+    "medicalDegree": "Tıp Fakültesi",
+    "viewProfile": "Doktor Profilini İncele"
+  },
+  "DoctorDetailPage": {
+    "notFoundTitle": "Doktor bulunamadı",
+    "invalidIdMsg": "Geçerli bir doktor kimliği sağlanmadı.",
+    "notFoundMsg": "İstenen doktor veritabanında bulunamadı.",
+    "backToDoctors": "Doktorlara Dön",
+    "noPhoto": "Fotoğraf Yok",
+    "experience": "Deneyim",
+    "yearsSuffix": "yıl",
+    "about": "Hakkında",
+    "noBio": "Bilgi bulunmamaktadır.",
+    "totalCases": "Toplam Vakalar",
+    "hairTransplants": "Saç Ekimi Vakaları",
+    "education": "Eğitim",
+    "noEducation": "Bilgi yok",
+    "casesTitle": "Vakalar & Öncesi / Sonrası",
+    "allDoctors": "Tüm Doktorlar",
+    "noCases": "Bu doktor için vaka bulunamadı.",
+    "defaultMethod": "Yöntem",
+    "ageSuffix": "yaş",
+    "ageNA": "Yaş Belirtilmemiş",
+    "defaultTitle": "Tıp Doktoru"
+  }
+}

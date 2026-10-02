@@ -1,0 +1,115 @@
+{
+  "Pages": {
+    "Home": {
+      "title": "Medica Hair Clinic - Haartransplantation Beratung",
+      "description": "Finden Sie den besten Spezialisten und die beste Klinik für Haartransplantationen."
+    },
+    "Clinics": {
+      "title": "Kliniken und Ärzte - Medica Hair Clinic",
+      "description": "Entdecken Sie Top-Haartransplantationskliniken und Fachärzte, um die beste Option für Sie zu finden."
+    }
+  },
+  "Hero": {
+    "altText": "Gesundheitsdienste",
+    "badge": "Haartransplantationsberatung",
+    "title": "Finden Sie den besten Haartransplantations-Spezialisten",
+    "description": "Bewerten Sie FUE, DHI, Preise und Kliniken auf einem einzigen Bildschirm. Füllen Sie ein kurzes Formular aus und wir führen Sie zu den richtigen Ärzten.",
+    "buttonDoctors": "Ärzte ansehen",
+    "buttonProcess": "Prozess",
+    "safeEval": "Sichere Auswertung",
+    "expertMatch": "Expertenabgleich"
+  },
+  "Header": {
+    "home": "Startseite",
+    "hairTransplants": "Haartransplantationen",
+    "hairTransplantsSub1": "Was ist die FUE-Technik?",
+    "hairTransplantsSub2": "DHI Haartransplantation",
+    "hairTransplantsSub3": "Bart- & Schnurrbarttransplantation",
+    "hairLoss": "Haarausfall",
+    "hairLossSub1": "Ursachen von Haarausfall",
+    "hairLossSub2": "Anlagebedingter Haarausfall",
+    "hairLossSub3": "PRP- & Stammzellbehandlungen",
+    "findClinic": "Klinik finden",
+    "results": "Ergebnisse",
+    "certification": "Zertifizierung",
+    "compareClinics": "Kliniken vergleichen",
+    "admin": "Admin",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "navLabel": "Hauptmenü",
+    "mobileNavLabel": "Mobile Navigation"
+  },
+  "ClinicCard": {
+    "imageNotAvailable": "Bild nicht verfügbar",
+    "verifiedFacility": "Geprüfte Einrichtung",
+    "established": "Gegr.",
+    "treatmentMethods": "Behandlungsmethoden",
+    "totalProcedures": "Gesamte Eingriffe",
+    "notAvailable": "k.A.",
+    "startingFrom": "Ab",
+    "contactForPrice": "Preis auf Anfrage",
+    "onlineConsult": "Online-Beratung",
+    "viewProfile": "Klinikprofil ansehen"
+  },
+  "ClinicsPage": {
+    "dashboardTitle": "Klinik-Dashboard",
+    "clinicsTitle": "Kliniken",
+    "clinicsCount": "{count} Kliniken",
+    "unknownCity": "Unbekannte Stadt",
+    "doctorsTitle": "Ärzte",
+    "doctorsCount": "{count} Ärzte"
+  },
+  "ClinicDetailPage": {
+    "notFoundTitle": "Klinik nicht gefunden",
+    "invalidIdMsg": "Keine gültige Klinik-ID angegeben.",
+    "notFoundMsg": "Die angeforderte Klinik wurde in der Datenbank nicht gefunden.",
+    "backToClinics": "Zurück zu Kliniken",
+    "noImage": "Kein Bild",
+    "founded": "Gegründet:",
+    "languages": "Sprachen:",
+    "specialties": "Spezialgebiete:",
+    "methods": "Methoden:",
+    "totalProcedures": "Gesamte Eingriffe:",
+    "price": "Preis:",
+    "about": "Über uns",
+    "noDetails": "Weitere Details zur Klinik sind nicht verfügbar.",
+    "score": "Bewertung",
+    "reviews": "{count} Bewertungen",
+    "address": "Adresse:",
+    "website": "Webseite:",
+    "visit": "Besuchen",
+    "doctorsTitle": "Ärzte in dieser Klinik",
+    "noDoctors": "Keine Ärzte gefunden, die mit dieser Klinik verbunden sind."
+  },
+  "DoctorCard": {
+    "noPhoto": "Kein Foto",
+    "yearsExp": "J. Erf.",
+    "totalCases": "Gesamtfälle",
+    "hairTransplants": "Haartransplantationen",
+    "areasOfExpertise": "Fachgebiete",
+    "generalPractice": "Allgemeinmedizin",
+    "medicalDegree": "Medizinisches Diplom",
+    "viewProfile": "Arztprofil ansehen"
+  },"DoctorDetailPage": {
+    "notFoundTitle": "Arzt nicht gefunden",
+    "invalidIdMsg": "Keine gültige Arzt-ID angegeben.",
+    "notFoundMsg": "Der angeforderte Arzt wurde in der Datenbank nicht gefunden.",
+    "backToDoctors": "Zurück zu Ärzten",
+    "noPhoto": "Kein Foto",
+    "experience": "Erfahrung",
+    "yearsSuffix": "Jahre",
+    "about": "Über mich",
+    "noBio": "Keine Informationen verfügbar.",
+    "totalCases": "Gesamtfälle",
+    "hairTransplants": "Haartransplantationen",
+    "education": "Ausbildung",
+    "noEducation": "Keine Info",
+    "casesTitle": "Fälle & Vorher / Nachher",
+    "allDoctors": "Alle Ärzte",
+    "noCases": "Keine Fälle für diesen Arzt gefunden.",
+    "defaultMethod": "Methode",
+    "ageSuffix": "Jahre",
+    "ageNA": "Alter k.A.",
+    "defaultTitle": "Arzt"
+  }
+}

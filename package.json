@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
+    "framer-motion": "^13.4.6",
     "next": "16.2.12",
     "next-cloudinary": "^6.18.8",
+    "next-intl": "^4.14.7",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },

@@ -1,7 +1,10 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function DoctorCard({ doctor }) {
+  const t = useTranslations('DoctorCard');
+
   const {
     name = "Doktor Adı",
     experience = 0,
@@ -30,7 +33,7 @@ export default function DoctorCard({ doctor }) {
                 />
               ) : (
                 <div className="flex h-full w-full items-center justify-center bg-slate-100 text-xs font-medium text-slate-400 text-center p-1">
-                  No Photo
+                  {t('noPhoto')}
                 </div>
               )}
             </div>
@@ -41,7 +44,7 @@ export default function DoctorCard({ doctor }) {
             <div className="pt-4">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-900/90 px-3 py-1 text-[10px] font-bold tracking-wider text-white uppercase shadow-sm">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                {doctor.yearsOfExperience} Yrs Exp.
+                {doctor.yearsOfExperience} {t('yearsExp')}
               </span>
             </div>
           )}
@@ -53,14 +56,14 @@ export default function DoctorCard({ doctor }) {
             {doctor.name}
           </h3>
           <p className="text-xs font-semibold text-teal-700 mt-0.5 line-clamp-1 tracking-wide">
-            {doctor.title || 'Medical Doctor'}
+            {doctor.title || t('medicalDegree')}
           </p>
         </div>
 
         {/* 2. PREMIUM METRİK BARI (İnce Separatörlü Düzen) */}
         <div className="mt-5 flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/50 py-3 px-4 text-xs">
           <div className="flex-1">
-            <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">Total Cases</span>
+            <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">{t('totalCases')}</span>
             <span className="mt-0.5 font-bold text-slate-900 text-sm tracking-tight">
               {doctor.cases ? doctor.cases.toLocaleString() : 'N/A'}
             </span>
@@ -69,7 +72,7 @@ export default function DoctorCard({ doctor }) {
           <div className="h-7 w-[1px] bg-slate-200/80 mx-3" />
 
           <div className="flex-1">
-            <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">Hair Transplants</span>
+            <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400">{t('hairTransplants')}</span>
             <span className="mt-0.5 font-bold text-slate-900 text-sm tracking-tight">
               {doctor.hairTransplantsCount ? `${doctor.hairTransplantsCount.toLocaleString()}+` : 'N/A'}
             </span>
@@ -79,7 +82,7 @@ export default function DoctorCard({ doctor }) {
         {/* Uzmanlık Alanları (Minimalist Kurumsal Rozetler) */}
         <div className="mt-5">
           <span className="block text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-2">
-            Areas of Expertise
+            {t('areasOfExpertise')}
           </span>
           <div className="flex flex-wrap gap-1.5">
             {doctor.specialties?.length ? (
@@ -92,13 +95,13 @@ export default function DoctorCard({ doctor }) {
                 </span>
               ))
             ) : (
-              <span className="text-xs text-slate-400 italic font-normal">General Practice</span>
+              <span className="text-xs text-slate-400 italic font-normal">{t('generalPractice')}</span>
             )}
           </div>
         </div>
       </div>
 
-      {/* 3. EĞİTİM VE ETKİLEŞİMLİ PROFIL BUTONU */}
+      {/* 3. EĞİTİM VE ETKİLEŞİMLİ PROFİL BUTONU */}
       <div className="mt-6 pt-4 border-t border-slate-100">
         {/* Eğitim Bilgisi */}
         <div className="flex items-center gap-2 text-xs text-slate-500 mb-4">
@@ -107,16 +110,16 @@ export default function DoctorCard({ doctor }) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
           </svg>
           <span className="truncate font-medium text-slate-700">
-            {doctor.education || 'Medical Degree'}
+            {doctor.education || t('medicalDegree')}
           </span>
         </div>
 
         {/* Kurumsal Profil Butonu */}
         <Link
-          href={`/doctor-detail?id=${doctor.id}`}
+          href={`/doctor-detail/${doctor.id}`}
           className="group/btn w-full inline-flex items-center justify-between rounded-xl bg-slate-900 px-4 py-2.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-teal-700 active:scale-[0.99]"
         >
-          <span className="tracking-wide">View Doctor Profile</span>
+          <span className="tracking-wide">{t('viewProfile')}</span>
           <span className="flex h-5 w-5 items-center justify-center rounded-md bg-white/10 transition-transform duration-200 group-hover/btn:translate-x-1">
             <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />

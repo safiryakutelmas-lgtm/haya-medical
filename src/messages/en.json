@@ -1,0 +1,116 @@
+{
+  "Pages": {
+    "Home": {
+      "title": "Medica Hair Clinic - Hair Transplant Consultation",
+      "description": "Find the right hair transplant specialist and clinic."
+    },
+    "Clinics": {
+      "title": "Clinics and Doctors - Medica Hair Clinic",
+      "description": "Explore top hair transplant clinics and specialist doctors to find the best option for you."
+    }
+  },
+  "Hero": {
+    "altText": "Healthcare Services",
+    "badge": "Hair Transplant Consultation",
+    "title": "Find the perfect hair transplant specialist",
+    "description": "Evaluate FUE, DHI, pricing, and clinics all on one screen. Fill out a short form and let us guide you to the right doctors and clinics.",
+    "buttonDoctors": "View Doctors",
+    "buttonProcess": "Our Process",
+    "safeEval": "Secure evaluation",
+    "expertMatch": "Expert matching"
+  },
+  "Header": {
+    "home": "Home",
+    "hairTransplants": "Hair Transplants",
+    "hairTransplantsSub1": "What is FUE Technique?",
+    "hairTransplantsSub2": "DHI Hair Transplant",
+    "hairTransplantsSub3": "Beard & Mustache Transplant",
+    "hairLoss": "Hair Loss",
+    "hairLossSub1": "Causes of Hair Loss",
+    "hairLossSub2": "Male Pattern Baldness",
+    "hairLossSub3": "PRP & Stem Cell Treatments",
+    "findClinic": "Find a Clinic",
+    "results": "Results",
+    "certification": "Certification",
+    "compareClinics": "Compare Clinics",
+    "admin": "Admin",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "navLabel": "Main Menu",
+    "mobileNavLabel": "Mobile Navigation"
+  },
+  "ClinicCard": {
+    "imageNotAvailable": "Image not available",
+    "verifiedFacility": "Verified Facility",
+    "established": "Est.",
+    "treatmentMethods": "Treatment Methods",
+    "totalProcedures": "Total Procedures",
+    "notAvailable": "N/A",
+    "startingFrom": "Starting From",
+    "contactForPrice": "Contact for Price",
+    "onlineConsult": "Online Consult",
+    "viewProfile": "View Clinic Profile"
+  },
+  "ClinicsPage": {
+    "dashboardTitle": "Clinic Dashboard",
+    "clinicsTitle": "Clinics",
+    "clinicsCount": "{count} clinics",
+    "unknownCity": "Unknown city",
+    "doctorsTitle": "Doctors",
+    "doctorsCount": "{count} doctors"
+  },
+  "ClinicDetailPage": {
+    "notFoundTitle": "Clinic not found",
+    "invalidIdMsg": "No valid clinic ID provided.",
+    "notFoundMsg": "The requested clinic was not found in the database.",
+    "backToClinics": "Back to Clinics",
+    "noImage": "No Image",
+    "founded": "Founded:",
+    "languages": "Languages:",
+    "specialties": "Specialties:",
+    "methods": "Methods:",
+    "totalProcedures": "Total Procedures:",
+    "price": "Price:",
+    "about": "About",
+    "noDetails": "More details about the clinic are not available.",
+    "score": "Score",
+    "reviews": "{count} reviews",
+    "address": "Address:",
+    "website": "Website:",
+    "visit": "Visit",
+    "doctorsTitle": "Doctors at this Clinic",
+    "noDoctors": "No doctors found linked to this clinic."
+  },
+  "DoctorCard": {
+    "noPhoto": "No Photo",
+    "yearsExp": "Yrs Exp.",
+    "totalCases": "Total Cases",
+    "hairTransplants": "Hair Transplants",
+    "areasOfExpertise": "Areas of Expertise",
+    "generalPractice": "General Practice",
+    "medicalDegree": "Medical Degree",
+    "viewProfile": "View Doctor Profile"
+  },
+  "DoctorDetailPage": {
+    "notFoundTitle": "Doctor not found",
+    "invalidIdMsg": "No valid doctor ID provided.",
+    "notFoundMsg": "The requested doctor was not found in the database.",
+    "backToDoctors": "Back to Doctors",
+    "noPhoto": "No Photo",
+    "experience": "Experience",
+    "yearsSuffix": "yrs",
+    "about": "About",
+    "noBio": "No information available.",
+    "totalCases": "Total Cases",
+    "hairTransplants": "Hair Transplants",
+    "education": "Education",
+    "noEducation": "No info",
+    "casesTitle": "Cases & Before / After",
+    "allDoctors": "All Doctors",
+    "noCases": "No cases found for this doctor.",
+    "defaultMethod": "Method",
+    "ageSuffix": "yrs",
+    "ageNA": "Age N/A",
+    "defaultTitle": "Medical Doctor"
+  }
+}

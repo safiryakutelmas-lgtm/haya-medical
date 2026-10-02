@@ -1,3 +1,8 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+// request.ts dosyamızın konumunu belirtiyoruz
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /* config options here */
@@ -19,11 +24,8 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.pexels.com',
       },
-
-
-      
     ],
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

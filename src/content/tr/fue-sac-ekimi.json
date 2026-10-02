@@ -1,0 +1,63 @@
+{
+  "slug": "fue-sac-ekimi",
+  "seo": {
+    "title": "FUE Saç Ekimi Nedir? | Aşamaları ve Fiyatları",
+    "description": "FUE saç ekimi tekniği hakkında bilmeniz gereken her şey: İyileşme süreci, avantajları ve operasyon aşamaları."
+  },
+  "hero": {
+    "title": "FUE Saç Ekimi",
+    "subtitle": "En güncel ve iz bırakmayan doğal saç ekim teknolojisi.",
+    "coverImage": "/images/articles/fue-hero.webp",
+    "imageAlt": "FUE Saç Ekimi Operasyonu"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "FUE Saç Ekimi Nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "FUE (Follicular Unit Extraction) yöntemi, saç köklerinin donör bölgeden tek tek mikro motorlar vasıtasıyla toplanarak kel olan bölgelere ekilmesi işlemidir."
+    },
+    {
+      "type": "image",
+      "src": "/images/articles/fue-operasyon.webp",
+      "alt": "FUE Tekniği ile Greft Toplama",
+      "caption": "Mikro motor yardımıyla greftlerin tek tek toplanma anı."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "FUE Saç Ekiminin Avantajları"
+    },
+    {
+      "type": "list",
+      "style": "bullet",
+      "items": [
+        "Dikiş veya neşter izi kalmaz.",
+        "İyileşme süresi diğer yöntemlere göre çok daha hızlıdır.",
+        "Doğal bir saç çizgisi elde edilir."
+      ]
+    },
+    {
+      "type": "callout",
+      "style": "info",
+      "text": "Önemli Not: Operasyon öncesinde en az 1 hafta boyunca kan sulandırıcı ilaçların kullanımı doktor kontrolünde durdurulmalıdır."
+    },
+    {
+      "type": "faq",
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "FUE saç ekimi acılı bir işlem midir?",
+          "a": "İşlem lokal anestezi altında yapıldığı için hasta operasyon sırasında hiçbir ağrı hissetmez."
+        },
+        {
+          "q": "Ekilen saçlar ne zaman çıkar?",
+          "a": "İlk 3 ay şok dökülme yaşanır. 6. aydan itibaren saçlar çıkmaya başlar, net sonuç 12. ayda alınır."
+        }
+      ]
+    }
+  ]
+}

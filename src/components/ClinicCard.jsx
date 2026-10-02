@@ -1,9 +1,12 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
-  const {
-  } = clinic || {};
+  // JSON dosyasındaki ClinicCard objesini çağırıyoruz
+  const t = useTranslations('ClinicCard');
+  
+  const {} = clinic || {};
 
   return (
     <div
@@ -21,7 +24,7 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-slate-100 text-xs font-medium text-slate-400">
-            Image not available
+            {t('imageNotAvailable')}
           </div>
         )}
 
@@ -33,7 +36,7 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
           <div className="absolute left-3.5 top-3.5">
             <span className="inline-flex items-center gap-1.5 rounded-md bg-slate-900/90 px-2.5 py-1 text-[10px] font-bold tracking-wider text-white shadow-sm backdrop-blur-md uppercase border border-white/10">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              Verified Facility
+              {t('verifiedFacility')}
             </span>
           </div>
         )}
@@ -50,11 +53,11 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
         {/* Görsel Üstü Sol Alt: Lokasyon & Kurum Tipi */}
         <div className="absolute bottom-3.5 left-4 right-4 z-10">
           <div className="flex items-center gap-2 text-[11px] font-medium text-slate-300 mb-0.5">
-                        <span className="truncate">{locationText}</span>
+            <span className="truncate">{locationText}</span>
             {clinic.foundedYear && (
               <>
                 <span>•</span>
-                <span>Est. {clinic.foundedYear}</span>
+                <span>{t('established')} {clinic.foundedYear}</span>
               </>
             )}
           </div>
@@ -70,16 +73,16 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
         {/* Metotlar & Operasyon Sayısı (İnce Çizgili Kurumsal Grid) */}
         <div className="grid grid-cols-2 gap-x-4 gap-y-3 pb-4 border-b border-slate-100 text-xs">
           <div>
-            <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Treatment Methods</dt>
+            <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{t('treatmentMethods')}</dt>
             <dd className="mt-1 font-semibold text-slate-800 line-clamp-1">
               {clinic.methods?.length ? clinic.methods.join(', ') : 'FUE, DHI'}
             </dd>
           </div>
 
           <div className="pl-4 border-l border-slate-100">
-            <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Total Procedures</dt>
+            <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{t('totalProcedures')}</dt>
             <dd className="mt-1 font-semibold text-slate-800">
-              {clinic.hairTransplantsCount > 0 ? `${clinic.hairTransplantsCount.toLocaleString()}+` : 'N/A'}
+              {clinic.hairTransplantsCount > 0 ? `${clinic.hairTransplantsCount.toLocaleString()}+` : t('notAvailable')}
             </dd>
           </div>
         </div>
@@ -87,9 +90,9 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
         {/* Fiyat Bilgisi Satırı */}
         <div className="py-3.5 flex items-center justify-between text-xs">
           <div>
-            <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">Starting From</span>
+            <span className="block text-[10px] font-bold uppercase tracking-wider text-slate-400">{t('startingFrom')}</span>
             <span className="text-base font-bold text-slate-900 tracking-tight">
-              {clinic.priceLabel || (prices.length > 0 ? `${prices[0]?.minPrice} ${prices[0]?.currency}` : 'Contact for Price')}
+              {clinic.priceLabel || (prices.length > 0 ? `${prices[0]?.minPrice} ${prices[0]?.currency}` : t('contactForPrice'))}
             </span>
           </div>
 
@@ -98,7 +101,7 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
               <svg className="w-3 h-3 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
-              Online Consult
+              {t('onlineConsult')}
             </span>
           )}
         </div>
@@ -109,7 +112,7 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
             href={`/clinic-detail/${clinic.id}`}
             className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 text-xs font-semibold text-white transition-all duration-150 hover:bg-slate-800 active:scale-[0.99]"
           >
-            <span>View Clinic Profile</span>
+            <span>{t('viewProfile')}</span>
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -118,6 +121,5 @@ export default function ClinicCard({ clinic, prices = [], locationText = '' }) {
 
       </div>
     </div>
-    
   );
 }
