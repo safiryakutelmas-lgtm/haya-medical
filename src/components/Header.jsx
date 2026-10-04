@@ -57,9 +57,17 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Orta: Masaüstü Modern Dropdown Menüleri */}
+          {/* Orta: Masaüstü Modern Dropdown Menüleri ve Neden Türkiye Linki */}
           <nav aria-label={t('navLabel')} className="hidden items-center gap-1.5 lg:flex">
             
+            {/* Neden Türkiye? Doğrudan Link (İşaretlediğin Alan) */}
+            <Link 
+              href="/neden-turkiyede-sac-ektirmelisin" 
+              className="rounded-full px-4 py-2 text-sm font-semibold text-teal-700 bg-teal-50/80 ring-1 ring-teal-500/20 transition-all hover:bg-teal-100/80 hover:text-teal-800"
+            >
+             <span>{t('whyTurkey')}</span>
+            </Link>
+
             {/* 1. Saç Ekimi Dropdown */}
             <div 
               className="relative"
@@ -82,15 +90,15 @@ export default function Header() {
                   <div className="overflow-hidden rounded-3xl bg-white/95 p-2 shadow-2xl shadow-teal-950/10 backdrop-blur-2xl border border-slate-100 ring-1 ring-slate-900/5">
                     <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-teal-400/15 blur-2xl pointer-events-none" />
                     
-                    <Link href="/rehber/fue-teknigi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/fue-sac-ekimi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairTransplantsSub1')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Altın standart mikro FUE yöntemi hakkında bilmeniz gerekenler.</div>
                     </Link>
-                    <Link href="/rehber/dhi-sac-ekimi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/dhi-sac-ekimi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairTransplantsSub2')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Tıraşsız ve kalem tekniğiyle sıklaştırma operasyonları.</div>
                     </Link>
-                    <Link href="/rehber/sakal-biyik-ekimi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/sakal-biyik-ekimi" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairTransplantsSub3')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Yüz hatlarına uygun doğal kök yerleştirme estetiği.</div>
                     </Link>
@@ -121,15 +129,15 @@ export default function Header() {
                   <div className="overflow-hidden rounded-3xl bg-white/95 p-2 shadow-2xl shadow-teal-950/10 backdrop-blur-2xl border border-slate-100 ring-1 ring-slate-900/5">
                     <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-emerald-400/15 blur-2xl pointer-events-none" />
 
-                    <Link href="/rehber/sac-dokulmesi-nedenleri" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/sac-dokulmesi-nedenleri" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairLossSub1')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Genetik, stres, vitamin eksiklikleri ve tetikleyiciler.</div>
                     </Link>
-                    <Link href="/rehber/erkek-tipi-dokulme" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/erkek-tipi-dokulme" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairLossSub2')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Androgenetik alopesi evreleri ve önlem yolları.</div>
                     </Link>
-                    <Link href="/rehber/prp-kok-hucre" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
+                    <Link href="/prp-kok-hucre" className="group/item relative flex flex-col rounded-2xl p-3.5 transition-all hover:bg-gradient-to-r hover:from-teal-50/80 hover:to-transparent">
                       <div className="text-sm font-semibold text-slate-900 group-hover/item:text-teal-700 transition-colors">{t('hairLossSub3')}</div>
                       <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">Mevcut saçları koruma ve kalitelerini artırma kürleri.</div>
                     </Link>
@@ -234,6 +242,22 @@ export default function Header() {
             {/* Mobil Akordeon Navigasyon */}
             <nav aria-label={t('mobileNavLabel')} className="space-y-2">
               
+              {/* Neden Türkiye? Linki (Mobil) */}
+             
+<Link 
+  href="/neden-turkiyede-sac-ektirmelisin" 
+  onClick={() => setIsMenuOpen(false)} 
+  className="flex items-center justify-between rounded-2xl px-4 py-3.5 text-base font-semibold text-teal-700 bg-teal-50 border border-teal-100 transition"
+>
+  <div className="flex items-center gap-2.5">
+    <span className="text-lg" role="img" aria-label="Türkiye Bayrağı">🇹🇷</span>
+   <span>{t('whyTurkey')}</span>
+  </div>
+  <svg className="h-4 w-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+  </svg>
+</Link>
+
               {/* Saç Ekimi Akordeon */}
               <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100">
                 <button

@@ -1,26 +1,58 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import { promises as fs } from 'fs';
+import path from 'path';
+
 import ArticleRenderer from '@/components/ArticleRenderer';
-// 1. ADIM: İlerleme çubuğunu import ediyoruz
 import ScrollProgress from '@/components/ScrollProgress';
 
+
+// Kurşun geçirmez ve akıllı dosya okuma fonksiyonu
 async function getArticle(locale, slug) {
-  try {
-    const article = await import(`@/content/${locale}/${slug}.json`);
-    return article.default;
-  } catch (error) {
+  // Sistem iki ihtimale de baksın (src içinde mi, dışında mı?)
+  const pathsToTry = [
+    path.join(process.cwd(), 'src', 'content', locale, `${slug}.json`),
+    path.join(process.cwd(), 'content', locale, `${slug}.json`)
+  ];
+
+  let fileContents = null;
+  let foundPath = "";
+
+  for (const filePath of pathsToTry) {
+    try {
+      fileContents = await fs.readFile(filePath, 'utf8');
+      foundPath = filePath;
+      break; // Dosyayı bulursa döngüden çık
+    } catch (e) {
+      continue; // Bulamazsa diğer klasör ihtimaline geç
+    }
+  }
+
+  // İki ihtimalde de bulamazsa nokta atışı hatayı terminale bas
+  if (!fileContents) {
+    console.log("-----------------------------------------");
+    console.log("❌ KRİTİK HATA: JSON DOSYASI BULUNAMADI!");
+    console.log(`Gidilen URL: /${locale}/${slug}`);
+    console.log("Şu iki adrese bakıldı ama dosya yok:");
+    console.log(`1) ${pathsToTry[0]}`);
+    console.log(`2) ${pathsToTry[1]}`);
+    console.log("-----------------------------------------");
     return null;
   }
+
+  // Dosya başarıyla okundu
+  return JSON.parse(fileContents);
 }
 
 export async function generateMetadata({ params }) {
   const { locale, slug } = await params;
   const article = await getArticle(locale, slug);
+  
   if (!article) return {};
 
   return {
-    title: article.seo.title,
-    description: article.seo.description,
+    title: article.seo?.title || article.hero?.title,
+    description: article.seo?.description,
   };
 }
 
@@ -34,9 +66,7 @@ export default async function ArticlePage({ params }) {
 
   return (
     <>
-      {/* 2. ADIM: TAM BURAYA KOYUYORSUN (React Fragment '<>' içinde en başa) */}
       <ScrollProgress />
-
       <main className="min-h-screen bg-white py-12">
         <article className="max-w-3xl mx-auto px-4">
           
@@ -62,7 +92,6 @@ export default async function ArticlePage({ params }) {
             )}
           </header>
 
-          {/* İÇERİK BLOKLARI MOTORU */}
           <ArticleRenderer blocks={article.blocks} />
 
         </article>

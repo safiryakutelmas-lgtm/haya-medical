@@ -1,0 +1,71 @@
+{
+  "slug": "dhi-hair-transplant",
+  "seo": {
+    "title": "What is DHI Hair Transplant? | Choi Pen Technique & Benefits",
+    "description": "Unshaven hair transplantation with DHI (Direct Hair Implantation) technique, recovery process, and Choi implanter pen details."
+  },
+  "hero": {
+    "title": "DHI Hair Transplant (Choi Pen)",
+    "subtitle": "The most advanced hair transplantation method that creates channels and implants hair follicles simultaneously.",
+    "coverImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "DHI Hair Transplant Operation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is DHI Hair Transplant?"
+    },
+    {
+      "type": "paragraph",
+      "text": "DHI (Direct Hair Implantation) is a procedure where hair grafts are implanted directly beneath the scalp without pre-opening channels, using specially developed medical pens known as Choi Implanters."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Key Feature: In the DHI method, channel creation and graft placement are performed in a single motion using the Choi pen."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Advantages of DHI Hair Transplant"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Offers the possibility of an unshaven hair transplant (ideal especially for women and density enhancement).",
+        "Lowers the risk of graft loss since the time follicles spend outside the body is minimized.",
+        "Allows for higher hair density (number of grafts per square centimeter).",
+        "Bleeding and tissue trauma are significantly lower compared to the FUE technique."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Choi Implanter Pen",
+      "caption": "Specialized medical Choi implanter pens used during DHI operations."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is the Difference Between DHI and FUE?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the classic FUE technique, channels are pre-cut using blades, and grafts are manually placed into these channels using forceps. In DHI, there is no separate channel creation phase; as soon as the Choi pen needle penetrates the scalp, it directly deposits the hair follicle."
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions About DHI",
+      "items": [
+        {
+          "q": "Can the DHI method be performed without shaving?",
+          "a": "Yes, one of the biggest advantages of the DHI technique is that even if the donor area is trimmed, the receiving area does not need to be completely shaved."
+        },
+        {
+          "q": "How many grafts can be implanted with the DHI technique?",
+          "a": "An average of 2,500 to 3,500 grafts can be implanted in a single session. For extensive hair loss, two sessions may be planned."
+        }
+      ]
+    }
+  ]
+}

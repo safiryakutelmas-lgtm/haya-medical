@@ -1,0 +1,119 @@
+{
+  "slug": "sac-dokulmesinin-nedenleri",
+  "seo": {
+    "title": "Saç Dökülmesinin Nedenleri | Genetik, Hormonal ve Çevresel Faktörler",
+    "description": "Saç dökülmesi neden olur? Erkek tipi (Androjenik) dökülme, DHT hormonu, vitamin eksiklikleri, stres ve medikal tedavi yöntemleri hakkında kapsamlı klinik rehber."
+  },
+  "hero": {
+    "title": "Saç Dökülmesinin Kök Nedenleri ve Biyolojik Mekanizması",
+    "subtitle": "Günde 100 teli aşan dökülmelerin arkasındaki genetik, hormonal ve çevresel faktörleri anlamak, doğru tedavinin ilk adımıdır.",
+    "coverImage": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Saç Dökülmesi ve Saç Analizi"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saç Dökülmesi Ne Zaman Bir Problem Haline Gelir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç folikülleri belirli bir yaşam döngüsüne sahiptir (Anagen, Katagen ve Telogen evreleri). Normal şartlarda başımızdaki saçların %85-90'ı büyüme fazındayken, %10-15'i dökülme evresindedir. Günlük 50 ila 100 tel arası saç dökülmesi fizyolojik olarak normal kabul edilir. Ancak bu miktar sürekli hale geldiyse ve şakaklarda açılma, tepe bölgesinde seyrekleşme fark ediliyorsa altında yatan biyolojik sebepleri incelemek gerekir."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Biyolojik Gerçek: Dökülen saç telinin kendisi değil, saç derisinin altındaki 'folikül' yani saç kökü önemlidir. Kök canlı kaldığı sürece doğru medikal veya cerrahi müdahaleyle yeniden sağlıklı saç elde edilebilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Erkek Tipi Dökülme (Androjenik Alopesi) ve DHT Hormonu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Erkeklerde görülen saç dökülmelerinin %95'inden fazlasının sorumlusu Androjenik Alopesi'dir. Bu dökülme türü genetik yatkınlığa dayanır ve temelinde Dihidrotestosteron (DHT) hormonu yatar. Testosteron enzimler aracılığıyla DHT'ye dönüştüğünde, genetik olarak hassas olan ön hat ve tepe bölgesindeki saç foliküllerine bağlanır."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Minyatürleşme Süreci:** DHT hormonu folikülleri daraltır; saç teli zamanla incelir, zayıflar, tüy haline gelir ve en sonunda tamamen dökülür.",
+        "**Ense Bölgesinin Direnci:** Ense ve kulak arkasındaki saç kökleri genetik olarak DHT hormonuna karşı dirençlidir. Bu nedenle saç ekimi operasyonlarında donör bölge olarak her zaman ense tercih edilir.",
+        "**Kadınlarda Androjenik Dökülme:** Kadınlarda da hormonal değişimler (menopoz, Polikistik Over Sendromu vb.) nedeniyle androjen seviyelerinin artmasıyla şakaklarda ve saç ayrım çizgisinde dökülme görülebilir."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saç Dökülmesi Türleri ve Karşılaştırması"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç dökülmesi tek bir sebebe bağlı gelişmez. Dökülmenin tipini belirlemek, tedavi veya ekim kararının başarısını doğrudan etkiler:"
+    },
+    {
+      "type": "table",
+      "headers": ["Dökülme Tipi", "Temel Nedeni", "Görüldüğü Bölge", "Geri Döndürülebilirlik"],
+      "rows": [
+        ["Androjenik Alopesi", "Genetik ve DHT Hormonu", "Şakaklar, Ön Hat ve Tepe", "Kalıcı Çözüm Saç Ekimidir"],
+        ["Telogen Effluvium", "Stres, Hastalık, Şok Dökülme", "Tüm Saç Derisinde Genel Seyrelme", "Neden Ortadan Kalkınca Düzelir"],
+        ["Alopesi Areata (Saç Kıran)", "Otoimmün (Bağışıklık) Sistemi", "Para Büyüklüğünde Bölgesel Yuvarlaklar", "Medikal / Kortizon Tedavisi Gerektirir"],
+        ["Besinsel / Metabolik", "Vitamin, Demir ve Çinko Eksikliği", "Diffüz (Genel) Dökülme", "Takviye ve Diyetle Düzelir"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Kan Değerleri, Vitamin ve Mineral Eksiklikleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç kökleri vücutta hücre bölünmesinin en hızlı olduğu yapılardan biridir. Bu nedenle vücuttaki herhangi bir eksiklik ilk olarak saç ve tırnak sağlığına yansır. Aşağıdaki değerlerin düşüklüğü doğrudan saç dökülmesini tetikler:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Ferritin (Demir Deposu):** Saç foliküllerine oksijen taşınmasını sağlar. Ferritin düştüğünde saç kökleri beslenemez.",
+        "**Vitamin D:** Yeni saç foliküllerinin oluşumunu (folikülojenez) uyarır. Eksikliğinde saç dökülmesi hızlanır.",
+        "**B12 ve Biotin (B7 Vitaminleri):** Keratin üretimini ve hücre yenilenmesini doğrudan destekler.",
+        "**Çinko ve Tiroid Hormonları (TSH, Free T3/T4):** Tiroid bezinin az veya çok çalışması saç yapısının bozulmasına ve yoğun dökülmeye yol açar."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Saç Derisi ve Folikül Analizi",
+      "caption": "Klinik ortamda yapılan trikolojik saç analizi ile foliküllerin sağlık durumu ve kök yoğunluğu tespit edilir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Stres, Yaşam Tarzı ve Yanlış Saç Bakımı"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yoğun fiziksel veya psikolojik stres, vücutta Kortizol hormonunu artırarak saç köklerinin erken dökülme evresine (Telogen fazı) girmesine neden olur. Şiddetli bir stresten 2-3 ay sonra yaşanan yoğun dökülmeler bunun en somut örneğidir."
+    },
+    {
+      "type": "paragraph",
+      "text": "Bunun yanı sıra aşırı sıcak fön kullanımı, kimyasal boyalar, saçı çok sıkı toplama (Traksiyon Alopesi) ve yetersiz uyku gibi etkenler de saç tellerinin kırılmasına ve folikül hasarına yol açabilir."
+    },
+    {
+      "type": "faq",
+      "title": "Saç Dökülmesi Hakkında Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "Dökülen saçlar şampuan veya krem kullanımıyla geri gelir mi?",
+          "a": "Genetik dökülmelerde şampuanlar tek başına genetik süreci (DHT etkisini) durduramaz. Şampuanlar sadece saç derisi hijyenini ve tel kalitesini destekler. Kalıcı dökülmelerde medikal tedaviler (PRP, Mezoterapi) veya saç ekimi gereklidir."
+        },
+        {
+          "q": "Saç kestirmek saç dökülmesini durdurur mu?",
+          "a": "Saç kestirmek saç kökünü etkilemez, sadece uçlardaki kırıkları temizler ve saçın daha hacimli görünmesini sağlar. Dökülmeyi durdurma veya yeni saç çıkarma üzerinde hiçbir biyolojik etkisi yoktur."
+        },
+        {
+          "q": "Saç dökülmesi için ne zaman doktora başvurulmalı?",
+          "a": "Dökülme 2 aydan uzun sürüyorsa, saç ayrım yerleri genişliyorsa, duşta ve tarakta ele gelen saç miktarı belirgin şekilde arttıysa vakit kaybetmeden kanda gerekli hormon ve vitamin analizleri yapılmalıdır."
+        }
+      ]
+    }
+  ]
+}

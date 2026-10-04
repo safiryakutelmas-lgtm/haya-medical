@@ -1,0 +1,103 @@
+{
+  "slug": "prp-ve-kok-hucre-tedavisi",
+  "seo": {
+    "title": "Saç İçin PRP ve Kök Hücre Tedavisi | Biyolojik Yenileme",
+    "description": "Saç tedavisinde PRP ve kök hücre (SVF) uygulamaları nasıl yapılır? Büyüme faktörleri, zayıf saç köklerini canlandırma süreçleri ve klinik rehber."
+  },
+  "hero": {
+    "title": "Saç İçin PRP ve Kök Hücre Tedavisi",
+    "subtitle": "Kendi kanınızdan elde edilen büyüme faktörleri ve yağ dokusu kök hücreleri ile zayıflayan saç foliküllerini doğal yoldan yeniden canlandırın.",
+    "coverImage": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Saç İçin PRP ve Kök Hücre Tedavisi"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Biyolojik Tedaviler Nedir ve Neden Önemlidir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç dökülmesi tedavisinde ve ekim operasyonlarının başarısını artırmada **biyolojik yenileme yöntemleri** kritik bir rol oynar. Vücudun kendi iyileştirme mekanizmalarını kullanan **PRP (Platelet Rich Plasma)** ve **Kök Hücre (SVF)** tedavileri, uykudaki saç köklerini uyandırır, hücresel düzeyde beslenmeyi artırır ve mevcut saç tellerini kalınlaştırır."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Hücresel Güç: PRP ve kök hücre tedavileri, saç köklerine doğrudan yoğunlaştırılmış büyüme faktörleri ve onarıcı hücreler sağlayarak minyatürleşme sürecini durdurmaya yardımcı olur."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. PRP (Platelet Rich Plasma) Tedavisi Nasıl Uygulanır?"
+    },
+    {
+      "type": "paragraph",
+      "text": "PRP işleminde hastadan az miktarda kan alınarak özel bir santrifüj cihazından geçirilir. Bu işlem sonucunda kanın trombosit ( platelet ) ve **büyüme faktörleri** açısından zengin olan plazma kısmı ayrıştırılır ve saç derisine mezoterapi yöntemiyle enjekte edilir."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Anında Hücresel Tetikleme:** Enjekte edilen trombositler, saç köklerinin etrafındaki kılcal damar dolaşımını (anjiyogenez) hızla uyarır.",
+        "**Seans Planlaması:** Genellikle 2-4 hafta arayla 3 ila 4 seanslık kürler halinde uygulanır, yılda bir kez idame seansları önerilir.",
+        "**Saç Ekiminden Sonraki Rolü:** Ekim yapılan greftlerin köke daha hızlı tutunmasını ve kabukların çok daha çabuk dökülmesini sağlar."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tedavi Yöntemlerinin Karşılaştırma Tablosudur"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç sağlığını desteklemek için kullanılan PRP ile Kök Hücre (SVF) tedavilerinin etki mekanizmaları ve uygulama sıklıkları birbirinden farklıdır:"
+    },
+    {
+      "type": "table",
+      "headers": ["Tedavi Türü", "Elde Edildiği Kaynak", "Etki Mekanizması", "Uygulama Sıklığı"],
+      "rows": [
+        ["PRP Tedavisi", "Kişinin Kendi Kanı", "Trombosit ve Büyüme Faktörleri", "Kür halinde yılda birkaç seans"],
+        ["Kök Hücre (SVF)", "Genellikle Kulak Arkası Yağ Dokusu", "Mezenkimal Kök Hücreler ve Yenilenme", "Tek Seans (Yıllarca Etkili)"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Kök Hücre (SVF - Stromal Vasküler Fraksiyon) Tedavisi"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kök hücre tedavisi, PRP'ye kıyasla çok daha güçlü ve derinlemesine hücresel onarım sunan bir cerrahi dışı prosedürdür. Genellikle kulak arkasından veya karın bölgesinden lokal anesteziyle çok küçük bir miktar yağ dokusu alınır."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Yüksek Onarım Gücü:** Alınan yağ dokusu özel laboratuvar işlemlerinden geçirilerek zengin **Mezenkimal Kök Hücre** süspansiyonuna (SVF) dönüştürülür.",
+        "**Tek Seanslık Avantaj:** Kök hücreler, hasar görmüş saç köklerini onarma ve yeni damar ağı oluşturma konusunda üst düzey kapasiteye sahiptir; çoğunlukla **tek seans** yeterlidir.",
+        "**Erken Evre Çözümü:** Saç ekimi için henüz erken olan, bölgesel seyrelme yaşayan ve saç kalitesini artırmak isteyen hastalar için mükemmel bir alternatiftir."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Klinik Saç Tedavisi ve Kan Analizi",
+      "caption": "Klinik ortamda hijyenik koşullarda gerçekleştirilen biyolojik tedaviler, saç köklerinin ömrünü doğrudan uzatır."
+    },
+    {
+      "type": "faq",
+      "title": "PRP ve Kök Hücre Tedavisi Hakkında Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "**PRP ve kök hücre saç dökülmesini tamamen durdurur mu?**",
+          "a": "Genetik dökülme sürecini tamamen yok etmezler; ancak saç köklerinin kalitesini artırarak dökülmeyi büyük ölçüde yavaşlatır ve zayıf telleri kalınlaştırır."
+        },
+        {
+          "q": "**İşlem sırasında ağrı veya acı hissedilir mi?**",
+          "a": "İşlem öncesi saç derisine lokal anestezik kremler uygulanır veya bölgesel hafif uyuşturma yapılır. Bu sayede ağrı hissedilmez, işlem sonrasında günlük hayata hemen dönülebilir."
+        },
+        {
+          "q": "**Saç ekimiyle birlikte yapılabilir mi?**",
+          "a": "Kesinlikle evet. Saç ekimi sırasında veya sonrasında uygulanan PRP/kök hücre desteği, ekilen köklerin çıkış oranını (greft tutunma başarısını) ve iyileşme hızını maksimum seviyeye çıkarır."
+        }
+      ]
+    }
+  ]
+}

@@ -2,11 +2,11 @@
   "slug": "dhi-sac-ekimi",
   "seo": {
     "title": "DHI Saç Ekimi Nedir? | Choi Pen Tekniği ve Avantajları",
-    "description": "DHI (Direct Hair Implantation) tekniği ile tıraşsız saç ekimi, iyileşme süreci ve Choi kalem yönteminin detayları."
+    "description": "DHI (Direct Hair Implantation) tekniği ile tıraşsız saç ekimi, hızlı iyileşme süreci ve Choi kalem yönteminin tüm detayları."
   },
   "hero": {
     "title": "DHI Saç Ekimi (Choi Pen)",
-    "subtitle": "Kanal açma ve ekim işlemini aynı anda gerçekleştiren en gelişmiş saç ekim yöntemi.",
+    "subtitle": "Kanal açma ve ekim işlemini tek hamlede birleştiren, tıraşsız ve sıklaştırma için en ideal medikal teknoloji.",
     "coverImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&auto=format&fit=crop&q=80",
     "imageAlt": "DHI Saç Ekimi Operasyonu"
   },
@@ -18,54 +18,65 @@
     },
     {
       "type": "paragraph",
-      "text": "DHI (Direct Hair Implantation), Türkçesiyle Doğrudan Saç Ekimi; özel olarak geliştirilmiş Choi (implanter) medikal kalemleri sayesinde greftlerin kanal açılmadan doğrudan cilt altına yerleştirilmesi işlemidir."
+      "text": "DHI (Direct Hair Implantation - Doğrudan Saç Ekimi), saç köklerinin donör bölgeden toplandıktan sonra Choi adı verilen medikal implanter kalemleri ile doğrudan hedef bölgeye yerleştirilmesi işlemidir. Bu teknikte saç derisinde önceden delik (kanal) açmaya gerek kalmaz."
     },
     {
       "type": "callout",
-      "text": "✨ Önemli Özellik: DHI yönteminde kanal açma ve kök yerleştirme aşamaları tek bir hamlede Choi kalemi ile yapılır."
+      "text": "✨ Önemli Özellik: DHI yönteminde kanal açma ve kök yerleştirme aşamaları Choi kalemi sayesinde tek bir hamlede yapılır. Bu durum saç köklerinin dışarıda kalma süresini en aza indirerek tutunma oranını artırır."
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "DHI Saç Ekiminin Avantajları"
+      "text": "DHI Yönteminin En Büyük Avantajları"
     },
     {
       "type": "list",
       "items": [
-        "Tıraşsız saç ekimi imkanı sunar (Özellikle kadınlar ve sıklaştırma yapılan durumlar için idealdir).",
-        "Köklerin dışarıda bekleme süresi minimuma indiği için greft kayıp riski düşer.",
-        "Saç ekim sıklığı (santimetrekareye düşen kök sayısı) daha fazla artırılabilir.",
-        "Kanama ve doku hasarı FUE yöntemine göre daha azdır."
+        "Tıraşsız operasyon imkanı (Özellikle kadınlar ve saçını kestirmek istemeyenler için idealdir).",
+        "Mevcut saçlara zarar vermeden, aralara girerek maksimum sıklık sağlama.",
+        "Kanal açılmadığı için doku hasarı, kanama ve kabuklanmanın yok denecek kadar az olması.",
+        "Sosyal hayata ve günlük rutine çok daha hızlı dönüş süreci."
       ]
     },
     {
       "type": "image",
       "src": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
       "alt": "Choi Implanter Kalemi",
-      "caption": "DHI operasyonlarında kullanılan özel medikal Choi implanter kalemleri."
+      "caption": "DHI operasyonlarında kullanılan ve kanal açma ile ekimi aynı anda yapan medikal Choi kalemleri."
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "DHI ile FUE Arasındaki Fark Nedir?"
+      "text": "DHI ve FUE Karşılaştırması"
     },
     {
       "type": "paragraph",
-      "text": "Klasik FUE yönteminde önceden slit adı verilen bıçaklarla kanallar açılır ve kökler penset yardımıyla bu kanallara yerleştirilir. DHI'da ise kanal açma aşaması yoktur; Choi kalemi iğnesiyle deriye girer girmez kökü içeri bırakır."
+      "text": "Hastalarımızın en çok merak ettiği konulardan biri hangi yöntemin kendileri için uygun olduğudur. Aşağıdaki tablo iki popüler yöntemin temel farklarını göstermektedir:"
+    },
+    {
+      "type": "table",
+      "headers": ["Özellik", "DHI Saç Ekimi", "FUE Saç Ekimi"],
+      "rows": [
+        ["Kullanılan Cihaz", "Choi Implanter Kalemi", "Safir veya Çelik Uçlu Bistüri"],
+        ["Tıraş Durumu", "Tıraşsız ekim kolayca yapılabilir", "Genellikle tüm başın tıraş edilmesi gerekir"],
+        ["Hedef Alan", "Bölgesel seyreklikler ve saç sıklaştırma", "Geniş kellik alanları ve yüksek greft ihtiyacı"],
+        ["Greft Sayısı (Tek Seans)", "Ortalama 2500 - 3000 Greft", "Ortalama 4000 - 5000 Greft"],
+        ["İyileşme Hızı", "Çok Hızlı (Kanal açılmadığı için)", "Standart"]
+      ]
     },
     {
       "type": "faq",
       "title": "DHI Hakkında Sıkça Sorulan Sorular",
       "items": [
         {
-          "q": "DHI yöntemi tıraşsız yapılabilir mi?",
-          "a": "Evet, DHI yönteminin en büyük avantajlarından biri donör bölge tıraş edilse bile ekim yapılacak bölgenin tamamen tıraş edilmeden operasyonun tamamlanabilmesidir."
+          "q": "DHI yöntemi daha mı pahalıdır?",
+          "a": "Evet, DHI yönteminde kullanılan Choi kalemlerinin tek kullanımlık olması ve operasyonun daha yoğun bir ekip ile daha uzun sürede tamamlanması maliyeti bir miktar artırmaktadır."
         },
         {
-          "q": "DHI tekniği ile kaç greft ekilebilir?",
-          "a": "Tek seansta ortalama 2500 - 3500 greft ekimi yapılabilir. Çok geniş açıklıklarda 2 seans planlanabilir."
+          "q": "İşlem ne kadar sürüyor?",
+          "a": "Ekilmesi planlanan greft sayısına bağlı olarak ortalama 6 ile 8 saat arasında sürmektedir. İşlem lokal anestezi altında yapıldığı için ağrısızdır."
         }
       ]
     }
   ]
-} 
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "neden-turkiyede-sac-ektirmelisin",
+  "seo": {
+    "title": "Neden Türkiye'de Saç Ektirmelisin? | Avantajlar ve Süreç Rehberi",
+    "description": "Türkiye'de saç ekimi neden dünyada ilk sırada? Uzman cerrahlar, VIP her şey dahil paketler, uygun fiyatlar ve doğal sonuçlar hakkında rehber."
+  },
+  "hero": {
+    "title": "Neden Türkiye'de Saç Ektirmelisin?",
+    "subtitle": "Dünya standartlarında teknoloji, milyonlarca başarılı operasyon, VIP konaklama hizmetleri ve %50'ye varan maliyet avantajıyla hayalinizdeki saça kavuşun.",
+    "coverImage": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "İstanbul'da Saç Ekimi ve Sağlık Turizmi"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türkiye Neden Küresel Saç Ekimi Merkezidir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Son yıllarda milyonlarca insan saç ekimi için rotasını Türkiye'ye çeviriyor. Bunun arkasında sadece uygun maliyetler değil; **sağlık turizminde edinilen onlarca yıllık tecrübe**, son teknoloji mikro cerrahi yöntemleri (FUE ve DHI) ve hastaya sunulan eksiksiz VIP hizmet kalitesi yatmaktadır."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Küresel Liderlik: Türkiye, dünyada saç ekimi operasyonlarında en yüksek vaka tecrübesine ve memnuniyet oranına sahip ülkelerin başında gelmektedir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Türkiye'de Saç Ektirmenin Başlıca Avantajları"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yurtdışından gelen bir hastanın Türkiye'yi seçmesi için kliniklerimiz tarafından sağlanan en önemli avantajlar şunlardır:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Uzman ve Deneyimli Cerrahlar:** Binlerce başarılı operasyona imza atmış, uluslararası sertifikalara sahip uzman doktorlar ve medikal ekipler.",
+        "**En Son Teknolojiler (DHI ve Safir FUE):** Köklerin zarar görmesini engelleyen mikromotorlar, safir uçlar ve özel Choi kalemleri ile maksimum sıklık.",
+        "**Her Şey Dahil VIP Paketler:** Havalimanından karşılama, lüks otel konaklaması, VIP araçlarla transfer ve kliniğe ulaşımda özel tercüman desteği.",
+        "**Yüksek Fiyat / Performans Dengesi:** Avrupa veya Amerika'daki kliniklere kıyasla aynı hatta çok daha üstün kalitedeki hizmete çok daha ekonomik bütçelerle ulaşma imkanı."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ülkeler Arası Maliyet ve Hizmet Karşılaştırması"
+    },
+    {
+      "type": "paragraph",
+      "text": "Avrupa ve Amerika'daki yüksek operasyon maliyetleri ile Türkiye'nin sunduğu kapsamlı paketlerin kıyaslaması tablodaki gibidir:"
+    },
+    {
+      "type": "table",
+      "headers": ["Hizmet / Kriter", "Avrupa / ABD Klinikleri", "Türkiye / Klinik Portalımız"],
+      "rows": [
+        ["Ortalama Operasyon Maliyeti", "Çok Yüksek ($7,000 - $15,000)", "Avantajlı ve Şeffaf Fiyatlandırma"],
+        ["Konaklama ve Transfer", "Genellikle Dahil Değil (Hasta Kendisi Ayarlar)", "Lüks Otel ve VIP Transfer Dahil Paketler"],
+        ["Cerrahın Vaka Tecrübesi", "Değişken", "Binlerce Başarılı Operasyon Deneyimi"],
+        ["Tercüman ve Destek", "Ek Ücrete Tabidir veya Yoktur", "7/24 Çok Dilli Asistanlık Desteği"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Havalimanından Başlayan VIP Süreç Nasıl İşler?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Yurtdışından gelen hastalarımız için süreci tamamen stressiz ve konforlu bir tatil/operasyon konseptinde tasarlıyoruz:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**1. Gün - Karşılama ve Otel:** Havalimanında özel VIP aracımızla karşılama ve otelinize yerleşme.",
+        "**2. Gün - Konsültasyon ve Operasyon:** Kliniğimizde kan tahlilleri, saç analizi, ön çizgi tasarımı ve konforlu operasyon.",
+        "**3. Gün - Kontrol ve Yıkama:** İlk yıkama, medikal kontrol ve taburculuk işlemleri sonrası havalimanına transfer."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&auto=format&fit=crop&q=80",
+      "alt": "İstanbul ve Sağlık Turizmi",
+      "caption": "Tarihi ve modern dokusuyla İstanbul, dünya sağlık turizminin başkentidir."
+    },
+    {
+      "type": "faq",
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "Türkiye'ye geldiğimde dil problemi yaşar mıyım?",
+          "a": "Kesinlikle yaşamazsınız. Kliniğimizde İngilizce, Almanca, Fransızca ve Arapça anadile sahip profesyonel sağlık asistanlarımız her an size eşlik eder."
+        },
+        {
+          "q": "Operasyon sonrası ülkeme döndüğümde takibim nasıl yapılacak?",
+          "a": "Operasyondan sonra da medikal ekibimiz sizinle dijital kanallar üzerinden iletişimde kalır. 1. ay, 6. ay ve 1. yıl saç gelişim fotoğraflarınız uzmanlarımız tarafından düzenli olarak takip edilir."
+        },
+        {
+          "q": "Uçak biletlerimi de organizasyona dahil edebiliyor musunuz?",
+          "a": "Genellikle konaklama, transfer ve operasyon paketleri sunuluyor; ancak uçak bileti rezervasyon süreçlerinizde de ekibimiz size danışmanlık yapmaktadır."
+        }
+      ]
+    }
+  ]
+}

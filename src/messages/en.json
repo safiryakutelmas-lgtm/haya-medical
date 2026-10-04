@@ -37,7 +37,8 @@
     "openMenu": "Open Menu",
     "closeMenu": "Close Menu",
     "navLabel": "Main Menu",
-    "mobileNavLabel": "Mobile Navigation"
+    "mobileNavLabel": "Mobile Navigation",
+    "whyTurkey": "Why Turkey?"
   },
   "ClinicCard": {
     "imageNotAvailable": "Image not available",

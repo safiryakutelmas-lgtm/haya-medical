@@ -1,0 +1,71 @@
+{
+  "slug": "dhi-haartransplantation",
+  "seo": {
+    "title": "Was ist DHI Haartransplantation? | Choi-Pen-Technik & Vorteile",
+    "description": "Haartransplantation ohne Rasur mit der DHI-Technik (Direct Hair Implantation), Heilungsprozess und Details zur Choi-Stift-Methode."
+  },
+  "hero": {
+    "title": "DHI Haartransplantation (Choi Pen)",
+    "subtitle": "Die fortgeschrittenste Methode der Haartransplantation, die Kanalöffnung und Implantation gleichzeitig durchführt.",
+    "coverImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "DHI Haartransplantation Operation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Was ist die DHI Haartransplantation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "DHI (Direct Hair Implantation) ist ein Verfahren, bei dem die Grafts mithilfe speziell entwickelter medizinischer Stifte (Choi Implanter) direkt unter die Haut eingesetzt werden, ohne dass vorher Kanäle geöffnet werden müssen."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Wichtiges Merkmal: Bei der DHI-Methode erfolgen Kanalöffnung und Einsetzen der Haarwurzel in einem einzigen Schritt mit dem Choi-Stift."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vorteile der DHI Haartransplantation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Bietet die Möglichkeit einer Haartransplantation ohne Rasur (ideal besonders für Frauen und Verdichtungen).",
+        "Senkt das Risiko von Graft-Verlusten, da die Verweildauer der Wurzeln außerhalb des Körpers minimal ist.",
+        "Die Haardichte (Anzahl der Wurzeln pro Quadratzentimeter) kann deutlich erhöht werden.",
+        "Blutungen und Gewebeschäden sind im Vergleich zur FUE-Methode geringer."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Choi Implanter Stift",
+      "caption": "Spezielle medizinische Choi Implanter Stifte, die bei DHI-Operationen verwendet werden."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Was ist der Unterschied zwischen DHI und FUE?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bei der klassischen FUE-Methode werden vorab Kanäle mit Klingen geschnitten und die Wurzeln mithilfe einer Pinzette in diese Kanäle eingesetzt. Bei DHI gibt es keine separate Kanalöffnung; sobald die Nadel des Choi-Stifts in die Haut eindringt, platziert sie die Wurzel direkt."
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zu DHI",
+      "items": [
+        {
+          "q": "Kann die DHI-Methode ohne Rasur durchgeführt werden?",
+          "a": "Ja, einer der größten Vorteile der DHI-Methode ist, dass der Zielbereich nicht komplett rasiert werden muss, selbst wenn der Spenderbereich getrimmt wird."
+        },
+        {
+          "q": "Wie viele Grafts können mit der DHI-Technik transplantiert werden?",
+          "a": "In einer einzigen Sitzung können durchschnittlich 2.500 bis 3.500 Grafts transplantiert werden. Bei sehr großen kahlen Stellen können zwei Sitzungen geplant werden."
+        }
+      ]
+    }
+  ]
+}

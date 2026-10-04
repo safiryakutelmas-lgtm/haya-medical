@@ -1,6 +1,24 @@
 import Image from 'next/image';
+import React from 'react';
 
 export default function ArticleRenderer({ blocks }) {
+  
+  // JSON içindeki **kalın yazı** formatını React <strong> etiketine çeviren yardımcı fonksiyon
+const renderInlineText = (text) => {
+    if (!text) return null;
+    const parts = text.split(/\*\*(.*?)\*\*/g);
+    return parts.map((part, index) => {
+      if (index % 2 === 1) {
+        return (
+          <strong key={index} className="font-semibold text-teal-600">
+            {part}
+          </strong>
+        );
+      }
+      return <React.Fragment key={index}>{part}</React.Fragment>;
+    });
+  };
+
   return (
     <div className="prose prose-slate max-w-none space-y-6">
       {blocks.map((block, index) => {
@@ -15,7 +33,7 @@ export default function ArticleRenderer({ blocks }) {
                   block.level === 3 ? 'text-xl mt-6' : 'text-2xl mt-8 mb-4'
                 }`}
               >
-                {block.text}
+                {renderInlineText(block.text)}
               </Tag>
             );
           }
@@ -24,7 +42,7 @@ export default function ArticleRenderer({ blocks }) {
           case 'paragraph':
             return (
               <p key={index} className="text-slate-600 leading-relaxed text-base">
-                {block.text}
+                {renderInlineText(block.text)}
               </p>
             );
 
@@ -43,7 +61,7 @@ export default function ArticleRenderer({ blocks }) {
                 </div>
                 {block.caption && (
                   <figcaption className="p-3 text-center text-xs text-slate-500 bg-slate-50 border-t border-slate-100">
-                    {block.caption}
+                    {renderInlineText(block.caption)}
                   </figcaption>
                 )}
               </figure>
@@ -52,9 +70,9 @@ export default function ArticleRenderer({ blocks }) {
           // Liste Bloğu
           case 'list':
             return (
-              <ul key={index} className="space-y-2 my-4 list-disc pl-5 text-slate-600">
+              <ul key={index} className="space-y-2 my-4 list-disc pl-5 text-slate-600 marker:text-slate-400">
                 {block.items.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i}>{renderInlineText(item)}</li>
                 ))}
               </ul>
             );
@@ -63,7 +81,39 @@ export default function ArticleRenderer({ blocks }) {
           case 'callout':
             return (
               <div key={index} className="my-6 rounded-xl border-l-4 border-emerald-500 bg-emerald-50/50 p-4 text-sm text-emerald-900">
-                {block.text}
+                {renderInlineText(block.text)}
+              </div>
+            );
+
+          // Karşılaştırma Tablosu (Table)
+          case 'table':
+            return (
+              <div key={index} className="my-8 overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+                <table className="w-full text-left border-collapse text-sm text-slate-600">
+                  <thead>
+                    <tr className="bg-slate-50 border-b border-slate-200 text-slate-900 font-semibold">
+                      {block.headers.map((header, i) => (
+                        <th key={i} className="py-3.5 px-4 sm:px-6">
+                          {renderInlineText(header)}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-100 bg-white">
+                    {block.rows.map((row, rowIndex) => (
+                      <tr key={rowIndex} className="hover:bg-slate-50/50 transition-colors">
+                        {row.map((cell, cellIndex) => (
+                          <td 
+                            key={cellIndex} 
+                            className={`py-3.5 px-4 sm:px-6 ${cellIndex === 0 ? 'font-medium text-slate-900' : ''}`}
+                          >
+                            {renderInlineText(cell)}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             );
 
@@ -75,11 +125,11 @@ export default function ArticleRenderer({ blocks }) {
                 {block.items.map((faq, i) => (
                   <details key={i} className="group rounded-lg bg-white p-4 border border-slate-200/80 [&_summary::-webkit-details-marker]:hidden">
                     <summary className="flex cursor-pointer items-center justify-between font-semibold text-slate-800">
-                      <span>{faq.q}</span>
+                      <span>{renderInlineText(faq.q)}</span>
                       <span className="transition group-open:-rotate-180">↓</span>
                     </summary>
                     <p className="mt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                      {faq.a}
+                      {renderInlineText(faq.a)}
                     </p>
                   </details>
                 ))}

@@ -1,0 +1,105 @@
+{
+  "slug": "erkek-tipi-sac-dokulmesi",
+  "seo": {
+    "title": "Erkek Tipi Saç Dökülmesi (Androjenik Alopesi) Nedenleri ve Çözümleri",
+    "description": "Erkek tipi saç dökülmesi (Androjenik Alopesi) nedir? Norwood evreleri, DHT hormonu mekanizması ve güncel tedavi / saç ekimi çözümleri hakkında klinik rehber."
+  },
+  "hero": {
+    "title": "Erkek Tipi Saç Dökülmesi (Androjenik Alopesi)",
+    "subtitle": "Genetik yatkınlık ve DHT hormonunun foliküller üzerindeki etkisinden kaynaklanan dökülme sürecini ve kalıcı çözüm yollarını keşfedin.",
+    "coverImage": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Erkek Tipi Saç Dökülmesi ve Analiz"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Erkek Tipi Saç Dökülmesi Nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Erkeklerde görülen saç dökülmelerinin **%95 oranında** baş sorumlusu **Androjenik Alopesi**, tıbbi adıyla erkek tipi saç dökülmesidir. Genellikle 20'li yaşlardan itibaren başlar; şakaklarda gerileme, alın çizgisinde açılma ve tepe (vertex) bölgesinde incelme şeklinde kendini gösterir."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Genetik Faktör: Bu dökülme türü tamamen kalıtsaldır. Anne veya baba tarafında genetik dökülme öyküsü olan bireylerde görülme olasılığı çok yüksektir."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "DHT Hormonunun Rolü ve Minyatürleşme Süreci"
+    },
+    {
+      "type": "paragraph",
+      "text": "Erkek tipi dökülmenin temel tetikleyicisi **Dihidrotestosteron (DHT)** adı verilen erkeklik hormonu türevidir. Testosteron hormonu, saç köklerinde bulunan **5-alfa redüktaz** enzimi ile birleşerek DHT'ye dönüşür."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Reseptör Hassasiyeti:** Genetik olarak hassas olan ön ve tepe bölgesindeki saç kökleri DHT'ye karşı duyarlıdır.",
+        "**Folikülün Küçülmesi (Minyatürleşme):** DHT hormonu kökleri besleyen damarları daraltır; saç teli zamanla kalınlığını kaybeder, incelir, ayva tüyüne döner ve en nihayetinde folikül tamamen kapanarak saç üretimi durur.",
+        "**Ense Bölgesinin Avantajı:** Ense ve kulak arkasındaki saç kökleri genetik olarak DHT reseptörlerine sahip değildir. Bu nedenle saç ekimi operasyonlarında donör bölge olarak hep bu güvenli alan seçilir."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Norwood Dökülme Evreleri Tablosu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tıpta erkek tipi dökülmenin derecesini sınıflandırmak için **Norwood Ölçeği** kullanılır. Dökülmenin hangi evrede olduğu, uygulanacak saç ekimi greft sayısını ve stratejisini doğrudan belirler:"
+    },
+    {
+      "type": "table",
+      "headers": ["Norwood Evresi", "Klinik Gözlem", "Açıklama ve Durum"],
+      "rows": [
+        ["**Evre 1 - 2**", "Hafif Gerileme", "Alın çizgisinde minimal çekilme ve şakaklarda hafif açılma başlar."],
+        ["**Evre 3 - 4**", "Belirgin Açılma", "Şakaklar derinleşir, tepe bölgesinde (vertex) seyrelme ve ada oluşumu gözlenir."],
+        ["**Evre 5 - 6**", "İleri Düzey Kayıp", "Ön ve tepe bölgesindeki açılmalar birleşir, ortada sadece ince bir köprü kalır."],
+        ["**Evre 7**", "Tam / Yoğun Kısırlık", "Sadece ense ve kulak üstünde at nalı şeklinde sınırlı bir donör saç kalmıştır."]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Erkek Tipi Dökülmede Tedavi ve Çözüm Seçenekleri"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dökülmenin erken evrelerinde medikal yaklaşımlarla süreç yavaşlatılabilirken, foliküllerin öldüğü ileri evrelerde tek kalıcı ve kesin çözüm **mikro cerrahi saç ekimidir**."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Medikal Destekler:** Minoxidil veya Finasteride gibi etken maddeler (hekim kontrolünde) dökülme hızını azaltabilir ancak kaybedilen saçları geri getirmez.",
+        "**Kombine Tedaviler (PRP ve Mezoterapi):** Mevcut zayıf saç tellerini güçlendirmek ve saç ekimi sonrasındaki iyileşmeyi hızlandırmak için kökler beslenir.",
+        "**FUE ve DHI Saç Ekimi:** Ense bölgesinden alınan güçlü köklerin, dökülen alanlara en doğal açı ve yönlerle transfer edilmesiyle ömür boyu kalıcı sonuç elde edilir."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Saç Ekim Planlaması",
+      "caption": "Kişiye özel ön saç çizgisi tasarımı ve greft planlaması, doğal görünümün en kritik aşamasıdır."
+    },
+    {
+      "type": "faq",
+      "title": "Erkek Tipi Saç Dökülmesi Hakkında Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "**Erkek tipi saç dökülmesi tamamen durdurulabilir mi?**",
+          "a": "Genetik kodlar değiştirilemeyeceği için süreci tamamen 'silmek' mümkün değildir; ancak doğru medikal takviyeler veya PRP uygulamalarıyla dökülme hızı ciddi oranda yavaşlatılabilir."
+        },
+        {
+          "q": "**Şapka takmak veya jöle sürmek erkek tipi dökülmeyi tetikler mi?**",
+          "a": "Hayır. Şapka veya şekillendirici ürünler saç derisinin dış yüzeyine temas eder. Erkek tipi dökülme tamamen içsel (hormonal ve genetik) bir süreçtir, dış etkenlerle oluşmaz."
+        },
+        {
+          "q": "**Ekilen saçlar ilerleyen yaşlarda tekrar dökülür mü?**",
+          "a": "Hayır. Ense bölgesindeki kökler genetik olarak DHT hormonuna karşı dirençli olduğu için, bu alanlardan alınıp ekilen saçlar ömür boyu dökülmeme özelliğini korur."
+        }
+      ]
+    }
+  ]
+}

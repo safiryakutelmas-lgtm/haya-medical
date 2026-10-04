@@ -37,7 +37,8 @@
     "openMenu": "Menüyü Aç",
     "closeMenu": "Menüyü Kapat",
     "navLabel": "Ana Menü",
-    "mobileNavLabel": "Mobil Navigasyon"
+    "mobileNavLabel": "Mobil Navigasyon",
+    "whyTurkey": "Neden Türkiye?"
   },
   "ClinicCard": {
     "imageNotAvailable": "Görsel bulunamadı",

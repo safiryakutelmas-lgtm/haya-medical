@@ -1,0 +1,82 @@
+{
+  "slug": "sakal-biyik-ekimi",
+  "seo": {
+    "title": "Sakal ve Bıyık Ekimi | Doğal Görünüm ve Yoğunlaştırma",
+    "description": "Sakal ve bıyık ekimi nasıl yapılır? Donör bölge seçimi, ekim açıları, iyileşme süreci ve doğal sonuçlar için rehber."
+  },
+  "hero": {
+    "title": "Sakal ve Bıyık Ekimi",
+    "subtitle": "Köse alanlar, bölgesel seyrekler veya yara izleri için doğal açı ve yönlerle kalıcı sakal/bıyık tasarımı.",
+    "coverImage": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Sakal ve Bıyık Ekimi Operasyonu"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sakal ve Bıyık Ekimi Nedir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sakal ve bıyık ekimi; genetik faktörler, hormonal nedenler, yanık veya yara izleri sonucu yüz bölgesinde sakal çıkmayan ya da seyrek olan alanlara, donör bölgeden alınan sağlıklı köklerin mikro cerrahi yöntemlerle nakledilmesi işlemidir."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Altın Kural: Yüz bölgesindeki kıl kökleri saçtan farklı olarak daha yatay açılarla (15-30 derece) çıkar. Doğal bir görünüm için köklerin ekim açısı ve yönü milimetrik olarak planlanmalıdır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Donör Bölge Neresidir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sakal ekiminde ilk tercih edilen donör bölge enselerdir. Ancak yeterli kök olmaması durumunda, çene altındaki gereksiz sakal kökleri de alınıp yanak veya bıyık bölgesindeki seyrek alanlara nakledilebilir."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Tekli Greft Kullanımı:** Yüzde doğal bir görünüm elde etmek için sadece tekli kıl kökleri tercih edilir.",
+        "**İz Bırakmaz:** FUE veya DHI yöntemiyle yapılan mikro alımlarda donör bölgede veya yüzde belirgin bir iz kalmaz.",
+        "**İstenilen Model:** Ekim öncesi hastanın yüz hattına uygun sakal ve bıyık çizgisi birlikte tasarlanır."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İyileşme Süreci Nasıl İşler?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operasyon sonrasında yüz bölgesindeki kan dolaşımı çok hızlı olduğu için iyileşme süreci saç ekimine göre daha hızlıdır:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**İlk 48 Saat:** Ekim yapılan bölgeye su değdirilmemeli ve temas edilmemelidir.",
+        "**10. Gün:** Kabuklanmalar özel yıkamalarla tamamen dökülür, ekim yapılan yer doğal tıraşlı sakal görünümüne kavuşur.",
+        "**2. - 4. Hafta:** 'Şok dökülme' evresi yaşanır. Ekilen kıllar geçici olarak dökülür, kökler deride kalır.",
+        "**3. Ay:** Yeni sakallar kalıcı olarak uzamaya başlar.",
+        "**6. - 9. Ay:** Sakallar tamamen doğal formunu kazanır ve normal bir şekilde makine veya jiletle kesilebilir."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Sakal ve Bıyık Ekimi Hakkında Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "q": "**Ekilen sakallar doğal durur mu?**",
+          "a": "Köklerin ekim açısı (yatay açı) ve yönü doğru planlandığı takdirde dışarıdan bakıldığında ekim olduğu kesinlikle anlaşılmaz."
+        },
+        {
+          "q": "**İşlem ne kadar sürer ve acı hisseder miyim?**",
+          "a": "Ekilerek ihtiyaca göre 1500 - 3000 greft arası planlanır ve işlem ortalama 4-6 saat sürer. Lokal anestezi uygulandığı için ağrı veya acı hissedilmez."
+        },
+        {
+          "q": "**Ekilen sakalları ne zaman tıraş edebilirim?**",
+          "a": "İlk 1 ay boyunca jilet kullanılması önerilmez. 15. günden itibaren makasla kısaltma yapılabilir, 1. aydan sonra makine veya jiletle tıraş olunabilir."
+        }
+      ]
+    }
+  ]
+}

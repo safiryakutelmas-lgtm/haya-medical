@@ -1,14 +1,14 @@
 {
   "slug": "fue-sac-ekimi",
   "seo": {
-    "title": "FUE Saç Ekimi Nedir? | Aşamaları ve Fiyatları",
-    "description": "FUE saç ekimi tekniği hakkında bilmeniz gereken her şey: İyileşme süreci, avantajları ve operasyon aşamaları."
+    "title": "Safir FUE Saç Ekimi Nedir? | Yüksek Greft ve Doğal Sonuçlar",
+    "description": "FUE saç ekimi yöntemi ile tek seansta maksimum greft ekimi, doğal ön hat tasarımı ve kalıcı saçlara kavuşma rehberi."
   },
   "hero": {
-    "title": "FUE Saç Ekimi",
-    "subtitle": "En güncel ve iz bırakmayan doğal saç ekim teknolojisi.",
-    "coverImage": "/images/articles/fue-hero.webp",
-    "imageAlt": "FUE Saç Ekimi Operasyonu"
+    "title": "FUE Saç Ekimi (Safir)",
+    "subtitle": "Geniş açıklıkları kapatmak ve tek seansta maksimum greft sayısına ulaşmak için dünyada en çok tercih edilen altın standart yöntem.",
+    "coverImage": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Safir FUE Saç Ekimi Operasyonu"
   },
   "blocks": [
     {
@@ -18,44 +18,61 @@
     },
     {
       "type": "paragraph",
-      "text": "FUE (Follicular Unit Extraction) yöntemi, saç köklerinin donör bölgeden tek tek mikro motorlar vasıtasıyla toplanarak kel olan bölgelere ekilmesi işlemidir."
+      "text": "FUE (Follicular Unit Extraction), saç köklerinin donör bölgeden mikro motorlar yardımıyla tek tek toplanması ve kellik olan bölgede önceden açılmış mikro kanallara yerleştirilmesi işlemidir. Günümüzde bu kanallar, doku hasarını minimuma indirmek için değerli bir maden olan Safir uçlu özel bıçaklarla açılmaktadır (Safir FUE)."
     },
     {
-      "type": "image",
-      "src": "/images/articles/fue-operasyon.webp",
-      "alt": "FUE Tekniği ile Greft Toplama",
-      "caption": "Mikro motor yardımıyla greftlerin tek tek toplanma anı."
+      "type": "callout",
+      "text": "✨ Önemli Özellik: FUE yöntemi, greft toplama hızının yüksek olması sayesinde geniş açıklığı olan hastalarda tek seansta 5000 grefte kadar ekim yapılmasına olanak tanır."
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "FUE Saç Ekiminin Avantajları"
+      "text": "FUE Yönteminin Avantajları"
     },
     {
       "type": "list",
-      "style": "bullet",
       "items": [
-        "Dikiş veya neşter izi kalmaz.",
-        "İyileşme süresi diğer yöntemlere göre çok daha hızlıdır.",
-        "Doğal bir saç çizgisi elde edilir."
+        "Tek seansta çok yüksek sayıda kök (greft) ekimine olanak sağlar.",
+        "Safir uçlu bıçaklar kullanıldığında iyileşme süreci çok daha hızlı ve pürüzsüzdür.",
+        "Saç kökleri doğal çıkış açısına uygun olarak yerleştirilebildiği için sonuç son derece doğaldır.",
+        "DHI yöntemine kıyasla işlem süresi daha kısadır ve maliyet açısından daha avantajlıdır."
       ]
     },
     {
-      "type": "callout",
-      "style": "info",
-      "text": "Önemli Not: Operasyon öncesinde en az 1 hafta boyunca kan sulandırıcı ilaçların kullanımı doktor kontrolünde durdurulmalıdır."
+      "type": "heading",
+      "level": 2,
+      "text": "Kimler FUE İçin Uygundur?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Özellikle saç dökülmesi ilerlemiş, ön hattı tamamen gerilemiş veya tepe bölgesinde geniş açıklıkları olan kişiler için bir numaralı tercihtir. Eğer hedef, mevcut saçların arasını sıklaştırmak değil de tamamen boşalmış bir alanı doldurmaksa, FUE yöntemi en doğru yoldur."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "FUE İyileşme Süreci Nasıl İşler?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "İlk 3 Gün: Ekilen köklerin tutunma aşamasıdır, bölgeye temas edilmemelidir.",
+        "10. Gün: Ekim bölgesindeki kabuklanmalar özel yıkamalarla tamamen dökülür.",
+        "1. - 3. Ay: 'Şok Dökülme' evresidir; ekilen saçlar dökülür (bu çok normal bir durumdur).",
+        "6. Ay: Saçların %60'ı gözle görülür şekilde uzar ve şekil almaya başlar.",
+        "12. Ay: Nihai sonuca ulaşılır, saçlar doğal ve kalıcı formunu kazanır."
+      ]
     },
     {
       "type": "faq",
-      "title": "Sıkça Sorulan Sorular",
+      "title": "FUE Hakkında Sıkça Sorulan Sorular",
       "items": [
         {
-          "q": "FUE saç ekimi acılı bir işlem midir?",
-          "a": "İşlem lokal anestezi altında yapıldığı için hasta operasyon sırasında hiçbir ağrı hissetmez."
+          "q": "Operasyon sırasında ağrı hisseder miyim?",
+          "a": "Hayır. İşlem öncesinde uygulanan lokal anestezi sayesinde operasyon tamamen ağrısız ve acısız geçmektedir."
         },
         {
-          "q": "Ekilen saçlar ne zaman çıkar?",
-          "a": "İlk 3 ay şok dökülme yaşanır. 6. aydan itibaren saçlar çıkmaya başlar, net sonuç 12. ayda alınır."
+          "q": "Ekilen saçlar tekrar dökülür mü?",
+          "a": "Ekilen saç kökleri, genetik olarak dökülmemeye kodlanmış olan ense bölgesinden alındığı için ömür boyu kalıcıdır ve bir daha dökülmezler."
         }
       ]
     }
