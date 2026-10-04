@@ -276,7 +276,7 @@ export default function Header() {
                     <Link href="/fue-sac-ekimi" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
                       • {t('hairTransplantsSub1')}
                     </Link>
-                    <Link href="dhi-sac-ekimi" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
+                    <Link href="/dhi-sac-ekimi" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
                       • {t('hairTransplantsSub2')}
                     </Link>
                     <Link href="/sakal-biyik-ekimi" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
@@ -301,13 +301,13 @@ export default function Header() {
                 
                 {mobileSubmenu === 'loss' && (
                   <div className="px-3 pb-3 pt-1 space-y-1 border-t border-slate-200/60 bg-white">
-                    <Link href="sac-dokulmesi-nedenleri" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
+                    <Link href="/sac-dokulmesi-nedenleri" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
                       • {t('hairLossSub1')}
                     </Link>
-                    <Link href="erkek-tipi-dokulme" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
+                    <Link href="/erkek-tipi-dokulme" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
                       • {t('hairLossSub2')}
                     </Link>
-                    <Link href="prp-kok-hucre" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
+                    <Link href="/prp-kok-hucre" onClick={() => setIsMenuOpen(false)} className="block rounded-xl px-3 py-2.5 text-sm font-medium text-slate-600 hover:bg-teal-50 hover:text-teal-700 transition">
                       • {t('hairLossSub3')}
                     </Link>
                   </div>
