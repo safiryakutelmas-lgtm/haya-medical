@@ -1,0 +1,82 @@
+{
+  "slug": "beard-and-mustache-transplantation",
+  "seo": {
+    "title": "Beard and Mustache Transplantation | Natural Look and Density",
+    "description": "How is beard and mustache transplantation performed? Guide to donor site selection, implantation angles, recovery process, and natural results."
+  },
+  "hero": {
+    "title": "Beard and Mustache Transplantation",
+    "subtitle": "Permanent beard/mustache design with natural angles and directions for patchy areas, regional thinning, or scars.",
+    "coverImage": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Beard and Mustache Transplantation Operation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Beard and Mustache Transplantation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Beard and mustache transplantation is the process of transplanting healthy hair follicles taken from the donor area using microsurgical techniques to areas on the face with no beard growth or thinning as a result of genetic factors, hormonal reasons, burns, or scars."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Golden Rule: Unlike scalp hair, facial hair follicles emerge at flatter angles (15-30 degrees). For a natural appearance, the implantation angle and direction of the roots must be planned with millimeter precision."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where is the Donor Area?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The primary preferred donor area for beard transplantation is the nape of the neck. However, if there are not enough follicles, excess beard roots beneath the chin can also be harvested and transplanted to sparse areas on the cheeks or mustache region."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Use of Single Grafts:** Only single hair follicles are preferred to achieve a natural look on the face.",
+        "**Leaves No Scars:** Micro-extractions performed with FUE or DHI techniques leave no visible scars in the donor area or on the face.",
+        "**Desired Shape:** A beard and mustache line suited to the patient's facial features is designed together prior to transplantation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Does the Recovery Process Work?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because blood circulation in the facial area is very rapid following the operation, the recovery process is faster compared to hair transplantation:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**First 48 Hours:** The transplanted area should not come into contact with water or be touched.",
+        "**Day 10:** Scabs completely shed with special washings, and the transplanted area achieves a natural clean-shaven beard appearance.",
+        "**Weeks 2 - 4:** The 'shock loss' phase occurs. Transplanted hairs temporarily shed while roots remain under the skin.",
+        "**Month 3:** New beard hair begins to grow permanently.",
+        "**Months 6 - 9:** The beard achieves its full natural form and can be trimmed normally with a trimmer or razor."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions About Beard and Mustache Transplantation",
+      "items": [
+        {
+          "q": "**Will the transplanted beard look natural?**",
+          "a": "If the implantation angle (horizontal angle) and direction of the roots are properly planned, it is virtually impossible to tell it was transplanted when viewed from the outside."
+        },
+        {
+          "q": "**How long does the procedure take and will I feel pain?**",
+          "a": "Between 1,500 and 3,000 grafts are typically planned depending on needs, and the procedure takes an average of 4-6 hours. Since local anesthesia is applied, no pain or discomfort is felt."
+        },
+        {
+          "q": "**When can I shave the transplanted beard?**",
+          "a": "Using a razor is not recommended for the first month. From day 15 onwards, trimming with scissors is allowed, and after month 1, shaving with an electric trimmer or razor can be done."
+        }
+      ]
+    }
+  ]
+}

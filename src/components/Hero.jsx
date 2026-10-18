@@ -45,15 +45,15 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row lg:justify-end">
-            <Link className="inline-flex w-full items-center justify-center rounded-xl bg-teal-500 px-7 py-3.5 text-sm font-semibold tracking-[0.02em] text-white shadow-[0_18px_35px_rgba(20,184,166,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-teal-400 sm:w-auto" href="/doctors">
+            <Link className="inline-flex w-full items-center justify-center rounded-xl bg-teal-500 px-7 py-3.5 text-sm font-semibold tracking-[0.02em] text-white shadow-[0_18px_35px_rgba(20,184,166,0.25)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-teal-400 sm:w-auto" href="/clinics">
               {t('buttonDoctors')} {/* Çeviri */}
             </Link>
-            <a
-              href="#about"
+            <Link
+              href="/sac-ekimi-sureci"
               className="inline-flex w-full items-center justify-center rounded-xl border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold tracking-[0.02em] text-white backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 sm:w-auto"
             >
               {t('buttonProcess')} {/* Çeviri */}
-            </a>
+            </Link>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-slate-200 lg:justify-end">

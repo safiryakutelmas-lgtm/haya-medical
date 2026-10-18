@@ -1,0 +1,119 @@
+{
+  "slug": "causes-of-hair-loss",
+  "seo": {
+    "title": "Causes of Hair Loss | Genetic, Hormonal & Environmental Factors",
+    "description": "What causes hair loss? Comprehensive clinical guide on male pattern (androgenetic) hair loss, DHT hormone, vitamin deficiencies, stress, and medical treatment methods."
+  },
+  "hero": {
+    "title": "Root Causes and Biological Mechanism of Hair Loss",
+    "subtitle": "Understanding the genetic, hormonal, and environmental factors behind hair loss exceeding 100 strands a day is the first step toward correct treatment.",
+    "coverImage": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Hair Loss and Hair Analysis"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When Does Hair Loss Become a Problem?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hair follicles have a specific life cycle (Anagen, Catagen, and Telogen phases). Under normal conditions, 85-90% of the hair on our scalp is in the growth phase, while 10-15% is in the shedding phase. Daily loss of 50 to 100 hair strands is considered physiologically normal. However, if this shedding becomes continuous and receding temples or thinning at the crown are noticed, underlying biological causes need to be examined."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Biological Fact: What matters is not the shed hair strand itself, but the 'follicle'—the hair root underneath the scalp. As long as the root remains alive, healthy hair can be achieved again with appropriate medical or surgical intervention."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Male Pattern Hair Loss (Androgenetic Alopecia) and the DHT Hormone"
+    },
+    {
+      "type": "paragraph",
+      "text": "Androgenetic Alopecia is responsible for more than 95% of hair loss seen in men. This type of hair loss is based on genetic predisposition, and its root cause lies in the Dihydrotestosterone (DHT) hormone. When testosterone is converted into DHT via enzymes, it binds to genetically sensitive hair follicles in the hairline and crown area."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Miniaturization Process:** DHT hormone shrinks the follicles; over time, the hair strand becomes thinner, weaker, turns into peach fuzz, and eventually sheds completely.",
+        "**Resistance of the Donor Area:** Hair roots in the nape and behind the ears are genetically resistant to the DHT hormone. Therefore, the donor area in hair transplant operations is always chosen from the nape.",
+        "**Androgenetic Hair Loss in Women:** In women as well, increased androgen levels due to hormonal changes (menopause, Polycystic Ovary Syndrome, etc.) can cause thinning at the temples and hair part line."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Types of Hair Loss and Comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hair loss does not develop due to a single cause. Identifying the type of hair loss directly affects the success of treatment or hair transplantation decisions:"
+    },
+    {
+      "type": "table",
+      "headers": ["Hair Loss Type", "Root Cause", "Affected Area", "Reversibility"],
+      "rows": [
+        ["Androgenetic Alopecia", "Genetics and DHT Hormone", "Temples, Hairline, and Crown", "Permanent Solution is Hair Transplantation"],
+        ["Telogen Effluvium", "Stress, Illness, Shock Shedding", "General Thinning Across Scalp", "Resolves Once Cause is Eliminated"],
+        ["Alopecia Areata (Spot Baldness)", "Autoimmune System", "Coin-Sized Round Patches", "Requires Medical / Cortisone Treatment"],
+        ["Nutritional / Metabolic", "Vitamin, Iron, and Zinc Deficiency", "Diffuse (General) Shedding", "Improves with Supplements & Diet"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Blood Values, Vitamin, and Mineral Deficiencies"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hair follicles are among the structures with the fastest cell division rate in the human body. Therefore, any deficiency in the body is first reflected in hair and nail health. Low values of the following directly trigger hair loss:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Ferritin (Iron Storage):** Ensures oxygen transport to hair follicles. When ferritin drops, hair roots cannot receive proper nutrition.",
+        "**Vitamin D:** Stimulates the formation of new hair follicles (folliculogenesis). Its deficiency accelerates hair loss.",
+        "**B12 and Biotin (Vitamin B7):** Directly support keratin production and cellular regeneration.",
+        "**Zinc and Thyroid Hormones (TSH, Free T3/T4):** Hypo- or hyper-activity of the thyroid gland damages hair structure and leads to severe hair loss."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Scalp and Follicle Analysis",
+      "caption": "Trichological hair analysis performed in a clinical setting determines follicle health status and root density."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Stress, Lifestyle, and Incorrect Hair Care"
+    },
+    {
+      "type": "paragraph",
+      "text": "Severe physical or psychological stress increases Cortisol hormone levels in the body, causing hair follicles to prematurely enter the shedding phase (Telogen phase). Intense shedding experienced 2-3 months after severe stress is a concrete example of this."
+    },
+    {
+      "type": "paragraph",
+      "text": "Additionally, factors such as excessive hot blow-drying, chemical dyes, tight hairstyles (Traction Alopecia), and inadequate sleep can lead to hair strand breakage and follicle damage."
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions About Hair Loss",
+      "items": [
+        {
+          "q": "Can shed hair be restored using shampoo or hair creams?",
+          "a": "In genetic hair loss, shampoos alone cannot stop the genetic process (DHT effect). Shampoos only support scalp hygiene and hair strand quality. Permanent hair loss requires medical treatments (PRP, Mesotherapy) or hair transplantation."
+        },
+        {
+          "q": "Does cutting hair stop hair loss?",
+          "a": "Cutting hair does not affect the hair root; it only cleans split ends and makes hair look fuller. It has no biological effect on stopping hair loss or growing new hair."
+        },
+        {
+          "q": "When should one consult a doctor for hair loss?",
+          "a": "If hair loss lasts longer than 2 months, hair part lines are widening, or the amount of hair coming out during showers or brushing increases significantly, necessary blood hormone and vitamin tests should be performed without delay."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "male-pattern-hair-loss",
+  "seo": {
+    "title": "Male Pattern Hair Loss (Androgenetic Alopecia) Causes & Solutions",
+    "description": "What is male pattern hair loss (Androgenetic Alopecia)? A clinical guide covering Norwood stages, the DHT hormone mechanism, and modern hair transplant solutions."
+  },
+  "hero": {
+    "title": "Male Pattern Hair Loss (Androgenetic Alopecia)",
+    "subtitle": "Discover the hair loss process caused by genetic predisposition and DHT hormone impact on follicles, along with permanent solution methods.",
+    "coverImage": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Male Pattern Hair Loss and Hair Analysis"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Male Pattern Hair Loss?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsible for **95%** of hair loss in men, **Androgenetic Alopecia** is the medical term for male pattern hair loss. It typically begins in a person's 20s, manifesting as a receding hairline, thinning at the temples, and thinning at the crown (vertex)."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Genetic Factor: This type of hair loss is entirely hereditary. Individuals with a family history of genetic hair loss on either the maternal or paternal side have a very high likelihood of experiencing it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Role of DHT Hormone and the Miniaturization Process"
+    },
+    {
+      "type": "paragraph",
+      "text": "The primary trigger for male pattern hair loss is a derivative of male hormones called **Dihydrotestosterone (DHT)**. Testosterone combines with the **5-alpha reductase** enzyme in hair follicles to convert into DHT."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Receptor Sensitivity:** Genetically sensitive hair follicles in the front and crown areas are reactive to DHT.",
+        "**Follicle Shrinkage (Miniaturization):** The DHT hormone constricts the blood vessels nourishing the roots; the hair strand gradually loses thickness, thins down, turns into vellus hair, and eventually the follicle closes completely, stopping hair production.",
+        "**Advantage of the Donor Area:** Hair follicles at the back of the head (occipital) and above the ears do not genetically possess DHT receptors. For this reason, this safe zone is always chosen as the donor area in hair transplant operations."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Norwood Hair Loss Stages Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "In medicine, the **Norwood Scale** is used to classify the severity of male pattern hair loss. The stage of hair loss directly determines the graft count and strategy for hair transplantation:"
+    },
+    {
+      "type": "table",
+      "headers": ["Norwood Stage", "Clinical Observation", "Description & Condition"],
+      "rows": [
+        ["**Stage 1 - 2**", "Mild Recession", "Minimal hairline recession and slight opening at the temples begin."],
+        ["**Stage 3 - 4**", "Noticeable Loss", "Temples deepen, thinning at the crown (vertex) and island formation are observed."],
+        ["**Stage 5 - 6**", "Advanced Loss", "Recession at the front and crown merge, leaving only a thin bridge of hair in the middle."],
+        ["**Stage 7**", "Severe / Extensive Loss", "Only a horseshoe-shaped band of donor hair remains around the back and sides of the head."]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment and Solution Options for Male Pattern Hair Loss"
+    },
+    {
+      "type": "paragraph",
+      "text": "While medical approaches can slow down the process in the early stages of hair loss, the only permanent and definitive solution in advanced stages where follicles have died is **micro-surgical hair transplantation**."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Medical Support:** Active ingredients such as Minoxidil or Finasteride (under medical supervision) can reduce the rate of hair loss, but cannot bring back lost hair.",
+        "**Combined Therapies (PRP & Mesotherapy):** Roots are nourished to strengthen existing weak hair strands and accelerate healing after hair transplantation.",
+        "**FUE & DHI Hair Transplantation:** Lifelong permanent results are achieved by transferring strong follicles harvested from the donor area to the thinning areas with the most natural angles and directions."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Hair Transplant Planning",
+      "caption": "Personalized hairline design and graft planning represent the most critical phase for a natural appearance."
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions About Male Pattern Hair Loss",
+      "items": [
+        {
+          "q": "**Can male pattern hair loss be completely stopped?**",
+          "a": "Since genetic code cannot be altered, completely 'erasing' the process is not possible; however, with proper medical supplements or PRP treatments, the rate of hair loss can be significantly slowed down."
+        },
+        {
+          "q": "**Does wearing a hat or applying hair gel trigger male pattern hair loss?**",
+          "a": "No. Hats or styling products only touch the external surface of the scalp. Male pattern hair loss is entirely an internal (hormonal and genetic) process and is not caused by external factors."
+        },
+        {
+          "q": "**Will transplanted hair fall out again in older age?**",
+          "a": "No. Because follicles in the donor area are genetically resistant to the DHT hormone, hair harvested and transplanted from these areas retains its permanent, non-falling characteristics for a lifetime."
+        }
+      ]
+    }
+  ]
+}

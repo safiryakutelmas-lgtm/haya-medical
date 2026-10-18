@@ -1,0 +1,119 @@
+{
+  "slug": "ursachen-von-haarausfall",
+  "seo": {
+    "title": "Ursachen von Haarausfall | Genetik, Hormone & Umweltfaktoren",
+    "description": "Warum entsteht Haarausfall? Umfassender klinischer Leitfaden zu männlichem Haarausfall (Androgenetische Alopezie), DHT-Hormon, Vitaminmangel, Stress und medizinischen Behandlungsmethoden."
+  },
+  "hero": {
+    "title": "Ursachen und biologischer Mechanismus von Haarausfall",
+    "subtitle": "Das Verständnis der genetischen, hormonellen und umweltbedingten Faktoren hinter Haarausfall von über 100 Haaren pro Tag ist der erste Schritt zur richtigen Behandlung.",
+    "coverImage": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Haarausfall und Haaranalyse"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wann wird Haarausfall zu einem Problem?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haarfollikel haben einen spezifischen Lebenszyklus (Anagen-, Katagen- und Telogenphase). Unter normalen Bedingungen befinden sich 85–90% der Haare auf unserer Kopfhaut in der Wachstumsphase, während 10–15% sich in der Ausfallphase befinden. Ein täglicher Verlust von 50 bis 100 Haaren gilt physiologisch als normal. Wenn dieser Ausfall jedoch dauerhaft wird und Geheimratsecken oder eine Lichtung im Scheitelbereich auffallen, müssen die zugrunde liegenden biologischen Ursachen untersucht werden."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Biologische Tatsache: Entscheidend ist nicht das ausgefallene Haar selbst, sondern der 'Follikel', sprich die Haarwurzel unter der Kopfhaut. Solange die Wurzel lebendig bleibt, kann mit entsprechenden medizinischen oder chirurgischen Eingriffen wieder gesundes Haar gewonnen werden."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Männlicher Haarausfall (Androgenetische Alopezie) und das DHT-Hormon"
+    },
+    {
+      "type": "paragraph",
+      "text": "Androgenetische Alopezie ist für mehr als 95% des Haarausfalls bei Männern verantwortlich. Diese Form des Haarausfalls beruht auf einer genetischen Veranlagung und hat ihre Ursache im Hormon Dihydrotestosteron (DHT). Wenn Testosteron durch Enzyme in DHT umgewandelt wird, bindet es an genetisch empfindliche Haarfollikel im Bereich des Haaransatzes und des Scheitels."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Miniaturisierungsprozess:** Das DHT-Hormon verengt die Follikel; das Haar wird mit der Zeit dünner, schwächer, wandelt sich in Flaumhaar um und fällt schließlich vollständig aus.",
+        "**Resistenz des Spenderbereichs:** Haarwurzeln im Nacken und hinter den Ohren sind genetisch resistent gegen das DHT-Hormon. Daher wird bei Haartransplantationsoperationen als Spenderbereich stets der Nacken bevorzugt.",
+        "**Androgenetischer Haarausfall bei Frauen:** Auch bei Frauen kann es aufgrund hormoneller Veränderungen (Wechseljahre, Polyzystisches Ovarialsyndrom usw.) durch erhöhte Androgenspiegel zu Ausdünnungen an den Schläfen und der Scheitellinie kommen."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arten von Haarausfall und Vergleich"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haarausfall entwickelt sich nicht aufgrund einer einzelnen Ursache. Die Bestimmung der Haarausfallart beeinflusst direkt den Erfolg der Behandlung oder der Transplantationsentscheidung:"
+    },
+    {
+      "type": "table",
+      "headers": ["Haarausfallart", "Hauptursache", "Betroffener Bereich", "Rückgängigmachung"],
+      "rows": [
+        ["Androgenetische Alopezie", "Genetik und DHT-Hormon", "Schläfen, Haaransatz und Scheitel", "Dauerhafte Lösung ist Haartransplantation"],
+        ["Telogenes Effluvium", "Stress, Krankheit, Schockausfall", "Generalisierte Ausdünnung der Kopfhaut", "Bessert sich nach Behebung der Ursache"],
+        ["Alopecia Areata (Kreisrunder Haarausfall)", "Autoimmunsystem", "Münzgroße runde Stellen", "Erfordert medizinische / Kortison-Behandlung"],
+        ["Nährstoff- / Stoffwechselbedingt", "Vitamin-, Eisen- und Zinkmangel", "Diffuser (allgemeiner) Ausfall", "Bessert sich durch Nahrungsergänzung & Diät"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Blutwerte, Vitamin- und Mineralstoffmangel"
+    },
+    {
+      "type": "paragraph",
+      "text": "Haarfollikel gehören zu den Strukturen mit der schnellsten Zellteilung im menschlichen Körper. Mängel im Körper spiegeln sich daher als Erstes in der Haar- und Nagelgesundheit wider. Niedrige Werte der folgenden Faktoren lösen direkt Haarausfall aus:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Ferritin (Eisenspeicher):** Sorgt für den Sauerstofftransport zu den Haarfollikeln. Sinkt der Ferritinwert, können die Haarwurzeln nicht ausreichend ernährt werden.",
+        "**Vitamin D:** Stimuliert die Bildung neuer Haarfollikel (Follikulogenese). Ein Mangel beschleunigt den Haarausfall.",
+        "**B12 und Biotin (Vitamin B7):** Unterstützen direkt die Keratinproduktion und die Zellregeneration.",
+        "**Zink und Schilddrüsenhormone (TSH, Freies T3/T4):** Eine Unter- oder Überfunktion der Schilddrüse schädigt die Haarstruktur und führt zu starkem Haarausfall."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Kopfhaut- und Follikelanalyse",
+      "caption": "Eine unter klinischen Bedingungen durchgeführte trichologische Haaranalyse bestimmt den Gesundheitszustand und die Wurzeldichte der Follikel."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Stress, Lebensstil und falsche Haarpflege"
+    },
+    {
+      "type": "paragraph",
+      "text": "Starker körperlicher oder psychischer Stress erhöht den Cortisolspiegel im Körper, wodurch Haarfollikel vorzeitig in die Ausfallphase (Telogenphase) eintreten. Ein intensiver Haarausfall, der 2-3 Monate nach schwerem Stress auftritt, ist ein konkretes Beispiel dafür."
+    },
+    {
+      "type": "paragraph",
+      "text": "Darüber hinaus können Faktoren wie übermäßiges heißes Föhnen, chemische Färbemittel, straffe Frisuren (Traktionsalopezie) und unzureichender Schlaf zu Haarbruscheinwirkungen und Follikelschäden führen."
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zu Haarausfall",
+      "items": [
+        {
+          "q": "Können ausgefallene Haare durch Shampoos oder Haarcremes zurückgewonnen werden?",
+          "a": "Bei genetisch bedingtem Haarausfall können Shampoos allein den genetischen Prozess (DHT-Wirkung) nicht stoppen. Shampoos unterstützen lediglich die Kopfhauthygiene und die Haarqualität. Bei dauerhaftem Haarausfall sind medizinische Behandlungen (PRP, Mesotherapie) oder eine Haartransplantation erforderlich."
+        },
+        {
+          "q": "Stoppt Haareschneiden den Haarausfall?",
+          "a": "Das Schneiden der Haare hat keinen Einfluss auf die Haarwurzel; es entfernt lediglich Spliss in den Spitzen und lässt das Haar voluminöser wirken. Es hat keinerlei biologischen Einfluss darauf, den Haarausfall zu stoppen oder neue Haare wachsen zu lassen."
+        },
+        {
+          "q": "Wann sollte man bei Haarausfall einen Arzt aufsuchen?",
+          "a": "Wenn der Haarausfall länger als 2 Monate anhält, sich der Scheitel verbreitert oder die Haarmenge beim Duschen und Kämmen spürbar zunimmt, sollten unverzüglich die notwendigen Hormon- und Vitaminanalysen im Blut durchgeführt werden."
+        }
+      ]
+    }
+  ]
+}

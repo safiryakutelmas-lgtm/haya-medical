@@ -16,6 +16,7 @@ const normalizeDoctor = (row) => ({
   hairTransplantsCount: Number(row.hairTransplantsCount ?? 0),
   education: row.education ?? null,
   medicalSocieties: Array.isArray(row.medicalSocieties) ? row.medicalSocieties : row.medicalSocieties ? [row.medicalSocieties] : null,
+  address: row.address ?? null,
   createdAt: row.createdAt ?? new Date().toISOString(),
 });
 
@@ -25,8 +26,7 @@ const normalizeClinicCase = (row) => ({
   clinicId: Number(row.clinicId),
   method: row.method ?? null,
   country: row.country ?? null,
-  beforeImageUrl: row.beforeImageUrl ?? null,
-  afterImageUrl: row.afterImageUrl ?? null,
+  imageUrl: row.imageUrl ?? null, // Tablodaki tek gerçek sütun (image_url)
   minPrice: row.minPrice == null ? null : Number(row.minPrice),
   maxPrice: row.maxPrice == null ? null : Number(row.maxPrice),
   currency: row.currency,
@@ -49,12 +49,13 @@ export async function createDoctor({
   hairTransplantsCount = 0,
   education = null,
   medicalSocieties = null,
+  address = null,
 } = {}) {
   const [doctor] = await sql`
     INSERT INTO doctors
-      (clinic_id, name, title, image_url, bio, specialties, cases, years_of_experience, hair_transplants_count, education, medical_societies)
+      (clinic_id, name, title, image_url, bio, specialties, cases, years_of_experience, hair_transplants_count, education, medical_societies, address)
     VALUES
-      (${clinicId}, ${name}, ${title}, ${imageUrl}, ${bio}, ${specialties}, ${cases}, ${yearsOfExperience}, ${hairTransplantsCount}, ${education}, ${medicalSocieties})
+      (${clinicId}, ${name}, ${title}, ${imageUrl}, ${bio}, ${specialties}, ${cases}, ${yearsOfExperience}, ${hairTransplantsCount}, ${education}, ${medicalSocieties}, ${address})
     RETURNING
       id,
       clinic_id AS "clinicId",
@@ -68,6 +69,7 @@ export async function createDoctor({
       hair_transplants_count AS "hairTransplantsCount",
       education,
       medical_societies AS "medicalSocieties",
+      address,
       created_at AS "createdAt"
   `;
 
@@ -90,6 +92,7 @@ export async function getAllDoctors() {
       hair_transplants_count AS "hairTransplantsCount",
       education,
       medical_societies AS "medicalSocieties",
+      address,
       created_at AS "createdAt"
     FROM doctors
     ORDER BY years_of_experience DESC, cases DESC
@@ -114,6 +117,7 @@ export async function getDoctorById(id) {
       hair_transplants_count AS "hairTransplantsCount",
       education,
       medical_societies AS "medicalSocieties",
+      address,
       created_at AS "createdAt"
     FROM doctors
     WHERE id = ${id}
@@ -132,8 +136,7 @@ export async function getCasesByClinicId(clinicId) {
       clinic_id AS "clinicId",
       method,
       country,
-      before_image_url AS "beforeImageUrl",
-      after_image_url AS "afterImageUrl",
+      image_url AS "imageUrl",
       min_price AS "minPrice",
       max_price AS "maxPrice",
       currency,
@@ -158,8 +161,7 @@ export async function getCasesByDoctorId(doctorId) {
       clinic_id AS "clinicId",
       method,
       country,
-      before_image_url AS "beforeImageUrl",
-      after_image_url AS "afterImageUrl",
+      image_url AS "imageUrl",
       min_price AS "minPrice",
       max_price AS "maxPrice",
       currency,
@@ -173,4 +175,66 @@ export async function getCasesByDoctorId(doctorId) {
   `;
 
   return cases.map(normalizeClinicCase);
+}
+
+/** 
+ * Doktor Güncelleme (PUT)
+ * @returns {Promise<Doctor | null>} 
+ */
+export async function updateDoctor(id, {
+  clinicId = null,
+  name,
+  title = null,
+  imageUrl = null,
+  bio = null,
+  specialties = null,
+  yearsOfExperience = 0,
+  education = null,
+  address = null,
+} = {}) {
+  const [doctor] = await sql`
+    UPDATE doctors
+    SET
+      clinic_id = ${clinicId},
+      name = ${name},
+      title = ${title},
+      image_url = ${imageUrl},
+      bio = ${bio},
+      specialties = ${specialties},
+      years_of_experience = ${yearsOfExperience},
+      education = ${education},
+      address = ${address}
+    WHERE id = ${id}
+    RETURNING
+      id,
+      clinic_id AS "clinicId",
+      name,
+      title,
+      image_url AS "imageUrl",
+      bio,
+      specialties,
+      cases,
+      years_of_experience AS "yearsOfExperience",
+      hair_transplants_count AS "hairTransplantsCount",
+      education,
+      medical_societies AS "medicalSocieties",
+      address,
+      created_at AS "createdAt"
+  `;
+
+  return doctor ? normalizeDoctor(doctor) : null;
+}
+
+/** 
+ * Doktor Silme (DELETE)
+ * @returns {Promise<number | null>} Silinen doktorun ID'sini döner
+ */
+export async function deleteDoctor(id) {
+  const [deleted] = await sql`
+    DELETE FROM doctors
+    WHERE id = ${id}
+    RETURNING id
+  `;
+
+  return deleted ? deleted.id : null;
 }

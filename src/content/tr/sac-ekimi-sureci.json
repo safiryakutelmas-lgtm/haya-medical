@@ -1,0 +1,78 @@
+{
+  "slug": "sac-ekimi-sureci",
+  "seo": {
+    "title": "Saç Ekimi Nasıl Yapılır? Aşamaları, Süresi ve İyileşme Rehberi",
+    "description": "Saç ekimi operasyonu adım adım nasıl gerçekleşir? Operasyon süresi, acı/ağrı durumu, şok dökülme ve sonuçların kalıcılığı hakkında tıbbi rehber."
+  },
+  "hero": {
+    "title": "Saç Ekimi Operasyon Süreci",
+    "subtitle": "İlk muayeneden kalıcı sonuçlara: Saç ekiminin tüm klinik aşamaları, operasyon süresi ve iyileşme takvimi.",
+    "coverImage": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Saç Ekimi Operasyonu ve Klinik Aşamalar"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saç Ekimi Operasyonu 4 Ana Aşamada Nasıl Gerçekleşir?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç ekimi, lokal anestezi altında gerçekleştirilen mikro-cerrahi bir doku nakli işlemidir. Seçtiğiniz klinik veya teknik (FUE/DHI) ne olursa olsun, operasyonun temeli 4 ana tıbbi aşamadan oluşur:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**1. Planlama ve Saç Çizgisi Tasarımı:** Ön muayenede donör bölge yoğunluğu analiz edilir, ekim yapılacak greft sayısı belirlenir ve yüz anatomisine uygun doğal saç çizgisi çizilir.",
+        "**2. Lokal Anestezi ve Greft Toplama:** Donör bölge (genellikle iki kulak arası) konforlu lokal anestezi ile uyuşturulur. Mikro motor uçları yardımıyla saç kökleri (greftler) tek tek toplanır ve özel koruyucu solüsyonda bekletilir.",
+        "**3. Kanal Açma (Kök Yuvalarının Hazırlanması):** Safir FUE tekniğinde safir uçlu özel mikro bıçaklarla, DHI tekniğinde ise doğrudan Choi implanter kalemleriyle saçın doğal çıkış açısına (40-45 derece) uygun kanallar açılır.",
+        "**4. Köklerin Yerleştirilmesi:** Toplanan greftler, saç çizgisinin doğallığı gözetilerek (ön hatlara tekli, arka hatlara ikili/üçlü kökler) açılan kanallara titizlikle nakledilir."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Operasyon Ne Kadar Sürer ve Acı Hissedilir mi?"
+    },
+    {
+      "type": "callout",
+      "text": "💡 Konfor Standartları: Modern iğnesiz/basınçlı lokal anestezi teknolojileri sayesinde operasyon sırasında veya sonrasında ciddi bir acı ya da ağrı hissedilmez."
+    },
+    {
+      "type": "paragraph",
+      "text": "Saç ekimi operasyonu ekilecek greft sayısına bağlı olarak ortalama **6 ila 8 saat** sürer. Operasyon sırasında hastalar müzik dinleyebilir, televizyon izleyebilir veya mola verip yemek yiyebilirler. Lokal anestezinin etkisiyle işlem tamamen ağrısız geçer; operasyon sonrası oluşabilecek hafif sızılar ise basit ağrı kesicilerle kolayca kontrol altına alınır."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "İyileşme Takvimi: Sonuçlar Ne Zaman Çıkar ve Kalıcı mıdır?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**İlk 10 Gün (Kabuk Dökme):** Operasyon sonrası oluşan küçük kabuklanmalar 10. gündeki özel yıkama ile tamamen dökülür ve saçlı deri iyileşir.",
+        "**2 - 4. Haftalar (Şok Dökülme):** Ekilen saçların gövdeleri geçici olarak dökülür. Bu, saç köklerinin dinlenme fazına geçtiğini gösteren tamamen doğal ve beklenen tıbbi bir süreçtir.",
+        "**3 - 6. Aylar (İlk Çıkışlar):** Saç kökleri canlanır ve yeni, kalıcı saç telleri çıkmaya başlar. Saçlar her ay belirgin şekilde yoğunlaşır.",
+        "**12. Ay (Nihai Kalıcı Sonuç):** Saç ekiminin tam ve nihai sonucu 12. ayda ortaya çıkar. Donör bölgeden alınan kökler dökülmeye genetik olarak dirençli olduğu için çıkan saçlar yaşam boyu kalıcıdır."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Saç Ekimi Hakkında Merak Edilen Tıbbi Sorular",
+      "items": [
+        {
+          "q": "**Ekilen saçlar gerçekten kalıcı mıdır?**",
+          "a": "Evet. Donör bölge olarak kullanılan ensedeki saç kökleri DHT (kodlanmış dökülme) hormonuna karşı dirençlidir. Bu bölgeden nakledilen kökler ömür boyu kalıcılığını korur."
+        },
+        {
+          "q": "**Operasyondan kaç gün sonra günlük hayata ve işe dönülebilir?**",
+          "a": "Fiziksel güç gerektirmeyen masa başı işlere 2-3 gün içinde rahatlıkla dönülebilir. Ağır spor ve havuz/deniz gibi aktiviteler için 3-4 hafta beklenmelidir."
+        },
+        {
+          "q": "**Tek seansta maksimum kaç greft ekilebilir?**",
+          "a": "Donör bölgenin sağlık durumuna göre tek seansta güvenli sınır 4.000 ile 5.000 greft (yaklaşık 10.000 - 12.000 saç teli) arasındadır."
+        }
+      ]
+    }
+  ]
+}

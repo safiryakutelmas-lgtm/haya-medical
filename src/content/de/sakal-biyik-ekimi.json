@@ -1,0 +1,82 @@
+{
+  "slug": "bart-und-schnurrbarttransplantation",
+  "seo": {
+    "title": "Bart- und Schnurrbarttransplantation | Natürliches Aussehen und Verdichtung",
+    "description": "Wie wird eine Bart- und Schnurrbarttransplantation durchgeführt? Leitfaden zu Spenderbereichswahl, Implantationswinkeln, Heilungsprozess und natürlichen Ergebnissen."
+  },
+  "hero": {
+    "title": "Bart- und Schnurrbarttransplantation",
+    "subtitle": "Dauerhaftes Bart-/Schnurrbart-Design mit natürlichen Winkeln und Richtungen für bartlose Stellen, regionale Ausdünnungen oder Narben.",
+    "coverImage": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Bart- und Schnurrbarttransplantations-Operation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Was ist eine Bart- und Schnurrbarttransplantation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Bart- und Schnurrbarttransplantation ist das Verfahren, bei dem gesunde Haarwurzeln aus dem Spenderbereich mit mikrochirurgischen Methoden in Bereiche des Gesichts verpflanzt werden, in denen aufgrund genetischer Faktoren, hormoneller Ursachen, Verbrennungen oder Narben kein oder nur spärlicher Bartwuchs vorhanden ist."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Goldene Regel: Im Gegensatz zum Kopfhaar wachsen die Haarwurzeln im Gesichtsbereich in flacheren Winkeln (15-30 Grad) heraus. Für ein natürliches Aussehen müssen Einpflanzungswinkel und -richtung der Wurzeln millimetergenau geplant werden."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wo befindet sich der Spenderbereich?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Der bevorzugte Spenderbereich bei einer Barttransplantation ist der Nacken. Bei unzureichenden Haarwurzeln können jedoch auch überschüssige Bartwurzeln unter dem Kinn entnommen und in dünne Bereiche an den Wangen oder der Oberlippe verpflanzt werden."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Verwendung von Einzelgrafts:** Um ein natürliches Aussehen im Gesicht zu erzielen, werden ausschließlich Einzelhaarwurzeln bevorzugt.",
+        "**Hinterlässt keine Narben:** Bei der Mikroentnahme mit der FUE- oder DHI-Methode bleiben weder im Spenderbereich noch im Gesicht sichtbare Narben zurück.",
+        "**Wunschmodell:** Vor der Transplantation wird gemeinsam eine Bart- und Schnurrbartlinie entworfen, die zu den Gesichtszügen des Patienten passt."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wie läuft der Heilungsprozess ab?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Da die Blutzirkulation im Gesichtsbereich sehr schnell ist, verläuft der Heilungsprozess nach der Operation schneller als bei einer Haartransplantation:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Erste 48 Stunden:** Der transplantierte Bereich darf nicht mit Wasser in Berührung kommen und nicht berührt werden.",
+        "**10. Tag:** Die Krusten fallen durch spezielle Waschungen vollständig ab und die transplantierte Stelle nimmt ein natürliches, rasierte-Bart-Erscheinungsbild an.",
+        "**2. - 4. Woche:** Die Phase des 'Schockausfalls' tritt ein. Die transplantierten Haare fallen vorübergehend aus, die Wurzeln bleiben in der Haut.",
+        "**3. Monat:** Neue Bart-Haare beginnen dauerhaft zu wachsen.",
+        "**6. - 9. Monat:** Der Bart nimmt seine vollständig natürliche Form an und kann ganz normal mit der Maschine oder dem Rasierer rasiert werden."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur Bart- und Schnurrbarttransplantation",
+      "items": [
+        {
+          "q": "**Sieht der transplantierte Bart natürlich aus?**",
+          "a": "Wenn der Einpflanzungswinkel (flacher Winkel) und die Wuchsrichtung der Wurzeln richtig geplant werden, ist von außen absolut nicht zu erkennen, dass eine Transplantation stattgefunden hat."
+        },
+        {
+          "q": "**Wie lange dauert der Eingriff und werde ich Schmerzen spüren?**",
+          "a": "Je nach Bedarf werden 1500 bis 3000 Grafts geplant, und der Eingriff dauert durchschnittlich 4-6 Stunden. Da eine Lokalanästhesie angewendet wird, verspürt man keine Schmerzen."
+        },
+        {
+          "q": "**Wann kann ich den transplantierten Bart rasieren?**",
+          "a": "In den ersten 4 Wochen wird die Verwendung einer Rasierklinge nicht empfohlen. Ab dem 15. Tag kann eine Kürzung mit der Schere erfolgen, nach dem 1. Monat kann mit der Maschine oder Klinge rasiert werden."
+        }
+      ]
+    }
+  ]
+}

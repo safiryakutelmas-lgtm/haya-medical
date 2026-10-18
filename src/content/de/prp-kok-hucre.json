@@ -1,0 +1,103 @@
+{
+  "slug": "prp-und-stammzelltherapie",
+  "seo": {
+    "title": "PRP- und Stammzelltherapie für Haare | Biologische Regeneration",
+    "description": "Wie werden PRP- und Stammzellbehandlungen (SVF) in der Haartherapie angewendet? Wachstumsfaktoren, Wiederbelebung schwacher Haarwurzeln und klinischer Leitfaden."
+  },
+  "hero": {
+    "title": "PRP- und Stammzelltherapie für Haare",
+    "subtitle": "Beleben Sie geschwächte Haarfollikel auf natürliche Weise mit Wachstumsfaktoren aus Ihrem eigenen Blut und Fettgewebe-Stammzellen wieder.",
+    "coverImage": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "PRP- und Stammzelltherapie für Haare"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Was sind biologische Behandlungen und warum sind sie wichtig?"
+    },
+    {
+      "type": "paragraph",
+      "text": "**Biologische Regenerationsmethoden** spielen eine entscheidende Rolle bei der Behandlung von Haarausfall und der Steigerung des Erfolgs von Transplantationsoperationen. Die **PRP (Platelet-Rich Plasma)** und **Stammzell-Therapien (SVF)** nutzen die körpereigenen Heilungsmechanismen, wecken schlafende Haarfollikel auf, verbessern die Nährstoffversorgung auf zellulärer Ebene und verdichten bestehende Haarsträhnen."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Zelluläre Kraft: PRP- und Stammzelltherapien liefern hochkonzentrierte Wachstumsfaktoren und regenerative Zellen direkt an die Haarfollikel, was hilft, den Miniaturisierungsprozess zu stoppen."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Wie wird die PRP-Behandlung (Thrombozytenreiches Plasma) angewendet?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bei der PRP-Behandlung wird dem Patienten eine geringe Menge Blut entnommen und in einer speziellen Zentrifuge verarbeitet. Das an Thrombozyten (Plättchen) und **Wachstumsfaktoren** reiche Plasma wird getrennt und mittels Mesotherapie-Techniken in die Kopfhaut injiziert."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Sofortiger zellulärer Impuls:** Die injizierten Thrombozyten stimulieren rasch die Kapillarzirkulation (Angiogenese) um die Haarfollikel.",
+        "**Sitzungsplanung:** In der Regel in Kuren von 3 bis 4 Sitzungen im Abstand von 2–4 Wochen angewendet, wobei jährliche Erhaltungssitzungen empfohlen werden.",
+        "**Rolle nach der Haartransplantation:** Sorgt dafür, dass transplantierte Grafts schneller anwachsen und der Schorf deutlich schneller abfällt."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vergleichstabelle der Behandlungsmethoden"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Wirkungsmechanismen und Anwendungshäufigkeiten der PRP- und Stammzell-Behandlungen (SVF) zur Unterstützung der Haargesundheit unterscheiden sich voneinander:"
+    },
+    {
+      "type": "table",
+      "headers": ["Behandlungsart", "Gewinnungsquelle", "Wirkungsmechanismus", "Anwendungshäufigkeit"],
+      "rows": [
+        ["PRP-Behandlung", "Eigenblut des Patienten", "Thrombozyten und Wachstumsfaktoren", "Mehrere Sitzungen pro Jahr als Kur"],
+        ["Stammzelle (SVF)", "Fettgewebe (meist hinter dem Ohr)", "Mesenchymale Stammzellen und Regeneration", "Einzelsitzung (jahrelang wirksam)"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Stammzelltherapie (SVF - Stromale Vaskuläre Fraktion)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Stammzelltherapie ist ein nicht-chirurgischer Eingriff, der im Vergleich zu PRP eine deutlich stärkere und tiefere zelluläre Reparatur bietet. In der Regel wird unter Lokalanästhesie eine sehr kleine Menge Fettgewebe hinter dem Ohr oder aus dem Bauchbereich entnommen."
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Hohe Reparaturkapazität:** Das entnommene Fettgewebe wird durch spezielle Laborverfahren in eine reiche **mesenchymale Stammzellsuspension** (SVF) umgewandelt.",
+        "**Vorteil einer Einzelsitzung:** Stammzellen besitzen eine herausragende Fähigkeit, geschädigte Haarfollikel zu reparieren und neue Gefäßnetzwerke zu bilden; meist reicht eine **einzige Sitzung** aus.",
+        "**Lösung für frühe Stadien:** Eine hervorragende Alternative für Patienten, für die eine Haartransplantation noch zu früh ist, die unter lokaler Ausdünnung leiden und die Haarqualität verbessern möchten."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&auto=format&fit=crop&q=80",
+      "alt": "Klinische Haarbehandlung und Blutanalyse",
+      "caption": "Unter hygienischen klinischen Bedingungen durchgeführte biologische Behandlungen verlängern direkt die Lebensdauer der Haarfollikel."
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zu PRP und Stammzelltherapie",
+      "items": [
+        {
+          "q": "**Stoppen PRP und Stammzellen den Haarausfall vollständig?**",
+          "a": "Sie heben den genetischen Haarausfallprozess nicht vollständig auf; sie verbessern jedoch die Qualität der Haarfollikel deutlich, verlangsamen den Ausfall erheblich und verdichten schwache Strähnen."
+        },
+        {
+          "q": "**Spürt man während des Eingriffs Schmerzen oder Beschwerden?**",
+          "a": "Vor dem Eingriff werden lokalanästhetische Cremes auf die Kopfhaut aufgetragen oder eine leichte regionale Betäubung durchgeführt. So entstehen keine Schmerzen und der Patient kann sofort in den Alltag zurückkehren."
+        },
+        {
+          "q": "**Kann die Behandlung zusammen mit einer Haartransplantation durchgeführt werden?**",
+          "a": "Absolut ja. Die während oder nach der Haartransplantation angewendete PRP-/Stammzellunterstützung maximiert die Anwachsrate der transplantierten Grafts und beschleunigt die Heilung."
+        }
+      ]
+    }
+  ]
+}

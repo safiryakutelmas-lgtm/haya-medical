@@ -1,0 +1,80 @@
+{
+  "slug": "fue-hair-transplantation",
+  "seo": {
+    "title": "What is Sapphire FUE Hair Transplant? | High Graft & Natural Results",
+    "description": "Guide to achieving maximum graft transplantation in a single session with the FUE hair transplant method, natural hairline design, and permanent hair."
+  },
+  "hero": {
+    "title": "FUE Hair Transplantation (Sapphire)",
+    "subtitle": "The world's most preferred gold standard method for covering large bald areas and reaching maximum graft count in a single session.",
+    "coverImage": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Sapphire FUE Hair Transplant Operation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is FUE Hair Transplantation?"
+    },
+    {
+      "type": "paragraph",
+      "text": "FUE (Follicular Unit Extraction) is the process of extracting hair follicles individually from the donor area using micro-motors and placing them into pre-opened micro-channels in the balding area. Today, these channels are opened using special blades with sapphire tips, a precious gemstone, to minimize tissue damage (Sapphire FUE)."
+    },
+    {
+      "type": "callout",
+      "text": "✨ Key Feature: Thanks to the high graft extraction speed, the FUE method allows for transplanting up to 5,000 grafts in a single session for patients with extensive hair loss."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Advantages of the FUE Method"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Allows for a very high number of root (graft) transplants in a single session.",
+        "When sapphire-tipped blades are used, the healing process is much faster and smoother.",
+        "Since hair follicles can be placed in alignment with their natural growth angle, the result is extremely natural.",
+        "Compared to the DHI method, the procedure duration is shorter and more cost-advantageous."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who is Suitable for FUE?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is the number one choice, especially for individuals with advanced hair loss, a completely receded hairline, or large open areas at the crown. If the goal is to fill a completely empty area rather than thickening existing hair, the FUE method is the most ideal path."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Does the FUE Recovery Process Work?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "First 3 Days: The anchoring stage for transplanted roots; the area should not be touched.",
+        "Day 10: Scabs in the transplanted area completely shed through special washings.",
+        "Months 1 - 3: The 'Shock Loss' stage; transplanted hair falls out (this is completely normal).",
+        "Month 6: 60% of the hair visibly grows and begins to take shape.",
+        "Month 12: The final result is achieved; hair gains its natural and permanent form."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions About FUE",
+      "items": [
+        {
+          "q": "Will I feel pain during the operation?",
+          "a": "No. Thanks to the local anesthesia applied before the procedure, the operation is completely painless and comfortable."
+        },
+        {
+          "q": "Will transplanted hair fall out again?",
+          "a": "Since the transplanted hair follicles are harvested from the donor area at the back of the head, which is genetically coded not to fall out, they are permanent for a lifetime and will not fall out again."
+        }
+      ]
+    }
+  ]
+}

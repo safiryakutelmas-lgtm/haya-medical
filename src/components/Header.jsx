@@ -60,7 +60,7 @@ export default function Header() {
           {/* Orta: Masaüstü Modern Dropdown Menüleri ve Neden Türkiye Linki */}
           <nav aria-label={t('navLabel')} className="hidden items-center gap-1.5 lg:flex">
             
-            {/* Neden Türkiye? Doğrudan Link (İşaretlediğin Alan) */}
+            {/* Neden Türkiye? Doğrudan Link */}
             <Link 
               href="/neden-turkiyede-sac-ektirmelisin" 
               className="rounded-full px-4 py-2 text-sm font-semibold text-teal-700 bg-teal-50/80 ring-1 ring-teal-500/20 transition-all hover:bg-teal-100/80 hover:text-teal-800"
@@ -151,7 +151,7 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Sağ Taraf: Turkuaz Klinik Bul Butonu, Dil Seçici ve Mobil Hamburger */}
+          {/* Sağ Taraf: Turkuaz Klinik Bul Butonu, Açılır Dil Seçici ve Mobil Hamburger */}
           <div className="flex items-center gap-3">
             <Link
               href="/clinics"
@@ -163,6 +163,7 @@ export default function Header() {
               {t('findClinic')}
             </Link>
 
+            {/* Masaüstü Açılır Dil Seçici */}
             <div className="hidden md:block">
               <LanguageSwitcher />
             </div>
@@ -192,17 +193,17 @@ export default function Header() {
         </div>
       </header>
 
-      {/* KESİN ÇÖZÜM: Koşullu Render ({isMenuOpen && ...}) - Mobilde DOM'a anında sıfırdan eklenir */}
+      {/* Mobil Kayar Menü */}
       {isMenuOpen && (
         <div className="fixed inset-0 z-[99] lg:hidden">
           
-          {/* Arka Plan Karartma (Fade-in animasyonlu) */}
+          {/* Arka Plan Karartma */}
           <div 
             className="absolute inset-0 bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 animate-in fade-in"
             onClick={() => setIsMenuOpen(false)}
           />
 
-          {/* Yan Kayar Menü Kutusu (Sağdan kayarak gelme animasyonlu) */}
+          {/* Yan Kayar Menü Kutusu */}
           <div className="absolute inset-y-0 right-0 w-[85vw] max-w-sm bg-white shadow-2xl transition-transform duration-300 ease-out flex flex-col px-5 py-6 overflow-y-auto animate-in slide-in-from-right">
             
             {/* Mobil Menü Başlık */}
@@ -242,21 +243,24 @@ export default function Header() {
             {/* Mobil Akordeon Navigasyon */}
             <nav aria-label={t('mobileNavLabel')} className="space-y-2">
               
-              {/* Neden Türkiye? Linki (Mobil) */}
-             
-<Link 
-  href="/neden-turkiyede-sac-ektirmelisin" 
-  onClick={() => setIsMenuOpen(false)} 
-  className="flex items-center justify-between rounded-2xl px-4 py-3.5 text-base font-semibold text-teal-700 bg-teal-50 border border-teal-100 transition"
->
-  <div className="flex items-center gap-2.5">
-    <span className="text-lg" role="img" aria-label="Türkiye Bayrağı">🇹🇷</span>
-   <span>{t('whyTurkey')}</span>
-  </div>
-  <svg className="h-4 w-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-  </svg>
-</Link>
+              {/* Neden Türkiye? Linki (Mobil) - Bayrak görseli CDN ile düzeltildi */}
+              <Link 
+                href="/neden-turkiyede-sac-ektirmelisin" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="flex items-center justify-between rounded-2xl px-4 py-3.5 text-base font-semibold text-teal-700 bg-teal-50 border border-teal-100 transition"
+              >
+                <div className="flex items-center gap-2.5">
+                  <img 
+                    src="https://flagcdn.com/w40/tr.png" 
+                    alt="Türkiye" 
+                    className="h-4 w-6 rounded-[2px] object-cover shadow-xs" 
+                  />
+                  <span>{t('whyTurkey')}</span>
+                </div>
+                <svg className="h-4 w-4 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
 
               {/* Saç Ekimi Akordeon */}
               <div className="rounded-2xl overflow-hidden bg-slate-50 border border-slate-100">
@@ -315,7 +319,7 @@ export default function Header() {
               </div>
 
               <Link href="/results" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-between rounded-2xl px-4 py-3.5 text-base font-semibold text-slate-800 bg-slate-50 border border-slate-100 hover:text-teal-700 transition">
-                <span>{t('results')}</span>
+                <span>{t('Results')}</span>
               </Link>
             </nav>
 

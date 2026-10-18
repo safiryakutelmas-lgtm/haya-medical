@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 
 import { getTranslations } from 'next-intl/server';
 
-// Dinamik ve SEO uyumlu Meta Bilgileri
+
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Pages.Home' });

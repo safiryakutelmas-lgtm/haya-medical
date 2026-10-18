@@ -1,0 +1,78 @@
+{
+  "slug": "haartransplantation-ablauf",
+  "seo": {
+    "title": "Wie funktioniert eine Haartransplantation? Ablauf, Dauer & Heilung",
+    "description": "Klinischer Leitfaden zur Haartransplantation. Erfahren Sie alles über Behandlungsdauer, Schmerzfreiheit, Schockausfall und dauerhafte Ergebnisse."
+  },
+  "hero": {
+    "title": "Der klinische Ablauf der Haartransplantation",
+    "subtitle": "Von der medizinischen Voruntersuchung bis zu lebenslangen Ergebnissen: Behandlungsphasen, Dauer und Heilungsverlauf.",
+    "coverImage": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Klinischer Ablauf der Haartransplantation"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Die 4 medizinischen Hauptphasen der Haartransplantation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Eine Haartransplantation ist ein mikrochirurgischer Eingriff unter lokaler Anästhesie. Unabhängig von Klinik oder Methode (FUE/DHI) gliedert sich die Behandlung in 4 zentrale Schritte:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**1. Planung & Haarlinien-Design:** Analyse der Spenderhaardichte, Berechnung der benötigten Grafts und Zeichnung einer natürlichen, anatomisch passenden Haarlinie.",
+        "**2. Lokale Anästhesie & Graft-Entnahme:** Der Spenderbereich wird schmerzfrei betäubt. Die Haarwurzeln (Grafts) werden einzeln entnommen und in einer Nährlösung gelagert.",
+        "**3. Kanalöffnung (Vorbereitung der Empfängerzonen):** Präzise Mikrokanäle werden im natürlichen Wuchswinkel (40–45 Grad) mittels Saphirklingen oder DHI Choi-Stiften gesetzt.",
+        "**4. Einsetzen der Haarwurzeln:** Die aufbereiteten Grafts werden sorgfältig eingesetzt (Einzelgrafts an der Haarlinie, Mehrfachgrafts für Dichte dahinter)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Wie lange dauert der Eingriff und hat man Schmerzen?"
+    },
+    {
+      "type": "callout",
+      "text": "💡 Komfort-Standard: Moderne nadellose Lokalanästhesie-Techniken ermöglichen eine schmerzfreie Behandlung während und nach dem Eingriff."
+    },
+    {
+      "type": "paragraph",
+      "text": "Die Behandlung dauert je nach Anzahl der Grafts durchschnittlich **6 bis 8 Stunden**. Währenddessen können Patienten entspannen, Musik hören oder Pausen einlegen. Durch die lokale Betäubung verläuft die Behandlung schmerzfrei; eventuelle leichte Spannungsgefühle danach lassen sich mit milden Schmerzmitteln problemlos behandeln."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Heilungsverlauf: Wann wachsen die Haare und sind sie dauerhaft?"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Tag 1 bis 10 (Krustenablösung):** Kleine Schorfbildungen lösen sich bis zum 10. Tag durch gezielte Wäschen vollständig ab.",
+        "**Woche 2 bis 4 (Schockausfall):** Die verpflanzten Haarhaare fallen vorübergehend aus. Dies ist ein völlig normaler biologischer Prozess vor der neuen Wachstumsphase.",
+        "**Monat 3 bis 6 (Erstes Wachstum):** Neue, permanente Haare beginnen sichtbar zu wachsen und verdichten sich monatlich.",
+        "**Monat 12 (Endergebnis):** Das finale Ergebnis ist nach 12 Monaten erreicht. Da Spenderhaare genetisch gegen Haarausfall geschützt sind, bleiben die Ergebnisse ein Leben lang erhalten."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Häufige medizinische Fragen zur Haartransplantation",
+      "items": [
+        {
+          "q": "**Sind die verpflanzten Haare wirklich dauerhaft?**",
+          "a": "Ja. Haarwurzeln aus dem Spenderbereich am Hinterkopf sind genetisch resistent gegen das Ausfallhormon DHT und bleiben lebenslang erhalten."
+        },
+        {
+          "q": "**Wann kann man wieder arbeiten?**",
+          "a": "Leichten Büroarbeiten kann man meist bereits nach 2–3 Tagen wieder nachgehen. Auf intensiven Sport sollte für 3–4 Wochen verzichtet werden."
+        },
+        {
+          "q": "**Wie viele Grafts können in einer Sitzung maximal verpflanzt werden?**",
+          "a": "Je nach Qualität des Spenderbereichs liegt die sichere Höchstgrenze in einer Sitzung zwischen 4.000 und 5.000 Grafts (ca. 10.000–12.000 Haare)."
+        }
+      ]
+    }
+  ]
+}

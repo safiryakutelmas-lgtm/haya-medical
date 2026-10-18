@@ -1,0 +1,78 @@
+{
+  "slug": "hair-transplant-process",
+  "seo": {
+    "title": "How Hair Transplantation Works: Steps, Duration & Recovery Guide",
+    "description": "Step-by-step clinical guide to hair transplantation. Learn about procedure duration, pain management, shock loss, and long-term result permanence."
+  },
+  "hero": {
+    "title": "The Clinical Hair Transplant Process",
+    "subtitle": "From initial medical evaluation to lifelong results: Procedure steps, duration, and complete recovery timeline.",
+    "coverImage": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&auto=format&fit=crop&q=80",
+    "imageAlt": "Hair Transplantation Procedure and Clinical Stages"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The 4 Main Stages of Hair Transplantation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hair transplantation is a micro-surgical tissue transplant performed under local anesthesia. Regardless of the clinic or technique (FUE or DHI), the medical core consists of 4 primary phases:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**1. Planning & Hairline Design:** Donor density is evaluated, graft numbers are calculated, and a natural hairline matching facial anatomy is designed.",
+        "**2. Local Anesthesia & Graft Extraction:** The donor area is numbed using comfortable local anesthesia. Individual hair follicles (grafts) are extracted via micromotor and stored in a nutrient-rich solution.",
+        "**3. Channel Creation (Recipient Site Preparation):** Micro-incisions aligned with natural hair growth angles (40-45 degrees) are created using Sapphire blades or DHI Choi implanter pens.",
+        "**4. Graft Implantation:** Extracted grafts are meticulously placed into recipient sites (single hair grafts for the frontal hairline, multi-hair grafts for density behind)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Long Does It Take and Is It Painful?"
+    },
+    {
+      "type": "callout",
+      "text": "💡 Comfort Standards: Modern needle-free local anesthesia techniques ensure a virtually painless experience during and after the procedure."
+    },
+    {
+      "type": "paragraph",
+      "text": "A standard hair transplant session takes between **6 to 8 hours** depending on the number of grafts. Patients can watch television, listen to music, or take breaks for meals. Thanks to targeted local anesthesia, the procedure itself is pain-free, and any mild post-op discomfort is easily managed with routine pain relievers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recovery Timeline: Growth Stages & Permanence"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**Days 1 to 10 (Crust Removal):** Small post-operative scabs naturally shed through specialized washes by day 10, leaving a clean scalp.",
+        "**Weeks 2 to 4 (Shock Loss):** Transplanted hair shafts temporarily shed. This is a completely normal biological phase as follicles transition into a resting state.",
+        "**Months 3 to 6 (Initial Growth):** Follicles reactivate and new permanent hair strands begin to emerge, steadily thickening each month.",
+        "**Month 12 (Final Permanent Results):** Full results appear around month 12. Because donor follicles are genetically resistant to thinning hormones, transplanted hair is permanent for life."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Clinical Questions",
+      "items": [
+        {
+          "q": "**Are transplanted hair results truly permanent?**",
+          "a": "Yes. Hair follicles harvested from the donor area (back of the head) are genetically resistant to DHT hormones, making transplanted hair permanent."
+        },
+        {
+          "q": "**How soon can I return to normal daily work?**",
+          "a": "Desk jobs and non-strenuous daily activities can be resumed within 2 to 3 days. Heavy physical exercise, swimming, and saunas should be avoided for 3 to 4 weeks."
+        },
+        {
+          "q": "**What is the maximum graft count in a single session?**",
+          "a": "Depending on donor area health, the safe maximum limit in a single session ranges between 4,000 and 5,000 grafts (approx. 10,000–12,000 individual hairs)."
+        }
+      ]
+    }
+  ]
+}

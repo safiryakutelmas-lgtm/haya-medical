@@ -44,7 +44,6 @@ const initialFormData = {
   doctorPriority: '',
   willingToTravel: null,
   country: '',
-  zipCode: '',
   title: 'Mr',
   firstName: '',
   lastName: '',
@@ -60,14 +59,16 @@ export default function MultiStepForm() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState(initialFormData);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const resetForm = () => {
     setFormData(initialFormData);
     setStep(1);
     setSubmitted(false);
+    setIsSubmitting(false);
   };
 
-  const totalSteps = 11;
+  const totalSteps = 10;
 
   const handleSelect = (key, value) => {
     setFormData((prev) => ({ ...prev, [key]: value }));
@@ -81,6 +82,11 @@ export default function MultiStepForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // Çift tıklamayı engelleme kontrolü
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+
     const payload = {
       hairLossType: formData.hairLossType,
       hadTransplant: formData.hadTransplant,
@@ -91,7 +97,6 @@ export default function MultiStepForm() {
       doctorPriority: formData.doctorPriority,
       willingToTravel: formData.willingToTravel,
       country: formData.country,
-      zipCode: formData.zipCode,
       title: formData.title,
       firstName: formData.firstName,
       lastName: formData.lastName,
@@ -120,15 +125,16 @@ export default function MultiStepForm() {
 
       console.log('Doctor finder payload:', JSON.stringify(payload, null, 2));
       console.log('Insert result:', result);
-      resetForm();
+      setSubmitted(true);
     } catch (error) {
       console.error('Submit failed:', error);
       alert(error.message || 'Form submission failed.');
+      setIsSubmitting(false); // Hata durumunda tekrar denenebilsin diye kilidi açıyoruz
     }
   };
 
   return (
-    <div className="flex min-h-[500px] w-full items-center justify-center  p-3 font-sans text-slate-900 md:p-8">
+    <div className="flex min-h-[500px] w-full items-center justify-center p-3 font-sans text-slate-900 md:p-8">
       <div className="relative w-full max-w-2xl overflow-hidden rounded-3xl border border-slate-200/80 bg-white/95 shadow-[0_20px_60px_-15px_rgba(15,23,42,0.08)] backdrop-blur-md">
         
         {/* Kurumsal Fırsat Rozeti */}
@@ -156,7 +162,8 @@ export default function MultiStepForm() {
                 {step > 1 && (
                   <button
                     onClick={handlePrev}
-                    className="group inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-slate-500 transition hover:text-slate-900 md:text-sm"
+                    disabled={isSubmitting}
+                    className="group inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-slate-500 transition hover:text-slate-900 md:text-sm disabled:opacity-50"
                     aria-label="Go back"
                   >
                     <span className="transition-transform group-hover:-translate-x-1">←</span> Back
@@ -169,7 +176,7 @@ export default function MultiStepForm() {
                 {step === 1 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 1 of 11
+                      Step 1 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       What does your hair loss look like?
@@ -201,7 +208,7 @@ export default function MultiStepForm() {
                 {step === 2 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 2 of 11
+                      Step 2 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       Have you ever had a hair transplant?
@@ -238,7 +245,7 @@ export default function MultiStepForm() {
                 {step === 3 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 3 of 11
+                      Step 3 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       Do other people in your family suffer from hair loss?
@@ -265,7 +272,7 @@ export default function MultiStepForm() {
                 {step === 4 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 4 of 11
+                      Step 4 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       How many years ago did your hair loss begin?
@@ -301,7 +308,7 @@ export default function MultiStepForm() {
                 {step === 5 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 5 of 11
+                      Step 5 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       How old are you?
@@ -333,7 +340,7 @@ export default function MultiStepForm() {
                 {step === 6 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 6 of 11
+                      Step 6 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       Are you currently treating your hair loss with finasteride or minoxidil?
@@ -360,7 +367,7 @@ export default function MultiStepForm() {
                 {step === 7 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.2em] text-teal-700">
-                      Step 7 of 11
+                      Step 7 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       What is the most important criterion for you when choosing a doctor?
@@ -392,7 +399,7 @@ export default function MultiStepForm() {
                 {step === 8 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 8 of 11
+                      Step 8 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       Would you be willing to go abroad?
@@ -419,7 +426,7 @@ export default function MultiStepForm() {
                 {step === 9 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 9 of 11
+                      Step 9 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-10 md:text-3xl">
                       In which country do you live?
@@ -451,36 +458,7 @@ export default function MultiStepForm() {
                 {step === 10 && (
                   <div className="flex flex-col justify-center animate-fadeIn">
                     <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 10 of 11
-                    </p>
-                    <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-8 md:text-3xl">
-                      Please enter your zip code
-                    </h2>
-
-                    <div className="mx-auto w-full max-w-md space-y-4">
-                      <input
-                        type="text"
-                        placeholder="Zip code"
-                        required
-                        value={formData.zipCode}
-                        onChange={(e) => setFormData({ ...formData, zipCode: e.target.value })}
-                        className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3.5 text-sm font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-base"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => setStep(11)}
-                        className="w-full rounded-2xl bg-slate-900 py-3.5 text-sm font-bold tracking-wide text-white shadow-lg shadow-slate-900/10 transition hover:bg-slate-800 hover:shadow-xl md:py-4"
-                      >
-                        Continue
-                      </button>
-                    </div>
-                  </div>
-                )}
-
-                {step === 11 && (
-                  <div className="flex flex-col justify-center animate-fadeIn">
-                    <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-[0.25em] text-teal-700">
-                      Step 11 of 11
+                      Step 10 of {totalSteps}
                     </p>
                     <h2 className="mb-6 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:mb-8 md:text-3xl">
                       Tell us about yourself
@@ -489,8 +467,9 @@ export default function MultiStepForm() {
                     <form onSubmit={handleSubmit} className="mx-auto w-full max-w-md space-y-3 md:space-y-4">
                       <select
                         value={formData.title}
+                        disabled={isSubmitting}
                         onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                        className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                        className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                       >
                         <option value="Mr">Mr</option>
                         <option value="Ms">Ms</option>
@@ -501,17 +480,19 @@ export default function MultiStepForm() {
                           type="text"
                           placeholder="First name"
                           required
+                          disabled={isSubmitting}
                           value={formData.firstName}
                           onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                         />
                         <input
                           type="text"
                           placeholder="Last name"
                           required
+                          disabled={isSubmitting}
                           value={formData.lastName}
                           onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                         />
                       </div>
 
@@ -519,15 +500,17 @@ export default function MultiStepForm() {
                         type="email"
                         placeholder="Email address"
                         required
+                        disabled={isSubmitting}
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                        className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                       />
 
                       <div className="grid grid-cols-[100px_1fr] gap-3">
                         <input
                           type="text"
                           placeholder="Code"
+                          disabled={isSubmitting}
                           value={formData.phone.countryCode}
                           onChange={(e) =>
                             setFormData({
@@ -535,12 +518,13 @@ export default function MultiStepForm() {
                               phone: { ...formData.phone, countryCode: e.target.value },
                             })
                           }
-                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                         />
                         <input
                           type="tel"
                           placeholder="Phone number"
                           required
+                          disabled={isSubmitting}
                           value={formData.phone.number}
                           onChange={(e) =>
                             setFormData({
@@ -548,25 +532,29 @@ export default function MultiStepForm() {
                               phone: { ...formData.phone, number: e.target.value },
                             })
                           }
-                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm"
+                          className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs font-medium text-slate-900 placeholder-slate-400 outline-none transition focus:border-slate-900 focus:bg-white focus:ring-4 focus:ring-slate-900/5 md:text-sm disabled:opacity-50"
                         />
                       </div>
 
                       <label className="flex items-start gap-3 rounded-2xl border border-slate-200/80 bg-slate-50/50 p-3.5 text-[11px] text-slate-600 transition hover:bg-slate-50 md:text-xs">
                         <input
                           type="checkbox"
+                          disabled={isSubmitting}
                           checked={formData.termsAccepted}
                           onChange={(e) => setFormData({ ...formData, termsAccepted: e.target.checked })}
-                          className="mt-0.5 h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900"
+                          className="mt-0.5 h-4 w-4 rounded border-slate-300 text-slate-900 focus:ring-slate-900 disabled:opacity-50"
                         />
                         <span>I agree to the terms and consent to being contacted regarding my consultation.</span>
                       </label>
 
                       <button
                         type="submit"
-                        className="w-full rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 py-3.5 text-xs font-bold tracking-wider text-white shadow-lg shadow-slate-950/10 transition hover:brightness-110 hover:shadow-xl md:py-4 md:text-sm"
+                        disabled={isSubmitting}
+                        className={`w-full rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 py-3.5 text-xs font-bold tracking-wider text-white shadow-lg shadow-slate-950/10 transition md:py-4 md:text-sm ${
+                          isSubmitting ? 'cursor-not-allowed opacity-70' : 'hover:brightness-110 hover:shadow-xl'
+                        }`}
                       >
-                        FIND MY DOCTOR
+                        {isSubmitting ? 'SUBMITTING...' : 'FIND MY DOCTOR'}
                       </button>
                     </form>
                   </div>
@@ -578,7 +566,6 @@ export default function MultiStepForm() {
                 <div className="flex flex-wrap items-center justify-center gap-6 text-[11px] font-semibold tracking-wide text-slate-500">
                   <span className="inline-flex items-center gap-1.5"><strong className="text-teal-600">✓</strong> Verified Clinics</span>
                   <span className="inline-flex items-center gap-1.5"><strong className="text-teal-600">✓</strong> Tailored Recommendations</span>
-                  
                 </div>
               </div>
             </>
@@ -589,6 +576,12 @@ export default function MultiStepForm() {
               <p className="mx-auto max-w-md text-xs leading-relaxed text-slate-600 md:text-sm">
                 Your information has been received. We will match you with the most suitable doctors and clinics based on your answers.
               </p>
+              <button
+                onClick={resetForm}
+                className="mt-6 inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-50"
+              >
+                Submit another request
+              </button>
             </div>
           )}
         </div>
